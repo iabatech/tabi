@@ -1,0 +1,2934 @@
+{
+ "tokyo": [
+  {
+   "id": "tokyo-kissa-lion",
+   "n": "Meikyoku Kissa Lion",
+   "jp": "名曲喫茶ライオン",
+   "k": "cafe",
+   "q": "Shibuya (Dōgenzaka)",
+   "why": "Un kissaten de musique classique hors du temps, à deux pas du tumulte de Shibuya : on boit son café en silence face à d'énormes haut-parleurs.",
+   "tip": "Ici on ne parle pas, on écoute. Parfait pour souffler entre deux quartiers.",
+   "near": "shibuya",
+   "lat": 35.6592775,
+   "lon": 139.6963633,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/preparer-voyage/savoir/gastronomie-japonaise/kissaten-les-cafes-retro-japonais"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-cafe-de-lambre",
+   "n": "Café de l'Ambre",
+   "jp": "カフェ・ド・ランブル",
+   "k": "cafe",
+   "q": "Ginza",
+   "why": "Ouvert en 1948, l'un des plus vieux kissaten de la capitale, avec plus de trente cafés différents à la carte, dont des grains vieillis.",
+   "tip": "Souvent plein le week-end : vise un matin de semaine.",
+   "near": "tsukiji",
+   "lat": 35.6679258,
+   "lon": 139.7622872,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/preparer-voyage/savoir/gastronomie-japonaise/kissaten-les-cafes-retro-japonais"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-takemura",
+   "n": "Takemura",
+   "jp": "竹むら",
+   "k": "douceur",
+   "q": "Kanda (Awajichō)",
+   "why": "Maison de douceurs fondée en 1930 dans un bâtiment en bois qui a survécu à la guerre. On y vient pour l'agemanju frit minute (environ 520 ¥) ou l'oshiruko, soupe d'azuki au mochi.",
+   "tip": "Fermé dimanche, lundi et jours fériés. Menu en japonais seulement mais illustré.",
+   "near": "akihabara",
+   "lat": 35.6966753,
+   "lon": 139.7690703,
+   "src": [
+    {
+     "n": "Kanpai",
+     "u": "https://www.kanpai.fr/tokyo/takemura-kissaten-cafe"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-bongen-coffee",
+   "n": "Bongen Coffee",
+   "jp": "ボンゲンコーヒー",
+   "k": "cafe",
+   "q": "Ginza",
+   "why": "Le comptoir du torréfacteur Shirafushi : des grains choisis comme une carte de vins, du Panama Geisha à un « Ginza Blend » torréfié à l'ancienne.",
+   "tip": "",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Ginza",
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/tokyo/restaurants-cafes/meilleurs-cafes-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-onibus",
+   "n": "Onibus Coffee Nakameguro",
+   "jp": "オニバスコーヒー 中目黒",
+   "k": "cafe",
+   "q": "Nakameguro",
+   "why": "Petite maison de deux étages au bord des voies, réputée pour ses torréfactions claires et fruitées et une carte volontairement courte.",
+   "tip": "Prends ton café sur le banc dehors et file ensuite le long de la rivière Meguro.",
+   "near": "",
+   "lat": 35.6431844,
+   "lon": 139.6980169,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/tokyo/restaurants-cafes/meilleurs-cafes-tokyo"
+    },
+    {
+     "n": "Ulysse",
+     "u": "https://ulysse.com/news/cafes-incontournables-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-blue-bottle-kiyosumi",
+   "n": "Blue Bottle Coffee Kiyosumi-Shirakawa",
+   "jp": "ブルーボトルコーヒー 清澄白河",
+   "k": "cafe",
+   "q": "Kiyosumi-Shirakawa",
+   "why": "Le premier Blue Bottle du Japon, ouvert en 2015 dans un ancien entrepôt où l'on voit torréfier. Bon point de départ pour flâner dans ce quartier calme de galeries et d'ateliers.",
+   "tip": "Enchaîne avec le jardin Kiyosumi, à dix minutes à pied.",
+   "near": "",
+   "lat": 35.6777665,
+   "lon": 139.800579,
+   "src": [
+    {
+     "n": "Ulysse",
+     "u": "https://ulysse.com/news/cafes-incontournables-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-akebono-yu",
+   "n": "Akebono-yu",
+   "jp": "曙湯",
+   "k": "bain",
+   "q": "Asakusa",
+   "why": "Un sento de quartier en bois, avec fresque du Fuji, présenté comme le plus ancien de Tokyo et tenu par des propriétaires adorables. Entrée au tarif sento, environ 550 ¥.",
+   "tip": "Horaires inhabituels : ouvert aussi tôt le matin. Fermé les 1er et 3e vendredis.",
+   "near": "senso",
+   "lat": 35.7181906,
+   "lon": 139.7954119,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/all-about-japan/tokyo/onsen-public-baths/public-baths-in-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-takara-yu",
+   "n": "Takara-yu",
+   "jp": "タカラ湯",
+   "k": "bain",
+   "q": "Kita-Senju",
+   "why": "Le sento comme on l'imagine : grand toit de temple, jardin japonais et bassin de carpes koï que l'on admire depuis le bain extérieur. Environ 550 ¥.",
+   "tip": "Fermé le vendredi. Ouvre en milieu d'après-midi.",
+   "near": "",
+   "lat": 35.7559386,
+   "lon": 139.7942661,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/all-about-japan/tokyo/onsen-public-baths/public-baths-in-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-takeno-yu",
+   "n": "Takeno-yu",
+   "jp": "竹の湯",
+   "k": "bain",
+   "q": "Azabu-Jūban",
+   "why": "Le sento des habitants d'Azabu depuis des générations, connu pour son eau noire (kuro-yu) riche en minéraux, très douce pour la peau. Environ 550 ¥.",
+   "tip": "Fermé lundi et vendredi. L'eau est vraiment sombre, c'est normal.",
+   "near": "",
+   "lat": 35.6513775,
+   "lon": 139.7342826,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/all-about-japan/tokyo/onsen-public-baths/public-baths-in-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-waguriya",
+   "n": "Waguriya",
+   "jp": "和栗や",
+   "k": "douceur",
+   "q": "Yanaka",
+   "why": "Spécialiste du marron japonais de Kasama : son mont-blanc et ses marrons rôtis valent le détour dans le quartier rétro de Yanaka.",
+   "tip": "",
+   "near": "yanaka",
+   "lat": 35.7276,
+   "lon": 139.7652845,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/tokyo/attractions-excursions/quartier-yanaka"
+    },
+    {
+     "n": "Go Tokyo",
+     "u": "https://www.gotokyo.org/fr/story/guide/neighborhood-shopping-streets/index.html"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-niku-no-suzuki",
+   "n": "Niku no Suzuki",
+   "jp": "肉のすずき",
+   "k": "resto",
+   "q": "Yanaka Ginza",
+   "why": "Boucherie de la rue Yanaka Ginza où l'on achète une menchi-katsu, croquette de viande hachée panée, à manger en marchant.",
+   "tip": "Achète-la au comptoir et mange-la en flânant dans la rue.",
+   "near": "yanaka",
+   "lat": 35.7276347,
+   "lon": 139.765507,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/tokyo/attractions-excursions/quartier-yanaka"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-yuyake-dandan",
+   "n": "Yūyake Dandan",
+   "jp": "夕やけだんだん",
+   "k": "vue",
+   "q": "Nippori",
+   "why": "L'escalier qui descend vers Yanaka Ginza depuis la gare de Nippori, réputé pour ses couchers de soleil et ses chats.",
+   "tip": "Viens en fin de journée et poursuis dans Yanaka Ginza.",
+   "near": "yanaka",
+   "lat": 35.7276462,
+   "lon": 139.7671692,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/tokyo/attractions-excursions/nippori-nishi-nippori"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-nippori-tissus",
+   "n": "Nippori Fabric Town",
+   "jp": "日暮里繊維街",
+   "k": "boutique",
+   "q": "Nippori",
+   "why": "Une rue entière de marchands de tissus. Tomato occupe cinq étages, Mihama et Tsukiyasu proposent des tissus japonais à prix de gros.",
+   "tip": "Idéal pour rapporter des coupons de tissu japonais à petit prix.",
+   "near": "yanaka",
+   "lat": 35.7287483,
+   "lon": 139.7761338,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/tokyo/attractions-excursions/nippori-nishi-nippori"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-kaikaya",
+   "n": "Kaikaya by the Sea",
+   "jp": "開花屋",
+   "k": "izakaya",
+   "q": "Shibuya (Maruyamachō)",
+   "why": "Izakaya de poisson animé derrière Shibuya : plateaux de sashimis, poissons grillés, poulpe et une belle sélection de saké.",
+   "tip": "Réserve ou arrive tôt, ouvre à 17 h.",
+   "near": "shibuya",
+   "lat": 35.6567107,
+   "lon": 139.6942028,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/tokyo/restaurants-cafes/top-5-izakayas-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-harmonica-yokocho",
+   "n": "Harmonica Yokochō",
+   "jp": "ハーモニカ横丁",
+   "k": "izakaya",
+   "q": "Kichijōji",
+   "why": "Un dédale de ruelles collé à la gare de Kichijōji, plein de minuscules izakaya, de bars debout et d'échoppes : l'apéro des Tokyoïtes de l'ouest.",
+   "tip": "Combine avec une balade au parc Inokashira l'après-midi.",
+   "near": "ghibli",
+   "lat": 35.7037538,
+   "lon": 139.5793227,
+   "src": [
+    {
+     "n": "Voyapon",
+     "u": "https://voyapon.com/fr/kichijoji-quartier-tokyo-attachant/"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-paper-message",
+   "n": "Paper Message Kichijōji",
+   "jp": "ペーパーメッセージ 吉祥寺",
+   "k": "boutique",
+   "q": "Kichijōji",
+   "why": "Papeterie intime et presque confidentielle : cartes imprimées en letterpress, carnets et petits cadeaux légers à rapporter.",
+   "tip": "",
+   "near": "ghibli",
+   "lat": 35.7049402,
+   "lon": 139.5737537,
+   "src": [
+    {
+     "n": "Voyapon",
+     "u": "https://voyapon.com/fr/kichijoji-quartier-tokyo-attachant/"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-yakumo",
+   "n": "Chūka Soba Yakumo",
+   "jp": "中華そば 八雲",
+   "k": "ramen",
+   "q": "Ikejiri-Ōhashi",
+   "why": "Sélectionné par le Michelin pour ses wonton-men au porc et à la crevette. Bouillon clair ou foncé : le guide conseille de demander un mélange des deux.",
+   "tip": "",
+   "near": "shibuya",
+   "lat": 35.6506033,
+   "lon": 139.6897056,
+   "src": [
+    {
+     "n": "Guide Michelin",
+     "u": "https://guide.michelin.com/fr/fr/best-of/meilleurs-ramen-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-toy-box",
+   "n": "Ramen-ya Toy Box",
+   "jp": "らぁ麺屋 トイボックス",
+   "k": "ramen",
+   "q": "Minowa",
+   "why": "Un shoyu ramen salué par le Michelin, dans un coin populaire de Tokyo que les touristes ne voient jamais.",
+   "tip": "Profite-en pour prendre le tramway Toden Arakawa, la dernière ligne de tram de la ville.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Minowa",
+   "src": [
+    {
+     "n": "Guide Michelin",
+     "u": "https://guide.michelin.com/fr/fr/best-of/meilleurs-ramen-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-sasaki-seimenjo",
+   "n": "Sasaki Seimenjo",
+   "jp": "中華そば 佐々木製麺所",
+   "k": "ramen",
+   "q": "Nishi-Ogikubo",
+   "why": "Le ramen de quartier qui fait le bonheur des riverains de Nishi-Ogikubo, avec des nouilles maison au blé japonais. Repéré par le Michelin.",
+   "tip": "Le guide suggère une promenade au parc Zenpukuji ensuite.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Nishi-Ogikubo",
+   "src": [
+    {
+     "n": "Guide Michelin",
+     "u": "https://guide.michelin.com/fr/fr/best-of/meilleurs-ramen-tokyo"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-nakiryu",
+   "n": "Nakiryū",
+   "jp": "創作麺工房 鳴龍",
+   "k": "ramen",
+   "q": "Ōtsuka",
+   "why": "« Le dragon qui pleure » est célèbre pour son tantanmen épicé, un bol étoilé pour moins de 1 400 ¥.",
+   "tip": "Arrive avant l'ouverture pour limiter l'attente.",
+   "near": "",
+   "lat": 35.7286654,
+   "lon": 139.7303627,
+   "src": [
+    {
+     "n": "Lonely Planet",
+     "u": "https://www.lonelyplanet.fr/article/tokyo-pas-cher-nos-bons-plans-et-astuces"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-kappabashi",
+   "n": "Kappabashi Dōgu-gai",
+   "jp": "かっぱ橋道具街",
+   "k": "boutique",
+   "q": "Kappabashi",
+   "why": "Environ 170 boutiques pour les pros de la restauration : couteaux santoku, bols, théières en fonte, faux plats en cire. Le meilleur endroit pour des souvenirs utiles.",
+   "tip": "La plupart des boutiques sont fermées le dimanche. Compte deux heures.",
+   "near": "senso",
+   "lat": 35.7142517,
+   "lon": 139.7888894,
+   "src": [
+    {
+     "n": "Kanpai",
+     "u": "https://www.kanpai.fr/tokyo/kappabashi"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-shibamata",
+   "n": "Shibamata Taishakuten Sandō",
+   "jp": "柴又帝釈天参道",
+   "k": "secret",
+   "q": "Shibamata",
+   "why": "Une rue d'avant-guerre qui mène au temple Taishakuten, avec ses kusa-dango à l'armoise, ses anguilles grillées et ses bonbons dagashi. Le Tokyo du film Tora-san.",
+   "tip": "Fais une pause matcha au salon Yamamoto-tei (environ 1 000 ¥ avec pâtisserie). Accès en Keisei, hors JR Pass.",
+   "near": "",
+   "lat": 35.7576004,
+   "lon": 139.8763507,
+   "src": [
+    {
+     "n": "Kanpai",
+     "u": "https://www.kanpai.fr/tokyo/shibamata"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-togoshi-ginza",
+   "n": "Togoshi Ginza",
+   "jp": "戸越銀座商店街",
+   "k": "marche",
+   "q": "Togoshi",
+   "why": "La plus longue rue commerçante de Tokyo (1,3 km) : une vingtaine de boutiques y font des korokke maison, à grignoter en marchant.",
+   "tip": "Termine au Togoshi Ginza Onsen, eau noire et bain sur le toit (serviette et savon 100 ¥).",
+   "near": "",
+   "lat": 35.616195,
+   "lon": 139.7150881,
+   "src": [
+    {
+     "n": "Go Tokyo",
+     "u": "https://www.gotokyo.org/fr/story/guide/neighborhood-shopping-streets/index.html"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-jujo-ginza",
+   "n": "Jūjō Ginza",
+   "jp": "十条銀座商店街",
+   "k": "marche",
+   "q": "Jūjō",
+   "why": "Rue commerçante couverte de quartier. Chez le volailler Toridai, les boulettes de poulet à 10 ¥ partent par milliers chaque jour.",
+   "tip": "Un plat à emporter pour deux revient à environ 1 000 ¥.",
+   "near": "",
+   "lat": 35.7624832,
+   "lon": 139.7213024,
+   "src": [
+    {
+     "n": "Go Tokyo",
+     "u": "https://www.gotokyo.org/fr/story/guide/neighborhood-shopping-streets/index.html"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-sugamo",
+   "n": "Sugamo Jizō-dōri",
+   "jp": "巣鴨地蔵通り商店街",
+   "k": "marche",
+   "q": "Sugamo",
+   "why": "Le « Harajuku des grands-mères » : une rue de temple pleine d'échoppes. Soba faits main chez Teuchi Soba Kikutani, riz et pickles maison chez Tokiwa Shokudō.",
+   "tip": "Les boutiques ouvrent vers 9 h : c'est une sortie du matin.",
+   "near": "",
+   "lat": 35.7387979,
+   "lon": 139.7306169,
+   "src": [
+    {
+     "n": "Go Tokyo",
+     "u": "https://www.gotokyo.org/fr/story/guide/neighborhood-shopping-streets/index.html"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-sankaku-chitai",
+   "n": "Sankaku Chitai",
+   "jp": "三角地帯",
+   "k": "bar",
+   "q": "Sangenjaya",
+   "why": "Un triangle de ruelles étroites bourrées de petits bars et de gargotes, qui s'anime à la nuit tombée. On y boit au comptoir avec les habitués.",
+   "tip": "Avant, monte gratuitement au Sky Carrot de la Carrot Tower : vue sur Shibuya et parfois le Fuji.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Sangenjaya",
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/all-about-japan/tokyo/attractions-excursions/sangenjaya"
+    }
+   ]
+  },
+  {
+   "id": "tokyo-monja-mugi",
+   "n": "Monja Mugi",
+   "jp": "もんじゃ麦 本店",
+   "k": "resto",
+   "q": "Tsukishima",
+   "why": "Institution de la rue du monjayaki depuis plus de 35 ans. On cuit soi-même sur la plaque la classique mentaiko-mochi-fromage.",
+   "tip": "Le soir, viens à plusieurs pour goûter plusieurs monja.",
+   "near": "tsukiji",
+   "lat": 35.6636594,
+   "lon": 139.7817591,
+   "src": [
+    {
+     "n": "Time Out Tokyo",
+     "u": "https://www.timeout.com/tokyo/restaurants/best-monjayaki-in-tokyo"
+    }
+   ]
+  }
+ ],
+ "hakone": [
+  {
+   "id": "hakone-hatsuhana",
+   "n": "Hatsuhana Honten",
+   "jp": "はつ花 本店",
+   "k": "resto",
+   "q": "Hakone-Yumoto",
+   "why": "La maison de soba historique de Yumoto, dont les nouilles sont liées à l'igname sauvage (jinenjo) au lieu de la farine de blé.",
+   "tip": "Fermé le mercredi. Idéal en arrivant ou en repartant par Yumoto.",
+   "near": "",
+   "lat": 35.2311356,
+   "lon": 139.1002104,
+   "src": [
+    {
+     "n": "Magical Trip",
+     "u": "https://www.magical-trip.com/media/where-to-enjoy-the-best-lunch-in-hakone-2025-top-scenic-spots-and-must-try-dishes/"
+    }
+   ]
+  },
+  {
+   "id": "hakone-naokichi",
+   "n": "Yubadon Naokichi",
+   "jp": "湯葉丼 直吉",
+   "k": "resto",
+   "q": "Hakone-Yumoto",
+   "why": "Un bol de yuba (peau de lait de soja) mijoté dans un bouillon de bonite : un repas léger avant de partir marcher.",
+   "tip": "Fermé le mardi.",
+   "near": "",
+   "lat": 35.2318164,
+   "lon": 139.1029195,
+   "src": [
+    {
+     "n": "Magical Trip",
+     "u": "https://www.magical-trip.com/media/where-to-enjoy-the-best-lunch-in-hakone-2025-top-scenic-spots-and-must-try-dishes/"
+    }
+   ]
+  },
+  {
+   "id": "hakone-naraya-cafe",
+   "n": "Naraya Cafe",
+   "jp": "NARAYA CAFE",
+   "k": "cafe",
+   "q": "Miyanoshita",
+   "why": "Café dans un ancien bâtiment de ryokan, avec des tables au-dessus d'un bain de pieds chaud. On y trouve aussi des objets en bois et en verre de créateurs locaux.",
+   "tip": "À 30 secondes de la gare de Miyanoshita. Fermé le mercredi.",
+   "near": "openair",
+   "lat": 35.2422965,
+   "lon": 139.062949,
+   "src": [
+    {
+     "n": "Magical Trip",
+     "u": "https://www.magical-trip.com/media/top-11-must-visit-cafes-coffee-shops-in-hakone-2025-scenic-spots-artisan-coffee-and-unique-local-flavors/"
+    }
+   ]
+  },
+  {
+   "id": "hakone-fujiya-lounge",
+   "n": "Lounge du Fujiya Hotel",
+   "jp": "富士屋ホテル",
+   "k": "cafe",
+   "q": "Miyanoshita",
+   "why": "Le premier hôtel de villégiature du Japon (1878) ouvre son salon aux non-résidents : on y commande la pomme au four et glace vanille dans un décor d'époque.",
+   "tip": "Ouvert tous les jours en journée, sans réservation.",
+   "near": "openair",
+   "lat": 35.2439378,
+   "lon": 139.0589207,
+   "src": [
+    {
+     "n": "Magical Trip",
+     "u": "https://www.magical-trip.com/media/top-11-must-visit-cafes-coffee-shops-in-hakone-2025-scenic-spots-artisan-coffee-and-unique-local-flavors/"
+    }
+   ]
+  },
+  {
+   "id": "hakone-bakery-table",
+   "n": "Bakery & Table Hakone",
+   "jp": "ベーカリー&テーブル箱根",
+   "k": "cafe",
+   "q": "Moto-Hakone (lac Ashi)",
+   "why": "Trois étages face au lac Ashi : boulangerie avec bain de pieds au rez-de-chaussée, café au premier, bar à café filtre au dernier.",
+   "tip": "Prends ton pain et installe-toi les pieds dans l'eau chaude.",
+   "near": "ashi",
+   "lat": 35.201827,
+   "lon": 139.030935,
+   "src": [
+    {
+     "n": "Magical Trip",
+     "u": "https://www.magical-trip.com/media/top-11-must-visit-cafes-coffee-shops-in-hakone-2025-scenic-spots-artisan-coffee-and-unique-local-flavors/"
+    }
+   ]
+  },
+  {
+   "id": "hakone-coffee-camp",
+   "n": "Coffee Camp",
+   "jp": "COFFEE CAMP",
+   "k": "cafe",
+   "q": "Gōra",
+   "why": "Café-torréfacteur ouvert dès 8 h à Gōra, rare à Hakone : formule hot-dog et café le matin avant le musée en plein air.",
+   "tip": "Fermé le mardi.",
+   "near": "ryokan",
+   "lat": 35.2515884,
+   "lon": 139.0476136,
+   "src": [
+    {
+     "n": "Magical Trip",
+     "u": "https://www.magical-trip.com/media/top-11-must-visit-cafes-coffee-shops-in-hakone-2025-scenic-spots-artisan-coffee-and-unique-local-flavors/"
+    }
+   ]
+  },
+  {
+   "id": "hakone-gora-brewery",
+   "n": "Gōra Brewery & Grill",
+   "jp": "GORA BREWERY & GRILL",
+   "k": "bar",
+   "q": "Gōra",
+   "why": "Microbrasserie dessinée par l'architecte Hiroshi Nakamura : bière Hakone Kohaku brassée avec l'eau locale et grillades, pour finir la journée.",
+   "tip": "Ouvre à 13 h.",
+   "near": "ryokan",
+   "lat": 35.2475987,
+   "lon": 139.0463367,
+   "src": [
+    {
+     "n": "Magical Trip",
+     "u": "https://www.magical-trip.com/media/where-to-enjoy-the-best-lunch-in-hakone-2025-top-scenic-spots-and-must-try-dishes/"
+    }
+   ]
+  }
+ ],
+ "kawaguchiko": [
+  {
+   "id": "kawaguchiko-hoto-fudo",
+   "n": "Hōtō Fudō",
+   "jp": "ほうとう不動",
+   "k": "resto",
+   "q": "Rive nord du lac Kawaguchi",
+   "why": "Le plat local : des nouilles plates et épaisses mijotées dans un bouillon au miso avec potiron et champignons. La maison principale est sur la rive nord, près du musée d'art.",
+   "tip": "Parfait après une journée froide au bord du lac.",
+   "near": "",
+   "lat": 35.4910773,
+   "lon": 138.7570765,
+   "src": [
+    {
+     "n": "byFood",
+     "u": "https://www.byfood.com/blog/where-to-eat/mount-fuji-restaurants-kawaguchiko"
+    }
+   ]
+  },
+  {
+   "id": "kawaguchiko-sanrokuen",
+   "n": "Sanrokuen",
+   "jp": "山麓園",
+   "k": "resto",
+   "q": "Lac Kawaguchi",
+   "why": "Dans une maison au toit de chaume de 150 ans, on grille soi-même brochettes de viande, poisson et tofu sur un foyer irori, avant un hōtō en fin de repas.",
+   "tip": "Plus cher que la moyenne, mais l'expérience vaut le détour.",
+   "near": "",
+   "lat": 35.4901705,
+   "lon": 138.7700499,
+   "src": [
+    {
+     "n": "byFood",
+     "u": "https://www.byfood.com/blog/where-to-eat/mount-fuji-restaurants-kawaguchiko"
+    }
+   ]
+  },
+  {
+   "id": "kawaguchiko-tsuruya-shokudo",
+   "n": "Tsuruya Shokudō",
+   "jp": "つるや食堂",
+   "k": "resto",
+   "q": "Fujiyoshida",
+   "why": "Un vieux restaurant de Yoshida udon, nouilles très fermes au bouillon miso-shoyu : le bol complet (tempura, viande de cheval, œuf) coûte environ 700 ¥.",
+   "tip": "Goûte d'abord le bouillon, puis ajoute le suridane, le condiment pimenté maison. Midi uniquement.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Fujiyoshida",
+   "src": [
+    {
+     "n": "Magical Trip",
+     "u": "https://www.magical-trip.com/media/discover-mt-fujis-local-restaurant-tsuruya-shokudo-yoshida-udon-famous-yamanashis-soul-food/"
+    },
+    {
+     "n": "Yamanashi Tourism",
+     "u": "https://www.yamanashi-kankou.jp/english/explore-by-area/fujisan-fujigoko/yoshida-no-udon.html"
+    }
+   ]
+  },
+  {
+   "id": "kawaguchiko-sylvans",
+   "n": "Sylvans (Fujizakura Heights Beer)",
+   "jp": "シルバンズ",
+   "k": "bar",
+   "q": "Funatsu (Fujikawaguchiko)",
+   "why": "La brasserie Fujizakura Heights, brassée avec l'eau de source du Fuji : de la lager légère à la bière noire torréfiée, avec saucisses et pizzas.",
+   "tip": "Navette gratuite depuis la gare de Kawaguchiko.",
+   "near": "",
+   "lat": 35.4583752,
+   "lon": 138.7600718,
+   "src": [
+    {
+     "n": "byFood",
+     "u": "https://www.byfood.com/blog/where-to-eat/mount-fuji-restaurants-kawaguchiko"
+    }
+   ]
+  },
+  {
+   "id": "kawaguchiko-troisieme-marche",
+   "n": "Café Troisième Marché",
+   "jp": "トロワジェムマルシェ",
+   "k": "cafe",
+   "q": "Rive nord du lac Kawaguchi",
+   "why": "Café au décor de campagne française, avec vue sur le Fuji : crêpes, parfaits et gâteaux, ou un curry pour un déjeuner calme.",
+   "tip": "Juste à côté du musée de la Forêt musicale.",
+   "near": "",
+   "lat": 35.5218197,
+   "lon": 138.7734865,
+   "src": [
+    {
+     "n": "byFood",
+     "u": "https://www.byfood.com/blog/where-to-eat/mount-fuji-restaurants-kawaguchiko"
+    }
+   ]
+  }
+ ],
+ "nikko": [
+  {
+   "id": "nikko-nagomi-chaya",
+   "n": "Nagomi-chaya",
+   "jp": "和み茶屋",
+   "k": "resto",
+   "q": "Rue principale (vers les sanctuaires)",
+   "why": "Le yuba, peau de lait de soja, est la spécialité de Nikkō : ici en kaiseki de saison à prix doux le midi (environ 1 500 à 2 700 ¥).",
+   "tip": "Réserve et demande les tables basses côté jardin.",
+   "near": "toshogu",
+   "lat": 36.7524813,
+   "lon": 139.6072411,
+   "src": [
+    {
+     "n": "Voyapon",
+     "u": "https://voyapon.com/fr/nikko-vegetarienne-yuba/"
+    },
+    {
+     "n": "Tsunagu Japan",
+     "u": "https://www.tsunagujapan.com/12-popular-restaurants-in-nikko/"
+    }
+   ]
+  },
+  {
+   "id": "nikko-hippari-dako",
+   "n": "Hippari Dako",
+   "jp": "ひっぱり凧",
+   "k": "izakaya",
+   "q": "Près du pont Shinkyō",
+   "why": "Petite cantine culte des voyageurs depuis des décennies : yakitori, yakisoba et plats au yuba, portions copieuses, murs couverts de mots laissés par les clients.",
+   "tip": "Menu en anglais, options végétariennes.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Près du pont Shinkyō",
+   "src": [
+    {
+     "n": "Tsunagu Japan",
+     "u": "https://www.tsunagujapan.com/12-popular-restaurants-in-nikko/"
+    }
+   ]
+  },
+  {
+   "id": "nikko-meiji-no-yakata",
+   "n": "Meiji no Yakata",
+   "jp": "明治の館",
+   "k": "resto",
+   "q": "Sanctuaires",
+   "why": "Dans une maison de style américain classée bien culturel, une cuisine occidentale de l'ère Meiji : l'omurice sauce demi-glace (environ 1 600 ¥).",
+   "tip": "Belle étape après le Tōshō-gū.",
+   "near": "toshogu",
+   "lat": 36.756845,
+   "lon": 139.6029831,
+   "src": [
+    {
+     "n": "Tsunagu Japan",
+     "u": "https://www.tsunagujapan.com/12-popular-restaurants-in-nikko/"
+    }
+   ]
+  },
+  {
+   "id": "nikko-hongu-cafe",
+   "n": "Hongū Café",
+   "jp": "本宮カフェ",
+   "k": "cafe",
+   "q": "Entrée des sanctuaires",
+   "why": "Dans une maison rénovée de 300 ans, au pied des temples : pudding au matcha (550 ¥), dango à l'armoise, ou chowder servi dans le pain de l'hôtel Kanaya.",
+   "tip": "",
+   "near": "toshogu",
+   "lat": 36.753937,
+   "lon": 139.6041849,
+   "src": [
+    {
+     "n": "Tsunagu Japan",
+     "u": "https://www.tsunagujapan.com/12-popular-restaurants-in-nikko/"
+    }
+   ]
+  },
+  {
+   "id": "nikko-tsuruya-yuba",
+   "n": "Tsuruya (yuba)",
+   "jp": "",
+   "k": "resto",
+   "q": "Lac Chūzenji",
+   "why": "Au bord du lac Chūzenji, en face de l'arrêt de bus principal : curry au yuba, soba au yuba et pudding au yuba, de 700 à 1 200 ¥.",
+   "tip": "À deux pas de la cascade de Kegon. Menu en japonais avec photos.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Lac Chūzenji",
+   "src": [
+    {
+     "n": "Japan Travel",
+     "u": "https://fr.jal.japantravel.com/tochigi/tsuruya-yuba-restaurant-nikko/18869"
+    }
+   ]
+  }
+ ],
+ "matsumoto": [
+  {
+   "id": "matsumoto-coffee-abe",
+   "n": "Coffee Abe",
+   "jp": "珈琲美学アベ",
+   "k": "cafe",
+   "q": "Fukashi (près de la gare)",
+   "why": "Kissaten rétro de 1957 où les habitants passent tôt le matin. On y commande le « mocha cream au lait », une sorte de café liégeois.",
+   "tip": "À 5 minutes à pied de la gare.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Fukashi (près de la gare)",
+   "src": [
+    {
+     "n": "Go Nagano",
+     "u": "https://www.go-nagano.net/en/trip-idea/id18930"
+    }
+   ]
+  },
+  {
+   "id": "matsumoto-marumo",
+   "n": "Coffee Marumo",
+   "jp": "まるも",
+   "k": "cafe",
+   "q": "Chūō",
+   "why": "Une institution de plus de 60 ans, avec meubles en bois fabriqués à Matsumoto. Pas d'espresso ici : un café filtre et un cheesecake.",
+   "tip": "",
+   "near": "matsumotojo",
+   "lat": 36.2342717,
+   "lon": 137.972385,
+   "src": [
+    {
+     "n": "Go Nagano",
+     "u": "https://www.go-nagano.net/en/trip-idea/id18930"
+    }
+   ]
+  },
+  {
+   "id": "matsumoto-nakamachi-cafe",
+   "n": "Nakamachi Café",
+   "jp": "",
+   "k": "douceur",
+   "q": "Nakamachi",
+   "why": "Derrière une façade d'entrepôt en terre de la rue Nakamachi, des pancakes soufflés (caramel salé, chocolat, fraise) avec un latte.",
+   "tip": "",
+   "near": "matsumotojo",
+   "lat": 36.2338651,
+   "lon": 137.9719473,
+   "src": [
+    {
+     "n": "Go Nagano",
+     "u": "https://www.go-nagano.net/en/trip-idea/id18930"
+    }
+   ]
+  },
+  {
+   "id": "matsumoto-cohiludo",
+   "n": "Cohiludo",
+   "jp": "",
+   "k": "cafe",
+   "q": "Ōte (vers le château)",
+   "why": "Café qui sert les spécialités de Nagano : oyaki, chaussons fourrés (légumes nozawana, curry, pomme), et soba, avec un latte à l'amazake.",
+   "tip": "Sur le chemin du château, à 15 minutes de la gare.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Ōte (vers le château)",
+   "src": [
+    {
+     "n": "Go Nagano",
+     "u": "https://www.go-nagano.net/en/trip-idea/id18930"
+    }
+   ]
+  },
+  {
+   "id": "matsumoto-high-five",
+   "n": "High-Five Coffee Stand",
+   "jp": "",
+   "k": "cafe",
+   "q": "Fukashi",
+   "why": "Petit torréfacteur de cafés d'origine derrière une façade vitrée : café filtre et boissons de saison.",
+   "tip": "Près du musée d'art de la ville, celui des pois de Yayoi Kusama.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Fukashi",
+   "src": [
+    {
+     "n": "Go Nagano",
+     "u": "https://www.go-nagano.net/en/trip-idea/id18930"
+    }
+   ]
+  }
+ ],
+ "takayama": [
+  {
+   "id": "takayama-suzuya",
+   "n": "Suzuya",
+   "jp": "寿々や",
+   "k": "resto",
+   "q": "Hanakawa-machi",
+   "why": "Restaurant familial qui sert le bœuf de Hida grillé sur feuille de magnolia au miso (hoba-miso), environ 2 500 à 3 500 ¥.",
+   "tip": "Service habitué aux voyageurs, menu en anglais.",
+   "near": "sanmachi",
+   "lat": 36.1425745,
+   "lon": 137.2557027,
+   "src": [
+    {
+     "n": "The Ranting Panda",
+     "u": "https://therantingpanda.com/2023/05/28/panda-picks-best-restaurants-cafes-to-check-out-in-takayama-japan-from-hida-beef-sushi-yakiniku-to-third-wave-coffeeshops/"
+    }
+   ]
+  },
+  {
+   "id": "takayama-maruaki",
+   "n": "Hidagyū Maruaki",
+   "jp": "丸明",
+   "k": "resto",
+   "q": "Tenman-machi",
+   "why": "Boucher-restaurant où l'on grille soi-même le bœuf de Hida en choisissant la qualité, ou en sukiyaki.",
+   "tip": "Pas de réservation : arrive avant le coup de feu.",
+   "near": "takayamaryokan",
+   "lat": 36.1425959,
+   "lon": 137.2543116,
+   "src": [
+    {
+     "n": "The Ranting Panda",
+     "u": "https://therantingpanda.com/2023/05/28/panda-picks-best-restaurants-cafes-to-check-out-in-takayama-japan-from-hida-beef-sushi-yakiniku-to-third-wave-coffeeshops/"
+    }
+   ]
+  },
+  {
+   "id": "takayama-falo",
+   "n": "Falo Coffee Roasters",
+   "jp": "",
+   "k": "cafe",
+   "q": "Kami-Ichinomachi",
+   "why": "Petit café de spécialité au décor scandinave avec une table commune, tenu par un barista passé par plusieurs villes étrangères.",
+   "tip": "",
+   "near": "sanmachi",
+   "lat": 36.1428872,
+   "lon": 137.260651,
+   "src": [
+    {
+     "n": "The Ranting Panda",
+     "u": "https://therantingpanda.com/2023/05/28/panda-picks-best-restaurants-cafes-to-check-out-in-takayama-japan-from-hida-beef-sushi-yakiniku-to-third-wave-coffeeshops/"
+    }
+   ]
+  },
+  {
+   "id": "takayama-fukyuan",
+   "n": "Fukyūan",
+   "jp": "",
+   "k": "douceur",
+   "q": "Shimo-Ichinomachi",
+   "why": "Maison de thé cachée dans une petite rue, avec vue sur un jardin : warabi mochi au kinako et glace vanille.",
+   "tip": "Facile à rater, cherche-la bien.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Shimo-Ichinomachi",
+   "src": [
+    {
+     "n": "The Ranting Panda",
+     "u": "https://therantingpanda.com/2023/05/28/panda-picks-best-restaurants-cafes-to-check-out-in-takayama-japan-from-hida-beef-sushi-yakiniku-to-third-wave-coffeeshops/"
+    }
+   ]
+  },
+  {
+   "id": "takayama-pain-mujo",
+   "n": "Le Pain Mujo",
+   "jp": "",
+   "k": "douceur",
+   "q": "Ōshin-machi",
+   "why": "Boulangerie au levain : kouign-amann et cannelés, à cinq minutes du marché du matin.",
+   "tip": "",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Ōshin-machi",
+   "src": [
+    {
+     "n": "The Ranting Panda",
+     "u": "https://therantingpanda.com/2023/05/28/panda-picks-best-restaurants-cafes-to-check-out-in-takayama-japan-from-hida-beef-sushi-yakiniku-to-third-wave-coffeeshops/"
+    }
+   ]
+  },
+  {
+   "id": "takayama-miyagawa-asaichi",
+   "n": "Marché du matin de Miyagawa",
+   "jp": "宮川朝市",
+   "k": "marche",
+   "q": "Bord de la rivière Miyagawa",
+   "why": "Le marché du matin le long de la rivière : légumes, pickles, artisanat et petits stands de street food comme les takoyaki.",
+   "tip": "Le matin seulement, idéal avant la vieille ville.",
+   "near": "sanmachi",
+   "lat": 36.1446938,
+   "lon": 137.2578518,
+   "src": [
+    {
+     "n": "The Ranting Panda",
+     "u": "https://therantingpanda.com/2023/05/28/panda-picks-best-restaurants-cafes-to-check-out-in-takayama-japan-from-hida-beef-sushi-yakiniku-to-third-wave-coffeeshops/"
+    }
+   ]
+  }
+ ],
+ "shirakawa": [
+  {
+   "id": "shirakawa-shiroyama",
+   "n": "Observatoire de Shiroyama",
+   "jp": "荻町城跡展望台",
+   "k": "vue",
+   "q": "Ogimachi (nord)",
+   "why": "Sur les ruines du château d'Ogimachi, le panorama carte postale sur les toits de chaume. La journée commence généralement ici.",
+   "tip": "Monte tôt le matin, avant l'arrivée des bus.",
+   "near": "shirakawago",
+   "lat": 36.2629545,
+   "lon": 136.9079634,
+   "src": [
+    {
+     "n": "Kanpai",
+     "u": "https://kanpai.fr/shirakawa-go"
+    }
+   ]
+  },
+  {
+   "id": "shirakawa-myozenji",
+   "n": "Myōzen-ji",
+   "jp": "明善寺",
+   "k": "secret",
+   "q": "Ogimachi",
+   "why": "Temple bouddhiste de 1744 transformé en musée, avec un clocher et un logis au toit de chaume : la visite prioritaire selon Kanpai.",
+   "tip": "",
+   "near": "shirakawago",
+   "lat": 36.2559101,
+   "lon": 136.9065906,
+   "src": [
+    {
+     "n": "Kanpai",
+     "u": "https://kanpai.fr/shirakawa-go"
+    }
+   ]
+  },
+  {
+   "id": "shirakawa-irori",
+   "n": "Irori",
+   "jp": "いろり",
+   "k": "resto",
+   "q": "Ogimachi",
+   "why": "Autour d'un foyer traditionnel, le set au tofu ferme grillé de la région, ou le teppanyaki à l'igname râpée.",
+   "tip": "Ouvert le midi seulement (10 h-14 h).",
+   "near": "shirakawago",
+   "lat": 36.2609107,
+   "lon": 136.9069331,
+   "src": [
+    {
+     "n": "Fun Japan",
+     "u": "https://www.fun-japan.jp/en/articles/9946"
+    }
+   ]
+  },
+  {
+   "id": "shirakawa-masuen-bunsuke",
+   "n": "Masuen Bunsuke",
+   "jp": "ます園 文助",
+   "k": "resto",
+   "q": "Ogimachi (flanc de colline)",
+   "why": "Restaurant de poissons de rivière dans une maison gasshō aux salles de tatamis baignées de lumière : omble grillé, sashimi de truite, légumes de montagne.",
+   "tip": "Un peu en hauteur, à l'écart de la foule.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Ogimachi (flanc de colline)",
+   "src": [
+    {
+     "n": "Hamoni",
+     "u": "https://hamoni.jp/en/area/gifu/oono/shirakawa/shops/cafe-kissaten"
+    }
+   ]
+  },
+  {
+   "id": "shirakawa-hanamizuki",
+   "n": "Hanamizuki",
+   "jp": "",
+   "k": "douceur",
+   "q": "Ogimachi",
+   "why": "Petit salon de wagashi avec vue sur le village : boulettes de mochi au kinako et mizuwarabi mochi, servis par une hôtesse chaleureuse.",
+   "tip": "",
+   "near": "shirakawago",
+   "lat": 36.2574237,
+   "lon": 136.9050222,
+   "src": [
+    {
+     "n": "Hamoni",
+     "u": "https://hamoni.jp/en/area/gifu/oono/shirakawa/shops/cafe-kissaten"
+    }
+   ]
+  },
+  {
+   "id": "shirakawa-kyoshu",
+   "n": "Bunka Kissa Kyōshū",
+   "jp": "文化喫茶 郷愁",
+   "k": "cafe",
+   "q": "Ogimachi",
+   "why": "Café qui surplombe le paysage de Shirakawa-gō : latte glacé (700 ¥) ou limonade et baumkuchen (550 ¥).",
+   "tip": "Fermé mercredi et samedi.",
+   "near": "shirakawago",
+   "lat": 36.2561326,
+   "lon": 136.9059566,
+   "src": [
+    {
+     "n": "Hamoni",
+     "u": "https://hamoni.jp/en/area/gifu/oono/shirakawa/shops/cafe-kissaten"
+    }
+   ]
+  }
+ ],
+ "kanazawa": [
+  {
+   "id": "kanazawa-kourin-sushi",
+   "n": "Kourin Sushi",
+   "jp": "香りん寿司",
+   "k": "resto",
+   "q": "Bakurōmachi (Ōmichō)",
+   "why": "Sushi de quartier près du marché Ōmichō et du château : un set de dix pièces autour de 1 320 ¥, avec nodoguro et crabe de saison.",
+   "tip": "Fermé mercredi et dimanche. Idéal au déjeuner.",
+   "near": "omicho",
+   "lat": 36.5694167,
+   "lon": 136.6585899,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/kanazawa/restaurants-cafes/restaurants-bars-izakaya-kanazawa"
+    }
+   ]
+  },
+  {
+   "id": "kanazawa-ushioya",
+   "n": "Ushioya",
+   "jp": "うしおや",
+   "k": "resto",
+   "q": "Higashi Chaya",
+   "why": "Comptoir de poisson du quartier des maisons de thé : le kaisendon aux trois poissons, et en hiver le buri shabu.",
+   "tip": "Ouvert seulement en journée, fermé le mardi.",
+   "near": "higashichaya",
+   "lat": 36.5724609,
+   "lon": 136.6661429,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/kanazawa/restaurants-cafes/restaurants-bars-izakaya-kanazawa"
+    }
+   ]
+  },
+  {
+   "id": "kanazawa-menya-uguisu",
+   "n": "Menya Uguisu",
+   "jp": "麺屋 鶯",
+   "k": "ramen",
+   "q": "Katamachi",
+   "why": "Petit comptoir de ramen au bouillon de poulet (tori paitan) dans le quartier de la nuit de Kanazawa. Demande tes nouilles « katame », fermes.",
+   "tip": "Ouvert tard, fermé le dimanche.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Katamachi",
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/kanazawa/restaurants-cafes/restaurants-bars-izakaya-kanazawa"
+    }
+   ]
+  },
+  {
+   "id": "kanazawa-fuwari",
+   "n": "Fuwari",
+   "jp": "ふわり",
+   "k": "izakaya",
+   "q": "Owarichō (Ōmichō)",
+   "why": "Izakaya en bois avec vue sur un jardin : grillades au charbon (le cou de poulet est la spécialité), sashimis frais.",
+   "tip": "Le soir seulement, fermé le lundi.",
+   "near": "omicho",
+   "lat": 36.5720352,
+   "lon": 136.6609855,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/kanazawa/restaurants-cafes/restaurants-bars-izakaya-kanazawa"
+    }
+   ]
+  },
+  {
+   "id": "kanazawa-kesaran-pasaran",
+   "n": "Kesaran Pasaran",
+   "jp": "ケサランパサラン",
+   "k": "cafe",
+   "q": "Shin-Tatemachi",
+   "why": "Bar à espresso de la rue Shin-Tatemachi, avec œuvres d'artistes locaux aux murs. Lattes et cheesecake au gorgonzola.",
+   "tip": "Fermé lundi et vendredi, queue possible le week-end.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Shin-Tatemachi",
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/kanazawa/restaurants-cafes/restaurants-bars-izakaya-kanazawa"
+    }
+   ]
+  },
+  {
+   "id": "kanazawa-curio",
+   "n": "Curio Espresso",
+   "jp": "キュリオエスプレッソ",
+   "k": "cafe",
+   "q": "Yasuechō",
+   "why": "Dans une machiya, l'un des premiers cafés de spécialité de la ville (2014), tenu par un ancien de Seattle. Un des rares endroits pour un vrai petit-déjeuner.",
+   "tip": "On commande en anglais sans souci.",
+   "near": "omicho",
+   "lat": 36.5733288,
+   "lon": 136.6554357,
+   "src": [
+    {
+     "n": "Visit Kanazawa",
+     "u": "https://visitkanazawa.jp/fr/trip-ideas/detail_316.html"
+    }
+   ]
+  },
+  {
+   "id": "kanazawa-ritorta",
+   "n": "Gelateria Ritorta",
+   "jp": "ジェラテリア リトルタ",
+   "k": "douceur",
+   "q": "Kōrinbō (Nagamachi)",
+   "why": "Glacier artisanal près du quartier samouraï de Nagamachi : stracciatella signature et parfums japonais de saison.",
+   "tip": "Fermé le mardi.",
+   "near": "musee21",
+   "lat": 36.5640867,
+   "lon": 136.6525945,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/kanazawa/restaurants-cafes/restaurants-bars-izakaya-kanazawa"
+    }
+   ]
+  },
+  {
+   "id": "kanazawa-and-kanazawa",
+   "n": "and KANAZAWA",
+   "jp": "アンド金沢",
+   "k": "douceur",
+   "q": "Higashi Chaya",
+   "why": "Dans une ancienne maison de ville aux poutres apparentes, un salon qui sert pain au lait épais, kinako, anko et une glace au kinako au lait de Noto.",
+   "tip": "Dans une ruelle en retrait, suis les panneaux.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Higashi Chaya",
+   "src": [
+    {
+     "n": "Visit Kanazawa",
+     "u": "https://visitkanazawa.jp/fr/trip-ideas/detail_316.html"
+    }
+   ]
+  }
+ ],
+ "kyoto": [
+  {
+   "id": "kyoto-smart-coffee",
+   "n": "Smart Coffee",
+   "jp": "スマート珈琲店",
+   "k": "cafe",
+   "q": "Teramachi",
+   "why": "Kissaten de 1932 qui torréfie toujours à la main sous la galerie Teramachi. On y vient pour le café maison et les hotcakes ou le sandwich aux œufs.",
+   "tip": "Le matin, avant la foule de la galerie.",
+   "near": "nishiki",
+   "lat": 35.0095335,
+   "lon": 135.7672419,
+   "src": [
+    {
+     "n": "Arigato Travel",
+     "u": "https://arigatotravel.com/blog/best-5-kissaten-kyoto"
+    },
+    {
+     "n": "Inside Kyoto",
+     "u": "https://www.insidekyoto.com/best-kissaten-in-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-francois",
+   "n": "Salon de thé François",
+   "jp": "フランソア喫茶室",
+   "k": "cafe",
+   "q": "Shijō-Kiyamachi",
+   "why": "Ouvert en 1934, ancien repaire d'écrivains et d'artistes, décor de paquebot et musique classique : premier café classé bien culturel du Japon. Café filtre et pudding maison.",
+   "tip": "",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Shijō-Kiyamachi",
+   "src": [
+    {
+     "n": "Arigato Travel",
+     "u": "https://arigatotravel.com/blog/best-5-kissaten-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-tyrol",
+   "n": "Tyrol",
+   "jp": "チロル",
+   "k": "cafe",
+   "q": "Nijō",
+   "why": "Kissaten de quartier de 1968, resté dans son jus Shōwa : café à 400 ¥, curry au riz avec œuf, spaghetti à la japonaise, tout à petit prix.",
+   "tip": "Parfait pour un déjeuner simple avant ou après le château de Nijō.",
+   "near": "nijo",
+   "lat": 35.0110613,
+   "lon": 135.747436,
+   "src": [
+    {
+     "n": "Arigato Travel",
+     "u": "https://arigatotravel.com/blog/best-5-kissaten-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-ichikawaya",
+   "n": "Ichikawaya Coffee",
+   "jp": "市川屋珈琲",
+   "k": "cafe",
+   "q": "Higashiyama (Gojō)",
+   "why": "Dans une machiya d'environ 200 ans avec petit jardin intérieur, on torréfie sur place et on sert un café filtré à la flanelle avec des sandwichs aux fruits de saison.",
+   "tip": "Bonne pause entre Kiyomizu-dera et Sanjūsangen-dō.",
+   "near": "kiyomizu",
+   "lat": 34.9931962,
+   "lon": 135.7741677,
+   "src": [
+    {
+     "n": "Arigato Travel",
+     "u": "https://arigatotravel.com/blog/best-5-kissaten-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-kaikado-cafe",
+   "n": "Kaikado Café",
+   "jp": "開化堂カフェ",
+   "k": "cafe",
+   "q": "Kawaramachi-Shichijō",
+   "why": "Le café de Kaikado, fabricant de boîtes à thé en cuivre depuis 1875, dans un bâtiment classé de 90 ans. Matcha maison et gâteaux d'une boulangerie du quartier.",
+   "tip": "L'atelier-boutique Kaikado est à cinq minutes à pied.",
+   "near": "",
+   "lat": 34.9898989,
+   "lon": 135.7644162,
+   "src": [
+    {
+     "n": "Afar",
+     "u": "https://afar.com/places/kaikado-cafe-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-nijo-koya",
+   "n": "Nijō Koya",
+   "jp": "二条小屋",
+   "k": "secret",
+   "q": "Nijō",
+   "why": "Un café caché dans une maison en bois au fond d'une cour, près de Nijō : café filtre, sandwich chaud à la sardine et vieux tourne-disque.",
+   "tip": "",
+   "near": "nijo",
+   "lat": 35.0112278,
+   "lon": 135.7502732,
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-sarasa-nishijin",
+   "n": "Sarasa Nishijin",
+   "jp": "さらさ西陣",
+   "k": "cafe",
+   "q": "Murasakino (Nishijin)",
+   "why": "Un ancien sento transformé en café : on déjeune sous les carreaux de majolique d'origine, dans le quartier des tisserands de Nishijin.",
+   "tip": "Le vrai bain Funaoka Onsen est juste à côté.",
+   "near": "",
+   "lat": 35.0376236,
+   "lon": 135.7468761,
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-funaoka-onsen",
+   "n": "Funaoka Onsen",
+   "jp": "船岡温泉",
+   "k": "bain",
+   "q": "Murasakino",
+   "why": "Présenté comme le plus beau bain public de la ville : bain en cyprès, bain aux herbes, sauna et bain extérieur dans la rocaille. L'ambiance d'un sento de quartier.",
+   "tip": "Ouvert tous les jours, bain du matin le dimanche dès 8 h.",
+   "near": "kinkaku",
+   "lat": 35.0369487,
+   "lon": 135.7444985,
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    },
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/kyoto/onsen-bains-publics/funaoka-onsen-source"
+    },
+    {
+     "n": "Kyoto Travel",
+     "u": "https://kyoto.travel/fr/travel-inspiration/morning-public-baths/"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-umeyu",
+   "n": "Sauna no Umeyu",
+   "jp": "サウナの梅湯",
+   "k": "bain",
+   "q": "Shimogyō (Gojō)",
+   "why": "Sento sauvé et restauré par un jeune passionné, devenu un lieu culte du renouveau des bains publics à Kyoto. Sauna compris dans l'entrée.",
+   "tip": "Ouvre dès 6 h du matin, fermé le jeudi.",
+   "near": "nishiki",
+   "lat": 34.9929538,
+   "lon": 135.7656602,
+   "src": [
+    {
+     "n": "Kyoto Travel",
+     "u": "https://kyoto.travel/fr/travel-inspiration/morning-public-baths/"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-kazariya",
+   "n": "Kazariya",
+   "jp": "かざりや",
+   "k": "douceur",
+   "q": "Imamiya-jinja",
+   "why": "Dans l'allée qui mène au sanctuaire Imamiya, on mange des petits mochi grillés au charbon et nappés de miso sucré, une recette de plusieurs siècles.",
+   "tip": "",
+   "near": "kinkaku",
+   "lat": 35.0452051,
+   "lon": 135.7427868,
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-demachi-futaba",
+   "n": "Demachi Futaba",
+   "jp": "出町ふたば",
+   "k": "douceur",
+   "q": "Demachi",
+   "why": "La pâtisserie de la rue Demachi Masugata, célèbre pour son mame-mochi : mochi aux haricots noirs fourré d'anko. À emporter vers le delta de la Kamo.",
+   "tip": "Emporte-les pour un pique-nique sur le delta tout proche.",
+   "near": "",
+   "lat": 35.0301072,
+   "lon": 135.7696274,
+   "src": [
+    {
+     "n": "Kanpai",
+     "u": "https://www.kanpai.fr/kyoto/delta-demachiyanagi"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-kamo-delta",
+   "n": "Delta de la Kamo",
+   "jp": "鴨川デルタ",
+   "k": "vue",
+   "q": "Demachiyanagi",
+   "why": "Le point de rendez-vous des Kyotoïtes, à la jonction de deux rivières : on traverse sur des pierres en forme de tortue et on pique-nique face aux montagnes.",
+   "tip": "Fin d'après-midi ou coucher de soleil. Gratuit et toujours accessible.",
+   "near": "",
+   "lat": 35.0301227,
+   "lon": 135.7717415,
+   "src": [
+    {
+     "n": "Kanpai",
+     "u": "https://www.kanpai.fr/kyoto/delta-demachiyanagi"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-gosho-ungetsu",
+   "n": "Gosho Ungetsu",
+   "jp": "御所雲月",
+   "k": "resto",
+   "q": "Gosho (Teramachi-Imadegawa)",
+   "why": "Près du palais impérial, une maison de cuisine kyotoïte qui vend à emporter un sushi au maquereau mariné (shime saba) enveloppé de feuille de bambou.",
+   "tip": "Idéal pour un pique-nique au parc du palais.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Gosho (Teramachi-Imadegawa)",
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-sakae-sushi",
+   "n": "Sakae Sushi",
+   "jp": "栄寿司",
+   "k": "resto",
+   "q": "Saga (Arashiyama)",
+   "why": "Un sushi-ya de quartier sans façade, à l'écart de la foule d'Arashiyama, fréquenté par les habitants.",
+   "tip": "Quelques mots de japonais aident.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Saga (Arashiyama)",
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-yoramu",
+   "n": "Sake Bar Yoramu",
+   "jp": "酒BARよらむ",
+   "k": "bar",
+   "q": "Nakagyō (Nijō)",
+   "why": "Bar discret derrière des galets blancs, dont la carte de saké est un vrai tour du Japon. On parle anglais derrière le comptoir.",
+   "tip": "Petit lieu : arrive tôt en soirée.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Nakagyō (Nijō)",
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-akagakiya",
+   "n": "Akagakiya",
+   "jp": "赤垣屋",
+   "k": "izakaya",
+   "q": "Sanjō (Kawabata)",
+   "why": "Izakaya ultra-local et sans touristes, à l'ambiance de vieux Kyoto : on s'assoit au comptoir pour les classiques de l'izakaya.",
+   "tip": "Ouvre le soir seulement. Peu d'anglais.",
+   "near": "nishiki",
+   "lat": 35.0127322,
+   "lon": 135.7725407,
+   "src": [
+    {
+     "n": "Inside Kyoto",
+     "u": "https://www.insidekyoto.com/best-izakaya-in-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-ichijoji-ramen",
+   "n": "Rue des ramen d'Ichijōji",
+   "jp": "一乗寺ラーメン街道",
+   "k": "ramen",
+   "q": "Ichijōji",
+   "why": "Le quartier étudiant où se concentrent les ramen de Kyoto : bouillon de poulet crémeux chez Gokkei, chūka soba de 1971 chez Tentenyū, tsukemen chez Enaku à 780 ¥.",
+   "tip": "Gokkei ferme quand le bouillon est épuisé : vas-y tôt.",
+   "near": "",
+   "lat": 35.0442096,
+   "lon": 135.7874156,
+   "src": [
+    {
+     "n": "byFood",
+     "u": "https://www.byfood.com/blog/kyoto/ichijoji-ramen-street"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-hosen-in",
+   "n": "Hōsen-in",
+   "jp": "宝泉院",
+   "k": "secret",
+   "q": "Ōhara",
+   "why": "Dans le village d'Ōhara, potager de Kyoto, un temple où l'on boit un thé face à un pin noueux encadré comme un tableau.",
+   "tip": "Bus 17 depuis la gare de Kyoto, environ 45 minutes. Goûte la glace au miso de Miso An à côté.",
+   "near": "",
+   "lat": 35.1213608,
+   "lon": 135.8326856,
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-kozanji",
+   "n": "Kōzan-ji",
+   "jp": "高山寺",
+   "k": "secret",
+   "q": "Takao",
+   "why": "Un temple perdu dans la forêt au nord-ouest de la ville, où l'on prend un thé et un wagashi assis sur les tatamis.",
+   "tip": "Superbe en automne, très calme le reste de l'année.",
+   "near": "",
+   "lat": 35.060479,
+   "lon": 135.678075,
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    }
+   ]
+  },
+  {
+   "id": "kyoto-kamigamo",
+   "n": "Quartier de Kamigamo",
+   "jp": "上賀茂",
+   "k": "secret",
+   "q": "Kamigamo",
+   "why": "Le quartier préféré d'un Français installé à Kyoto : maisons basses, chêne sacré au sanctuaire Kamo, bains de quartier et berges de la rivière.",
+   "tip": "À combiner avec une balade le long de la Kamo vers le sud.",
+   "near": "",
+   "lat": 35.0604683,
+   "lon": 135.7522589,
+   "src": [
+    {
+     "n": "Yonder",
+     "u": "https://www.yonder.fr/destinations/un-autre-regard/les-bonnes-adresses-de-paul-causse-a-kyoto"
+    }
+   ]
+  }
+ ],
+ "nara": [
+  {
+   "id": "nara-naramachi",
+   "n": "Naramachi",
+   "jp": "ならまち",
+   "k": "secret",
+   "q": "Naramachi",
+   "why": "L'ancien quartier marchand au sud du parc : maisons de bois étroites qui cachent des jardins, petites boutiques et la vieille maison de saké Imanishi Seibei.",
+   "tip": "Commence par le temple Gangō-ji et perds-toi dans les ruelles.",
+   "near": "kasuga",
+   "lat": 34.6776317,
+   "lon": 135.8313186,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/a-la-decouverte-du-japon/nara/attractions-touristiques-et-excursions/naramachi"
+    }
+   ]
+  },
+  {
+   "id": "nara-mizutani-chaya",
+   "n": "Mizutani-chaya",
+   "jp": "水谷茶屋",
+   "k": "douceur",
+   "q": "Nara-kōen",
+   "why": "Une maison de thé au toit de chaume cachée dans les érables du parc : thé, wagashi et nouilles simples, une des rares pauses possibles dans cette zone.",
+   "tip": "Ouvert seulement en journée, superbe en automne.",
+   "near": "kasuga",
+   "lat": 34.683491,
+   "lon": 135.846791,
+   "src": [
+    {
+     "n": "Inside Kyoto",
+     "u": "https://insidekyoto.com/places-to-eat-in-nara"
+    }
+   ]
+  },
+  {
+   "id": "nara-tengyokudo",
+   "n": "Yoshino Honkuzu Tengyokudō",
+   "jp": "吉野本葛 天極堂 奈良本店",
+   "k": "douceur",
+   "q": "Centre (Isui-en)",
+   "why": "Maison spécialiste du kuzu de Yoshino, amidon de racine local : on y goûte les kuzumochi et kuzukiri en dessert, ou un repas léger.",
+   "tip": "Près du jardin Isui-en.",
+   "near": "todaiji",
+   "lat": 34.6870023,
+   "lon": 135.8349282,
+   "src": [
+    {
+     "n": "Inside Kyoto",
+     "u": "https://insidekyoto.com/places-to-eat-in-nara"
+    }
+   ]
+  },
+  {
+   "id": "nara-edogawa",
+   "n": "Edogawa Naramachi",
+   "jp": "江戸川 ならまち店",
+   "k": "resto",
+   "q": "Naramachi",
+   "why": "Une adresse d'anguille (unagi) dans une maison de Naramachi, aussi bien pour le déjeuner que le dîner.",
+   "tip": "",
+   "near": "todaiji",
+   "lat": 34.6786362,
+   "lon": 135.8291255,
+   "src": [
+    {
+     "n": "Inside Kyoto",
+     "u": "https://insidekyoto.com/places-to-eat-in-nara"
+    }
+   ]
+  },
+  {
+   "id": "nara-awa",
+   "n": "Awa Naramachi",
+   "jp": "粟 ならまち店",
+   "k": "resto",
+   "q": "Naramachi",
+   "why": "Dans une maison de deux siècles au fond d'une ruelle, une cuisine faite uniquement de légumes anciens et de produits de la région de Nara, dont le bœuf wagyu local.",
+   "tip": "Réservation conseillée, demande une salle avec vue sur le jardin.",
+   "near": "todaiji",
+   "lat": 34.6786402,
+   "lon": 135.830556,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/a-la-decouverte-du-japon/nara/restaurants-et-cafes/awa-naramachi-ten"
+    }
+   ]
+  },
+  {
+   "id": "nara-el-mundo",
+   "n": "El Mundo",
+   "jp": "エル・ムンド",
+   "k": "cafe",
+   "q": "Kitamachi",
+   "why": "Café minuscule à l'étage d'une bouquinerie, à l'ancienne, où la patronne passe des vinyles de musique classique. Café du jour ou Irish coffee.",
+   "tip": "Fermé le lundi.",
+   "near": "todaiji",
+   "lat": 34.6849649,
+   "lon": 135.8287368,
+   "src": [
+    {
+     "n": "Nara Sightseeing",
+     "u": "https://nara-sightseeing.com/%e6%9c%aa%e5%88%86%e9%a1%9e/where-to-get-coffee-and-tea-in-nara-recommended-nara-cafes/"
+    }
+   ]
+  },
+  {
+   "id": "nara-kura",
+   "n": "Kura",
+   "jp": "蔵",
+   "k": "izakaya",
+   "q": "Naramachi",
+   "why": "Petit izakaya du centre avec menu en anglais : cuisine japonaise simple, bière et saké local après une journée au parc.",
+   "tip": "Ouvre à 17 h.",
+   "near": "todaiji",
+   "lat": 34.6796867,
+   "lon": 135.8287361,
+   "src": [
+    {
+     "n": "Inside Kyoto",
+     "u": "https://insidekyoto.com/places-to-eat-in-nara"
+    }
+   ]
+  }
+ ],
+ "osaka": [
+  {
+   "id": "osaka-hiraoka-coffee",
+   "n": "Hiraoka Coffee",
+   "jp": "平岡珈琲店",
+   "k": "cafe",
+   "q": "Honmachi",
+   "why": "Présenté comme le plus vieux kissaten d'Osaka (1921), tenu par la même famille depuis trois générations. Café torréfié maison, préparé « bouilli » à l'ancienne, avec des doughnuts maison. Entre 500 et 1 000 ¥.",
+   "tip": "",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Honmachi",
+   "src": [
+    {
+     "n": "Arigato Japan",
+     "u": "https://arigatojapan.co.jp/best-5-kissaten-osaka/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-marufuku-coffee",
+   "n": "Marufuku Coffee Sennichimae",
+   "jp": "丸福珈琲店 千日前本店",
+   "k": "cafe",
+   "q": "Sennichimae",
+   "why": "Kissaten de 1934 aux lampes et vitraux rétro, décor d'un roman de Seiko Tanabe. On y commande les pancakes cuits sur une plaque de cuivre, beurre et sirop d'érable.",
+   "tip": "À deux pas de Dōtonbori mais dans une autre époque.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Sennichimae",
+   "src": [
+    {
+     "n": "Arigato Japan",
+     "u": "https://arigatojapan.co.jp/best-5-kissaten-osaka/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-arabiya-coffee",
+   "n": "Arabiya Coffee",
+   "jp": "アラビヤコーヒー",
+   "k": "cafe",
+   "q": "Namba (Hōzen-ji)",
+   "why": "Kissaten de 1951 rempli de souvenirs de la maison, avec une petite salle cachée à l'étage. Le duo à commander : café « full-boiled » et pudding maison bien ferme.",
+   "tip": "",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Namba (Hōzen-ji)",
+   "src": [
+    {
+     "n": "Arigato Japan",
+     "u": "https://arigatojapan.co.jp/best-5-kissaten-osaka/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-mazura",
+   "n": "Kissa Mazura",
+   "jp": "喫茶マヅラ",
+   "k": "cafe",
+   "q": "Umeda (Ekimae Daiichi Building)",
+   "why": "Ouvert l'année de l'Expo 1970 au sous-sol d'un immeuble de bureaux, avec un plafond étoilé rétro-futuriste. Café filtre, sandwich aux fruits, spaghetti napolitain.",
+   "tip": "Fermé dimanche et jours fériés. Aucune enseigne au rez-de-chaussée : descends au B1.",
+   "near": "umeda",
+   "lat": 34.6988984,
+   "lon": 135.4964571,
+   "src": [
+    {
+     "n": "Time Out Osaka",
+     "u": "https://www.timeout.com/osaka/restaurants/mazura"
+    },
+    {
+     "n": "Table Journey",
+     "u": "https://tablejourney.com/japan/osaka/hidden-gems/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-lilo-coffee",
+   "n": "LiLo Coffee Roasters",
+   "jp": "リロコーヒーロースターズ",
+   "k": "cafe",
+   "q": "Shinsaibashi",
+   "why": "Café de spécialité avec une vingtaine de cafés du jour choisis par les baristas, menu et équipe anglophones. Entre 450 et 1 000 ¥.",
+   "tip": "Pratique en plein quartier commerçant de Shinsaibashi.",
+   "near": "dotonbori",
+   "lat": 34.6740631,
+   "lon": 135.4982234,
+   "src": [
+    {
+     "n": "Arigato Japan",
+     "u": "https://arigatojapan.co.jp/best-5-kissaten-osaka/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-nakazakicho",
+   "n": "Nakazakichō",
+   "jp": "中崎町",
+   "k": "secret",
+   "q": "Nakazakichō",
+   "why": "Derrière les voies d'Umeda, un quartier de vieilles maisons de bois reconverties en cafés, friperies et ateliers. Salon de AManTo y a ouvert le premier café en maison ancienne, Café Arabiq sert son tiramisu entre les livres.",
+   "tip": "À dix minutes à pied d'Umeda. Pas de photos chez Café Arabiq.",
+   "near": "umeda",
+   "lat": 34.7080618,
+   "lon": 135.5043734,
+   "src": [
+    {
+     "n": "Voyapon",
+     "u": "https://voyapon.com/fr/nakazakicho-quartier-osaka/"
+    },
+    {
+     "n": "Table Journey",
+     "u": "https://tablejourney.com/japan/osaka/hidden-gems/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-tenjinbashisuji",
+   "n": "Tenjinbashisuji",
+   "jp": "天神橋筋商店街",
+   "k": "marche",
+   "q": "Tenma",
+   "why": "La plus longue rue commerçante couverte du Japon, 2,6 km et plus de 600 boutiques locales. On grignote les korokke de Nakamuraya et on file au sanctuaire Tenmangū.",
+   "tip": "Viens le ventre vide et finis dans les ruelles d'izakaya de Tenma.",
+   "near": "",
+   "lat": 34.7076513,
+   "lon": 135.511304,
+   "src": [
+    {
+     "n": "Voyapon",
+     "u": "https://voyapon.com/tenjinbashisuji-osaka-longest-shopping-street-in-japan/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-harukoma",
+   "n": "Harukoma Sushi",
+   "jp": "春駒",
+   "k": "resto",
+   "q": "Tenjinbashisuji",
+   "why": "Le sushi populaire et pas cher de Tenjinbashisuji, toujours une file d'habitués devant. L'adresse idéale pour déjeuner pendant la balade.",
+   "tip": "Vise l'ouverture pour limiter l'attente.",
+   "near": "",
+   "lat": 34.7077175,
+   "lon": 135.5115267,
+   "src": [
+    {
+     "n": "Voyapon",
+     "u": "https://voyapon.com/tenjinbashisuji-osaka-longest-shopping-street-in-japan/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-tenma-izakaya",
+   "n": "Ruelles d'izakaya de Tenma",
+   "jp": "天満",
+   "k": "izakaya",
+   "q": "Tenma",
+   "why": "Plus de 200 izakaya dans les ruelles autour de la gare de Tenma, fréquentées par les employés du coin : yakitori, oden, teppanyaki, très peu de touristes.",
+   "tip": "Peu de menus en anglais : une appli de traduction aide.",
+   "near": "",
+   "lat": 34.7049249,
+   "lon": 135.5123175,
+   "src": [
+    {
+     "n": "Table Journey",
+     "u": "https://tablejourney.com/japan/osaka/hidden-gems/"
+    },
+    {
+     "n": "Voyapon",
+     "u": "https://voyapon.com/tenjinbashisuji-osaka-longest-shopping-street-in-japan/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-shin-umeda-shokudogai",
+   "n": "Shin-Umeda Shokudōgai",
+   "jp": "新梅田食道街",
+   "k": "izakaya",
+   "q": "Umeda",
+   "why": "Une galerie de gargotes sous les voies d'Umeda, qui sert depuis 1945 : ramen, kushikatsu et comptoirs où l'on boit debout après le travail.",
+   "tip": "L'entrée est un passage étroit sous la gare, mal indiqué sur les cartes.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Umeda",
+   "src": [
+    {
+     "n": "Table Journey",
+     "u": "https://tablejourney.com/japan/osaka/hidden-gems/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-tsuruhashi",
+   "n": "Tsuruhashi, ruelles coréennes",
+   "jp": "鶴橋",
+   "k": "resto",
+   "q": "Tsuruhashi",
+   "why": "Derrière le marché couvert de Tsuruhashi, des restaurants familiaux de yakiniku grillent au charbon des brochettes d'abats pour 150 à 300 ¥ pièce.",
+   "tip": "Les ruelles derrière l'arcade principale sont la partie que les touristes ratent.",
+   "near": "",
+   "lat": 34.6657235,
+   "lon": 135.5310393,
+   "src": [
+    {
+     "n": "Table Journey",
+     "u": "https://tablejourney.com/japan/osaka/hidden-gems/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-jinrui-mina-menrui",
+   "n": "Jinrui Mina Menrui",
+   "jp": "人類みな麺類",
+   "k": "ramen",
+   "q": "Nishinakajima",
+   "why": "« L'humanité entière est nouilles » : un shoyu ramen de référence avec un porc mijoté longuement, autour de 1 000 ¥.",
+   "tip": "Ouvert tard dans la nuit, pratique depuis Shin-Osaka.",
+   "near": "",
+   "lat": 34.7254974,
+   "lon": 135.4992515,
+   "src": [
+    {
+     "n": "JW Web Magazine",
+     "u": "https://jw-webmagazine.com/tips/ramen-in-osaka"
+    }
+   ]
+  },
+  {
+   "id": "osaka-moeyo-mensuke",
+   "n": "Moeyo Mensuke",
+   "jp": "燃えよ麺助",
+   "k": "ramen",
+   "q": "Fukushima",
+   "why": "Petit comptoir de Fukushima, près d'Umeda, connu pour ses bouillons shoyu au canard ou aux palourdes. Environ 1 000 ¥.",
+   "tip": "Fermé le lundi. Compte 30 à 60 minutes d'attente au déjeuner.",
+   "near": "umeda",
+   "lat": 34.6963677,
+   "lon": 135.4868866,
+   "src": [
+    {
+     "n": "JW Web Magazine",
+     "u": "https://jw-webmagazine.com/tips/ramen-in-osaka"
+    }
+   ]
+  },
+  {
+   "id": "osaka-kadoya-shokudo",
+   "n": "Kadoya Shokudō",
+   "jp": "カドヤ食堂 本店",
+   "k": "ramen",
+   "q": "Nishi-Nagahori",
+   "why": "Le shoyu ramen préféré des habitants depuis plus d'un demi-siècle. Tsukemen et bol de riz au porc noir également. Environ 1 000 ¥.",
+   "tip": "Fermé le mardi, arrive avant l'ouverture.",
+   "near": "",
+   "lat": 34.6761315,
+   "lon": 135.4837548,
+   "src": [
+    {
+     "n": "JW Web Magazine",
+     "u": "https://jw-webmagazine.com/tips/ramen-in-osaka"
+    }
+   ]
+  },
+  {
+   "id": "osaka-hinode-yu",
+   "n": "Hinode-yu",
+   "jp": "日之出湯",
+   "k": "bain",
+   "q": "Nishinari",
+   "why": "Sento de quartier abordable avec sauna finlandais en pierre volcanique du Fuji compris dans l'entrée, bain très chaud et bain extérieur.",
+   "tip": "Une bonne première expérience de sento à petit budget.",
+   "near": "shinsekai",
+   "lat": 34.6452496,
+   "lon": 135.5066014,
+   "src": [
+    {
+     "n": "JW Web Magazine",
+     "u": "https://jw-webmagazine.com/tips/best-sento-in-osaka/"
+    }
+   ]
+  },
+  {
+   "id": "osaka-karahori",
+   "n": "Karahori Shōtengai",
+   "jp": "空堀商店街",
+   "k": "marche",
+   "q": "Tanimachi",
+   "why": "Une arcade épargnée par la guerre, sur le tracé d'une ancienne douve du château : patates douces rôties, pickles, et dans les ruelles autour, cafés et boutiques dans des maisons de bois restaurées.",
+   "tip": "Perds-toi dans les ruelles latérales, c'est là que sont les pépites.",
+   "near": "dotonbori",
+   "lat": 34.6736486,
+   "lon": 135.5145744,
+   "src": [
+    {
+     "n": "Lonely Planet",
+     "u": "https://www.lonelyplanet.com/points-of-interest/karahori-shotengai/1552189"
+    }
+   ]
+  },
+  {
+   "id": "osaka-sakishima",
+   "n": "Sakishima Cosmo Tower",
+   "jp": "さきしまコスモタワー展望台",
+   "k": "vue",
+   "q": "Baie d'Osaka (Sakishima)",
+   "why": "Un observatoire à 252 m sur la baie, moins couru que ceux du centre : panorama à 360° jusqu'à l'île d'Awaji et au pont d'Akashi. Environ 1 200 ¥.",
+   "tip": "Fermé le lundi. Le soir pour les lumières de la baie.",
+   "near": "",
+   "lat": 34.6381291,
+   "lon": 135.4148351,
+   "src": [
+    {
+     "n": "Osaka Info",
+     "u": "https://osaka-info.jp/fr/special/coolosaka/cool-spot/361/"
+    }
+   ]
+  }
+ ],
+ "koya": [
+  {
+   "id": "koya-hamadaya",
+   "n": "Hamadaya",
+   "jp": "濱田屋",
+   "k": "douceur",
+   "q": "Rue principale (vers Okunoin)",
+   "why": "La maison du goma-dōfu, tofu au sésame que mangent les moines. À goûter salé, sauce soja et wasabi, puis sucré pour comparer.",
+   "tip": "On peut aussi l'emporter en souvenir.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Rue principale (vers Okunoin)",
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/koyasan/restaurants-cafes/hamadaya-restaurant-shojin-ryori"
+    },
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/koyasan-day-trip-food-guide"
+    }
+   ]
+  },
+  {
+   "id": "koya-kadohama",
+   "n": "Kadohama Goma-dōfu",
+   "jp": "角濱ごまとうふ総本舗",
+   "k": "douceur",
+   "q": "Rue principale",
+   "why": "L'autre spécialiste du goma-dōfu de Kōya-san, à manger frais sur place ou à emporter.",
+   "tip": "",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Rue principale",
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/koyasan-day-trip-food-guide"
+    }
+   ]
+  },
+  {
+   "id": "koya-chuo-shokudo",
+   "n": "Chūō Shokudō",
+   "jp": "中央食堂 さんぼう",
+   "k": "resto",
+   "q": "Senjuinbashi",
+   "why": "Pour goûter la cuisine végétarienne des moines (shōjin ryōri) sans dormir au temple : set tofu et légumes de saison, entre 2 000 et 4 000 ¥.",
+   "tip": "Compte une heure. Appelle en haute saison.",
+   "near": "",
+   "lat": 34.2136963,
+   "lon": 135.5861553,
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/koyasan-day-trip-food-guide"
+    }
+   ]
+  },
+  {
+   "id": "koya-nankai-shokudo",
+   "n": "Nankai Shokudō",
+   "jp": "",
+   "k": "resto",
+   "q": "Senjuinbashi",
+   "why": "Cantine familiale avec vitrine de plats en cire : curry tonkatsu, oyakodon ou udon, environ 1 500 ¥, servis vite.",
+   "tip": "La plupart des restaurants ferment vers 16 ou 17 h : déjeune entre 11 h 30 et 13 h.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Senjuinbashi",
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/koyasan-day-trip-food-guide"
+    }
+   ]
+  }
+ ],
+ "himeji": [
+  {
+   "id": "himeji-maneki-ekisoba",
+   "n": "Maneki Ekisoba",
+   "jp": "まねきのえきそば",
+   "k": "ramen",
+   "q": "Gare de Himeji",
+   "why": "La spécialité de quai de gare depuis 1949 : des nouilles jaunes chinoises dans un bouillon dashi japonais, environ 480 ¥, prêtes en trois minutes.",
+   "tip": "Sur les quais (billet requis) ou hors des portiques à Piole et au sous-sol Grand Festa.",
+   "near": "himejijo",
+   "lat": 34.8274961,
+   "lon": 134.6889908,
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/himeji-ekisoba-guide"
+    }
+   ]
+  },
+  {
+   "id": "himeji-yamayoshi",
+   "n": "Sumiyaki Anago Yamayoshi",
+   "jp": "炭焼あなご 山義",
+   "k": "resto",
+   "q": "Ekimae-chō",
+   "why": "Le congre (anago) grillé au charbon, spécialité de la mer intérieure : anago-meshi ou boîte wappa, environ 2 000 ¥.",
+   "tip": "Seulement 14 places : vise 14 h. Comptoir à emporter.",
+   "near": "himejijo",
+   "lat": 34.8288923,
+   "lon": 134.6924514,
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/himeji-anago-eel-guide"
+    }
+   ]
+  },
+  {
+   "id": "himeji-miyuki-dori",
+   "n": "Miyuki-dōri",
+   "jp": "みゆき通り商店街",
+   "k": "marche",
+   "q": "Entre la gare et le château",
+   "why": "L'arcade couverte qui relie la gare au château, avec cafés simples et stands de grignotage entre deux repas.",
+   "tip": "Dans les cafés du coin, le matin, demande le toast aux amandes, spécialité de Himeji.",
+   "near": "himejijo",
+   "lat": 34.8311465,
+   "lon": 134.6923178,
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/himeji-food"
+    }
+   ]
+  },
+  {
+   "id": "himeji-sora-niwa",
+   "n": "Sora Niwa",
+   "jp": "",
+   "k": "vue",
+   "q": "Centre (Miki Building)",
+   "why": "Restaurant au 6e étage dont les grandes baies font face au château de Himeji, avec une cuisine franco-japonaise (environ 4 000 ¥ le midi).",
+   "tip": "Vérifie les horaires, ils varient selon les sources.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Centre (Miki Building)",
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/himeji-anago-eel-guide"
+    }
+   ]
+  },
+  {
+   "id": "himeji-jigoro",
+   "n": "Jigoro Kohiro",
+   "jp": "",
+   "k": "izakaya",
+   "q": "Gare de Himeji",
+   "why": "Près de la gare, on goûte l'oden façon Himeji, servi avec une sauce soja au gingembre (shōga-jōyu), et de l'anago. Entre 2 000 et 3 000 ¥.",
+   "tip": "Si on ne te la propose pas, demande la sauce shōga-jōyu à part.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Gare de Himeji",
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/himeji-food"
+    }
+   ]
+  }
+ ],
+ "naoshima": [
+  {
+   "id": "naoshima-cafe-konnichiwa",
+   "n": "Café Konnichiwa",
+   "jp": "直島カフェ コンニチハ",
+   "k": "cafe",
+   "q": "Honmura",
+   "why": "Café rustique avec vue sur le port de Honmura et une arrière-salle d'objets faits sur l'île. Plats du jour : risotto, curry de fruits de mer, doria.",
+   "tip": "",
+   "near": "",
+   "lat": 34.461337,
+   "lon": 133.9979112,
+   "src": [
+    {
+     "n": "Japan Journeys",
+     "u": "https://japanjourneys.jp/kagawa/naoshima/dining/where-to-eat-and-drink-on-naoshima/"
+    }
+   ]
+  },
+  {
+   "id": "naoshima-aisunao",
+   "n": "Aisunao",
+   "jp": "玄米心食 あいすなお",
+   "k": "resto",
+   "q": "Honmura",
+   "why": "Déjeuner sain de riz complet et de légumes, dans une maison du village de Honmura.",
+   "tip": "La file se forme vite à midi.",
+   "near": "",
+   "lat": 34.4604328,
+   "lon": 133.9963489,
+   "src": [
+    {
+     "n": "Japan Journeys",
+     "u": "https://japanjourneys.jp/kagawa/naoshima/dining/where-to-eat-and-drink-on-naoshima/"
+    }
+   ]
+  },
+  {
+   "id": "naoshima-shioya-diner",
+   "n": "Shioya Diner",
+   "jp": "シオヤダイナー",
+   "k": "resto",
+   "q": "Miyanoura",
+   "why": "Diner rétro près du port de Miyanoura : poulet, burgers, tacos, gumbo, et objets vintage à vendre.",
+   "tip": "",
+   "near": "naoshimaart",
+   "lat": 34.4579056,
+   "lon": 133.9751636,
+   "src": [
+    {
+     "n": "Japan Journeys",
+     "u": "https://japanjourneys.jp/kagawa/naoshima/dining/where-to-eat-and-drink-on-naoshima/"
+    }
+   ]
+  },
+  {
+   "id": "naoshima-nakaoku",
+   "n": "Café Salon Nakaoku",
+   "jp": "カフェサロン中奥",
+   "k": "resto",
+   "q": "Honmura",
+   "why": "La seule table confirmée le soir à Honmura : plats à la carte avec les produits de la mer intérieure de Seto.",
+   "tip": "Fermé lundi et mardi. Réservation prioritaire (087-892-3887).",
+   "near": "naoshimaart",
+   "lat": 34.4577775,
+   "lon": 133.9952539,
+   "src": [
+    {
+     "n": "Finding Naoshima",
+     "u": "https://finding-naoshima.co.jp/?p=2090"
+    }
+   ]
+  },
+  {
+   "id": "naoshima-little-plum",
+   "n": "Little Plum",
+   "jp": "",
+   "k": "bar",
+   "q": "Miyanoura",
+   "why": "Bar-restaurant du port de Miyanoura ouvert tous les soirs, le bon plan quand le reste de l'île est fermé le lundi.",
+   "tip": "Dîner autour de 4 000 à 5 000 ¥.",
+   "near": "naoshimaart",
+   "lat": 34.4580795,
+   "lon": 133.9753552,
+   "src": [
+    {
+     "n": "Finding Naoshima",
+     "u": "https://finding-naoshima.co.jp/?p=2090"
+    }
+   ]
+  }
+ ],
+ "hiroshima": [
+  {
+   "id": "hiroshima-nagataya",
+   "n": "Nagataya",
+   "jp": "長田屋",
+   "k": "resto",
+   "q": "Ōtemachi (Dôme de la bombe A)",
+   "why": "L'okonomiyaki de Hiroshima, en couches avec nouilles soba ou udon, à deux pas du Dôme. Environ 1 000 ¥ le midi.",
+   "tip": "Queue quotidienne, fermé le mardi. Le midi est moins cher.",
+   "near": "paix",
+   "lat": 34.3942219,
+   "lon": 132.4545042,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/hiroshima/restaurants-cafes/restaurants-okonomiyaki-hiroshima-miyajima"
+    },
+    {
+     "n": "Table Journey",
+     "u": "https://tablejourney.com/japan/hiroshima/budget-eating/"
+    }
+   ]
+  },
+  {
+   "id": "hiroshima-bakudanya",
+   "n": "Bakudanya Honten",
+   "jp": "ばくだん屋 本店",
+   "k": "ramen",
+   "q": "Shintenchi",
+   "why": "Le berceau du tsukemen de Hiroshima : nouilles froides, chou, concombre et sauce pimentée, pour moins de 1 000 ¥.",
+   "tip": "Le piment se choisit par niveau : prendre plus doux ne coûte rien.",
+   "near": "okonomi",
+   "lat": 34.3914402,
+   "lon": 132.462524,
+   "src": [
+    {
+     "n": "Table Journey",
+     "u": "https://tablejourney.com/japan/hiroshima/budget-eating/"
+    }
+   ]
+  },
+  {
+   "id": "hiroshima-reichan",
+   "n": "Reichan",
+   "jp": "麗ちゃん",
+   "k": "resto",
+   "q": "Gare de Hiroshima",
+   "why": "Okonomiyaki dans la gare : la version soba nature commence vers 790 ¥, idéale avant un train.",
+   "tip": "Les suppléments calmar et crevette font vite grimper l'addition.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Gare de Hiroshima",
+   "src": [
+    {
+     "n": "Table Journey",
+     "u": "https://tablejourney.com/japan/hiroshima/budget-eating/"
+    }
+   ]
+  },
+  {
+   "id": "hiroshima-ekinishi",
+   "n": "Ekinishi",
+   "jp": "エキニシ",
+   "k": "bar",
+   "q": "Gare de Hiroshima (ouest)",
+   "why": "Un quartier de petits bars et de cantines à l'ambiance Shōwa, juste à l'ouest de la sortie sud de la gare : on y va seul ou en groupe.",
+   "tip": "",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Gare de Hiroshima (ouest)",
+   "src": [
+    {
+     "n": "Dive Hiroshima",
+     "u": "https://dive-hiroshima.com/fr/feature/feature-82148/"
+    }
+   ]
+  },
+  {
+   "id": "hiroshima-kishibe",
+   "n": "Kishibe",
+   "jp": "",
+   "k": "resto",
+   "q": "Miyajima",
+   "why": "Un okonomiyaki généreux au comptoir, à cinq minutes du sanctuaire. Les habitants de l'île y viennent aussi. Moins de 1 200 ¥.",
+   "tip": "Une dizaine de places seulement. Fermé le jeudi.",
+   "near": "miyajima",
+   "lat": 34.2979712,
+   "lon": 132.3220293,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/hiroshima/restaurants-cafes/restaurants-okonomiyaki-hiroshima-miyajima"
+    }
+   ]
+  },
+  {
+   "id": "hiroshima-komitei",
+   "n": "Kōmitei",
+   "jp": "",
+   "k": "resto",
+   "q": "Miyajima",
+   "why": "Okonomiyaki façon Hiroshima ou Osaka sur la rue principale entre l'embarcadère et le sanctuaire. L'une des rares tables de l'île ouvertes le soir, avec un jardin à l'arrière.",
+   "tip": "Fermé le mercredi.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Miyajima",
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/hiroshima/restaurants-cafes/restaurants-okonomiyaki-hiroshima-miyajima"
+    }
+   ]
+  },
+  {
+   "id": "hiroshima-saijo",
+   "n": "Saijō, la ville du saké",
+   "jp": "西条酒蔵通り",
+   "k": "bar",
+   "q": "Higashi-Hiroshima (excursion)",
+   "why": "À 40 minutes de train, huit brasseries de saké ouvertes au public, dont Kamoizumi et Kamotsuru. Goûte le bishu nabe, plat cuit au saké.",
+   "tip": "Visite guidée gratuite le 10 de chaque mois, festival en octobre.",
+   "near": "",
+   "lat": 34.4306213,
+   "lon": 132.7433314,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/hiroshima/attractions-excursions/saijo"
+    }
+   ]
+  }
+ ],
+ "fukuoka": [
+  {
+   "id": "fukuoka-shin-shin",
+   "n": "Hakata Ramen ShinShin",
+   "jp": "博多らーめん ShinShin",
+   "k": "ramen",
+   "q": "Tenjin",
+   "why": "Un tonkotsu crémeux mijoté plus de 8 heures, nouilles fines cuites à la demande, à partir de 650 ¥.",
+   "tip": "Ouvert jusqu'à 3 h du matin. Ticket au distributeur, prévois de la monnaie.",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Tenjin",
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/fukuoka/restaurants-cafes/restaurant-ramen-shin-shin"
+    }
+   ]
+  },
+  {
+   "id": "fukuoka-yanagibashi",
+   "n": "Marché Yanagibashi Rengō",
+   "jp": "柳橋連合市場",
+   "k": "marche",
+   "q": "Entre Tenjin et Hakata",
+   "why": "Le « garde-manger de Fukuoka » depuis 1889 : une cinquantaine d'étals de poisson, mentaiko et gyoroke (croquette de poisson).",
+   "tip": "Ouvre au public à 8 h. Viens tôt pour l'animation.",
+   "near": "yatai",
+   "lat": 33.5827522,
+   "lon": 130.4080371,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/fukuoka/marches/marcheyanagibashirengofukuoka"
+    }
+   ]
+  },
+  {
+   "id": "fukuoka-kawabata",
+   "n": "Kawabata-dōri",
+   "jp": "川端通商店街",
+   "k": "marche",
+   "q": "Hakata (Nakasu)",
+   "why": "Arcade couverte de 400 m au charme Shōwa, une centaine de boutiques et un char du festival Yamakasa exposé.",
+   "tip": "Le week-end, Kawabata Zenzai Hiroba sert une soupe d'azuki au mochi grillé.",
+   "near": "yatai",
+   "lat": 33.5925534,
+   "lon": 130.4102258,
+   "src": [
+    {
+     "n": "Lonely Planet",
+     "u": "https://www.lonelyplanet.fr/article/8-des-meilleures-choses-faire-fukuoka-au-japon"
+    }
+   ]
+  },
+  {
+   "id": "fukuoka-yamanaka",
+   "n": "Motsunabe Yamanaka Akasaka",
+   "jp": "博多もつ鍋 やま中 赤坂店",
+   "k": "resto",
+   "q": "Akasaka",
+   "why": "Le motsunabe, fondue de tripes au chou et à la ciboule, plat d'hiver de Fukuoka : version miso pour environ 3 200 ¥ à deux.",
+   "tip": "L'entrée ressemble à un hall d'hôtel, la salle est à l'étage.",
+   "near": "",
+   "lat": 33.5876126,
+   "lon": 130.390865,
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/motsunabe-and-mizutaki-hot-pot-guide-fukuoka"
+    }
+   ]
+  },
+  {
+   "id": "fukuoka-nishi-koen",
+   "n": "Parc Nishi",
+   "jp": "西公園",
+   "k": "vue",
+   "q": "Ōhori (ouest)",
+   "why": "Colline gratuite avec vue sur la baie de Hakata et environ 1 300 cerisiers au printemps.",
+   "tip": "Enchaîne avec le parc Ōhori tout proche.",
+   "near": "",
+   "lat": 33.5976491,
+   "lon": 130.3754863,
+   "src": [
+    {
+     "n": "Lonely Planet",
+     "u": "https://www.lonelyplanet.fr/article/8-des-meilleures-choses-faire-fukuoka-au-japon"
+    }
+   ]
+  },
+  {
+   "id": "fukuoka-nanzoin",
+   "n": "Nanzō-in",
+   "jp": "南蔵院",
+   "k": "secret",
+   "q": "Sasaguri",
+   "why": "Un temple dans la forêt à quelques kilomètres de la ville, qui abrite un bouddha couché en bronze de 41 m. Toucher ses pieds porterait chance.",
+   "tip": "Accès à la statue jusqu'à 16 h 30. Tenue correcte, tatouages couverts.",
+   "near": "",
+   "lat": 33.6181923,
+   "lon": 130.5741717,
+   "src": [
+    {
+     "n": "Lonely Planet",
+     "u": "https://www.lonelyplanet.fr/article/8-des-meilleures-choses-faire-fukuoka-au-japon"
+    }
+   ]
+  }
+ ],
+ "sapporo": [
+  {
+   "id": "sapporo-shingen",
+   "n": "Ramen Shingen",
+   "jp": "らーめん 信玄",
+   "k": "ramen",
+   "q": "Susukino",
+   "why": "Le miso ramen de Sapporo dans sa version la plus réputée : choisis le « shinshu », miso épais, avec du kakuni.",
+   "tip": "Compte environ une heure de queue, en partie à l'intérieur.",
+   "near": "sapporoodori",
+   "lat": 43.0522632,
+   "lon": 141.3475335,
+   "src": [
+    {
+     "n": "Girl Eat World",
+     "u": "https://girleatworld.net/sapporo-food-guide/"
+    }
+   ]
+  },
+  {
+   "id": "sapporo-garaku",
+   "n": "Soup Curry Garaku",
+   "jp": "スープカレー GARAKU",
+   "k": "resto",
+   "q": "Susukino",
+   "why": "La soupe curry, spécialité née à Sapporo, dans l'adresse la plus populaire de la ville.",
+   "tip": "Queue fréquente. Sa petite sœur Treasure, dans le même quartier, est moins connue.",
+   "near": "sapporoodori",
+   "lat": 43.0580516,
+   "lon": 141.3550978,
+   "src": [
+    {
+     "n": "Girl Eat World",
+     "u": "https://girleatworld.net/sapporo-food-guide/"
+    }
+   ]
+  },
+  {
+   "id": "sapporo-hachikyo",
+   "n": "Umi Hachikyō",
+   "jp": "海味はちきょう",
+   "k": "izakaya",
+   "q": "Susukino",
+   "why": "Izakaya de la mer célèbre pour son tsukko-meshi : le bol de riz sur lequel on verse les œufs de saumon jusqu'à déborder.",
+   "tip": "Réserve à l'avance.",
+   "near": "sapporoodori",
+   "lat": 43.0563655,
+   "lon": 141.3539999,
+   "src": [
+    {
+     "n": "Girl Eat World",
+     "u": "https://girleatworld.net/sapporo-food-guide/"
+    }
+   ]
+  },
+  {
+   "id": "sapporo-beer-museum",
+   "n": "Musée de la bière Sapporo",
+   "jp": "サッポロビール博物館",
+   "k": "bar",
+   "q": "Higashi-ku",
+   "why": "Dans l'ancienne brasserie en brique, on goûte la Sapporo Classic, vendue seulement à Hokkaidō.",
+   "tip": "",
+   "near": "",
+   "lat": 43.0714076,
+   "lon": 141.3689962,
+   "src": [
+    {
+     "n": "Girl Eat World",
+     "u": "https://girleatworld.net/sapporo-food-guide/"
+    }
+   ]
+  },
+  {
+   "id": "sapporo-kinotoya-bake",
+   "n": "Kinotoya Bake",
+   "jp": "きのとや BAKE",
+   "k": "douceur",
+   "q": "Susukino",
+   "why": "La glace à l'italienne au lait de Hokkaidō, et la tarte aux pommes de la maison.",
+   "tip": "",
+   "near": "",
+   "lat": null,
+   "lon": null,
+   "approx": "Susukino",
+   "src": [
+    {
+     "n": "Girl Eat World",
+     "u": "https://girleatworld.net/sapporo-food-guide/"
+    }
+   ]
+  }
+ ],
+ "okinawa": [
+  {
+   "id": "okinawa-makishi",
+   "n": "Marché public de Makishi",
+   "jp": "第一牧志公設市場",
+   "k": "marche",
+   "q": "Naha (Kokusai-dōri)",
+   "why": "On choisit son poisson au rez-de-chaussée, puis on le fait cuisiner à l'étage pour quelques centaines de yens.",
+   "tip": "Autour du 18 du mois, jour du marché, beaucoup de produits sont en promotion.",
+   "near": "",
+   "lat": 26.2145462,
+   "lon": 127.6882881,
+   "src": [
+    {
+     "n": "Japan Experience",
+     "u": "https://www.japan-experience.com/fr/decouvrir/okinawa/marches/marche-public-makishi-naha"
+    },
+    {
+     "n": "Okinawa Labo",
+     "u": "https://okinawa-labo.com/en/okinawa-lunch-4437"
+    }
+   ]
+  },
+  {
+   "id": "okinawa-sakae-no-niku",
+   "n": "Sakae no Niku",
+   "jp": "栄ノ肉",
+   "k": "izakaya",
+   "q": "Naha (marché de Sakaemachi)",
+   "why": "Izakaya du vieux marché de Sakaemachi dédié au porc d'Okinawa : nouilles froides au soki et rafute (1 200 ¥), saucisses de porc agu.",
+   "tip": "Le marché s'anime le soir, fais plusieurs comptoirs.",
+   "near": "",
+   "lat": 26.2172813,
+   "lon": 127.6970822,
+   "src": [
+    {
+     "n": "Have a Good Holiday",
+     "u": "https://haveagood-holiday.com/en/articles/221847"
+    }
+   ]
+  },
+  {
+   "id": "okinawa-kusawake",
+   "n": "Yasai no Sakaba Kusawake",
+   "jp": "野菜の酒場。クサワケ",
+   "k": "izakaya",
+   "q": "Naha (marché de Sakaemachi)",
+   "why": "Petit bar à légumes d'Okinawa, chaleureux : assiette de cinq amuse-bouches (1 350 ¥) et sour à la tomate cerise.",
+   "tip": "",
+   "near": "",
+   "lat": 26.2172813,
+   "lon": 127.6970822,
+   "src": [
+    {
+     "n": "Have a Good Holiday",
+     "u": "https://haveagood-holiday.com/en/articles/221847"
+    }
+   ]
+  },
+  {
+   "id": "okinawa-mikasa",
+   "n": "Mikasa Shokudō",
+   "jp": "三笠食堂",
+   "k": "resto",
+   "q": "Naha (Matsuyama)",
+   "why": "Cantine ouverte de 8 h à minuit où l'on commande le champon local : non pas des nouilles, mais un bol de riz couvert de légumes sautés.",
+   "tip": "Assieds-toi au comptoir face à la cuisine.",
+   "near": "",
+   "lat": 26.2176424,
+   "lon": 127.6790652,
+   "src": [
+    {
+     "n": "Okinawa Labo",
+     "u": "https://okinawa-labo.com/en/okinawa-lunch-4437"
+    }
+   ]
+  },
+  {
+   "id": "okinawa-yagiya",
+   "n": "Yagiya",
+   "jp": "屋宜家",
+   "k": "resto",
+   "q": "Yaese (sud de l'île)",
+   "why": "Soba d'Okinawa dans une maison classée bien culturel, avec jardin : nouilles aux algues aasa ou au lait de soja.",
+   "tip": "Fermé le mardi en général.",
+   "near": "",
+   "lat": 26.1273725,
+   "lon": 127.736968,
+   "src": [
+    {
+     "n": "Okinawa Labo",
+     "u": "https://okinawa-labo.com/en/okinawa-lunch-4437"
+    }
+   ]
+  },
+  {
+   "id": "okinawa-kurukuma",
+   "n": "Café Kurukuma",
+   "jp": "カフェくるくま",
+   "k": "cafe",
+   "q": "Nanjō (Chinen)",
+   "why": "Terrasse sur la falaise face à l'océan dans le sud de l'île : curry épicé et plats thaïs, dessert à la mangue.",
+   "tip": "La terrasse est la place la plus demandée.",
+   "near": "",
+   "lat": 26.1623966,
+   "lon": 127.8122713,
+   "src": [
+    {
+     "n": "Okinawa Labo",
+     "u": "https://okinawa-labo.com/en/okinawa-lunch-4437"
+    }
+   ]
+  },
+  {
+   "id": "okinawa-hanajinai",
+   "n": "Hanajinai",
+   "jp": "花人逢",
+   "k": "resto",
+   "q": "Motobu (nord)",
+   "why": "Pizzeria sur une colline au-dessus de la mer, dans le nord de l'île : on y vient pour la pizza maison et la vue depuis la véranda.",
+   "tip": "Fermé mardi et mercredi. Arrive dès 11 h 30.",
+   "near": "",
+   "lat": 26.6685756,
+   "lon": 127.9006458,
+   "src": [
+    {
+     "n": "Okinawa Labo",
+     "u": "https://okinawa-labo.com/en/okinawa-lunch-4437"
+    }
+   ]
+  }
+ ],
+ "_routes": [
+  {
+   "from": "tokyo",
+   "to": "kyoto",
+   "n": "Côté Fuji : siège E",
+   "why": "Sur le Tōkaidō Shinkansen vers Kyoto ou Osaka, le Fuji apparaît à droite environ 40 à 45 minutes après Tokyo. Réserve le siège E (ou D en Green Car), le siège A donne sur la mer. Au retour, il est à gauche.",
+   "src": [
+    {
+     "n": "Shinkansen Tickets",
+     "u": "https://shinkansentickets.net/fr/guide/mount-fuji-shinkansen-seats"
+    }
+   ]
+  },
+  {
+   "from": "tokyo",
+   "to": "kyoto",
+   "n": "Ekiben chez Ekibenya Matsuri",
+   "why": "Dans le passage central de la gare de Tokyo, environ 170 bentos de gare de tout le Japon, de 700 à 1 200 ¥ pour un vrai repas. Le bento en forme de Shinkansen se garde en souvenir.",
+   "src": [
+    {
+     "n": "JRailPass (blog)",
+     "u": "https://www.jrailpass.com/blog/fr/ekiben-gares-japonaises"
+    }
+   ]
+  },
+  {
+   "from": "tokyo",
+   "to": "hakone",
+   "n": "Hakone Free Pass et Romancecar",
+   "why": "Le pass couvre l'aller-retour depuis Shinjuku et tous les transports de Hakone (train, funiculaire, téléphérique, bateau, bus) pendant 2 ou 3 jours, pour environ 7 210 ¥. Le Romancecar jusqu'à Hakone-Yumoto coûte un supplément d'environ 1 200 ¥.",
+   "src": [
+    {
+     "n": "Kanpai",
+     "u": "https://www.kanpai.fr/voyage-japon/hakone-free-pass"
+    }
+   ]
+  },
+  {
+   "from": "tokyo",
+   "to": "hakone",
+   "n": "Halte kamaboko à Kazamatsuri",
+   "why": "Entre Odawara et Hakone, la gare de Kazamatsuri dessert le village Suzuhiro, fabricant de kamaboko (pâté de poisson) depuis 1865 : atelier d'une heure pour faire le sien, buffet, soba et bière de Hakone.",
+   "src": [
+    {
+     "n": "Japan Travel",
+     "u": "https://jal.japantravel.com/kanagawa/suzuhiro-kamaboko-in-odawara/35356"
+    }
+   ]
+  },
+  {
+   "from": "tokyo",
+   "to": "kanazawa",
+   "n": "Hokuriku Arch Pass",
+   "why": "Alternative au JR Pass pour une boucle Tokyo, Kanazawa, Kyoto, Osaka : 7 jours pour 30 000 ¥, contre 50 000 ¥ pour le JR Pass national. Il ne couvre pas le Tōkaidō Shinkansen, mais un aller simple Tokyo-Kyoto par Tsuruga coûte déjà environ 19 780 ¥.",
+   "src": [
+    {
+     "n": "Tokyo Cheapo",
+     "u": "https://tokyocheapo.com/travel/tokyo-osaka-hokuriku-arch-pass"
+    }
+   ]
+  },
+  {
+   "from": "osaka",
+   "to": "hiroshima",
+   "n": "Ekisoba sur le quai de Himeji",
+   "why": "En descendant vers Hiroshima, un arrêt à Himeji permet de goûter l'ekisoba de Maneki, servi depuis 1949 : nouilles chinoises dans un dashi japonais, environ 480 ¥, prêt en trois minutes.",
+   "src": [
+    {
+     "n": "Japan Activity",
+     "u": "https://japanactivity.com/himeji-ekisoba-guide"
+    }
+   ]
+  }
+ ]
+}

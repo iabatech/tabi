@@ -1,0 +1,1224 @@
+[
+ {
+  "id": "senso",
+  "n": "Sensō-ji",
+  "jp": "浅草寺",
+  "city": "tokyo",
+  "area": "Asakusa",
+  "histoire": "Le plus ancien temple de Tokyo, fondé selon la tradition en 628. Détruit par les bombardements de 1945, il a été reconstruit à l'identique.",
+  "personnage": [
+   "Tokugawa Ieyasu",
+   "Le premier shogun d'Edo en fait le temple protecteur de son gouvernement au début du XVIIe siècle. Asakusa devient alors le quartier du théâtre et des plaisirs populaires."
+  ],
+  "folklore": "Deux frères pêcheurs, Hinokuma Hamanari et Takenari, remontent dans leur filet une statuette de Kannon, déesse de la compassion. Ils la rejettent à l'eau, elle revient dans le filet. Le chef du village transforme sa maison en temple pour l'abriter.",
+  "surprise": "La statuette d'origine n'est jamais montrée. C'est un hibutsu, une « image cachée » : même les moines ne la voient pas.",
+  "tresor": "Hoppy-dōri, à deux rues à l'ouest : une rangée d'izakaya en terrasse, où les habitués boivent la Hoppy, bière légère mélangée au shōchū.",
+  "queries": {
+   "geo": "Senso-ji, Asakusa, Tokyo",
+   "img": "Sensoji Asakusa Kaminarimon",
+   "person": "Tokugawa Ieyasu portrait"
+  },
+  "geo": {
+   "lat": 35.7134032,
+   "lon": 139.7955265,
+   "name": "Temple Sensō"
+  }
+ },
+ {
+  "id": "meiji",
+  "n": "Meiji-jingū",
+  "jp": "明治神宮",
+  "city": "tokyo",
+  "area": "Harajuku",
+  "histoire": "Sanctuaire shintō inauguré en 1920, dédié à l'empereur Meiji et à l'impératrice Shōken. Il se cache au milieu d'une forêt de 70 hectares en plein Tokyo.",
+  "personnage": [
+   "L'empereur Meiji (1852-1912)",
+   "Monté sur le trône à 15 ans, il voit la fin des shoguns en 1868. En une génération, le Japon féodal devient une puissance industrielle : chemin de fer, armée moderne, constitution."
+  ],
+  "folklore": "Le puits de Kiyomasa, dans le jardin intérieur, passe pour une « power spot ». On dit qu'en mettre la photo en fond d'écran porte chance. Il doit son nom au général Katō Kiyomasa, qui l'aurait creusé.",
+  "surprise": "Face aux tonneaux de saké offerts au sanctuaire se dresse un mur de barriques de vin de Bourgogne. L'empereur Meiji appréciait le vin, symbole de l'ouverture à l'Occident.",
+  "tresor": "La forêt a été plantée à la main : environ 100 000 arbres offerts par tout le Japon. Les paysagistes l'avaient conçue pour devenir une forêt naturelle au bout d'un siècle. Pari tenu.",
+  "queries": {
+   "geo": "Meiji Jingu, Shibuya, Tokyo",
+   "img": "Meiji Jingu shrine Tokyo",
+   "person": "Emperor Meiji portrait"
+  },
+  "geo": {
+   "lat": 35.6748417,
+   "lon": 139.6996266,
+   "name": "Sanctuaire Meiji"
+  }
+ },
+ {
+  "id": "shibuya",
+  "n": "Carrefour de Shibuya",
+  "jp": "渋谷",
+  "city": "tokyo",
+  "area": "Shibuya",
+  "histoire": "Le carrefour le plus célèbre du monde : aux heures de pointe, jusqu'à 3 000 personnes le traversent à chaque feu vert.",
+  "personnage": [
+   "Hachikō",
+   "Un chien akita qui attendait chaque soir son maître, le professeur Hidesaburō Ueno, à la gare de Shibuya. Le professeur meurt en 1925. Hachikō continue de venir pendant près de dix ans, jusqu'à sa mort en 1935."
+  ],
+  "folklore": "Au Japon, le chien protège les enfants : on offre aux naissances de petits chiens en papier mâché, les inu-hariko.",
+  "surprise": "Hachikō n'a pas tout à fait quitté Tokyo : il a été naturalisé et se trouve au Musée national de la nature et des sciences, à Ueno.",
+  "tresor": "Nonbei Yokochō, la « ruelle des ivrognes », le long des voies : une quarantaine de bars minuscules, certains à six places.",
+  "queries": {
+   "geo": "Shibuya Scramble Crossing, Tokyo",
+   "img": "Shibuya crossing night",
+   "person": "Hachiko dog photograph"
+  },
+  "geo": {
+   "lat": 35.6594951,
+   "lon": 139.7004982,
+   "name": "Shibuya Crossing"
+  }
+ },
+ {
+  "id": "golden",
+  "n": "Golden Gai et Omoide Yokochō",
+  "jp": "新宿",
+  "city": "tokyo",
+  "area": "Shinjuku",
+  "histoire": "Omoide Yokochō est né du marché noir de l'après-guerre. Golden Gai, juste à côté, aligne environ 200 bars dans six ruelles étroites.",
+  "folklore": "Hanazono-jinja, collé à Golden Gai, est un sanctuaire d'Inari. Ses renards, les kitsune, sont les messagers du kami des récoltes et du commerce. Dans les contes, le renard est un métamorphe qui prend forme humaine pour tromper ou aider les hommes.",
+  "surprise": "Beaucoup de bars de Golden Gai tiennent à cinq ou six clients, chacun avec son thème : punk, cinéma, jazz, films d'horreur.",
+  "tresor": "Le soir, Hanazono-jinja est presque désert et éclairé de lanternes : un contraste total avec les néons à cinquante mètres.",
+  "queries": {
+   "geo": "Golden Gai, Shinjuku, Tokyo",
+   "img": "Golden Gai Shinjuku alley"
+  },
+  "geo": {
+   "lat": 35.6939905,
+   "lon": 139.7047001,
+   "name": "Shinjuku Golden Gai"
+  }
+ },
+ {
+  "id": "gyoen",
+  "n": "Shinjuku Gyoen",
+  "jp": "新宿御苑",
+  "city": "tokyo",
+  "area": "Shinjuku",
+  "histoire": "Ancienne résidence du clan Naitō à l'époque d'Edo, devenue jardin impérial, puis ouverte au public en 1949.",
+  "personnage": [
+   "Henri Martinet",
+   "Paysagiste français. En 1906, à la demande de la cour impériale, il dessine le jardin à la française et le jardin à l'anglaise du parc."
+  ],
+  "surprise": "Il y a donc un morceau de jardin français en plein Shinjuku, avec ses allées de platanes.",
+  "tresor": "La grande serre tropicale, incluse dans le billet, que la plupart des visiteurs oublient.",
+  "queries": {
+   "geo": "Shinjuku Gyoen, Tokyo",
+   "img": "Shinjuku Gyoen garden"
+  },
+  "geo": {
+   "lat": 35.6850716,
+   "lon": 139.7095466,
+   "name": "Jardin impérial de Shinjuku"
+  }
+ },
+ {
+  "id": "tsukiji",
+  "n": "Marché extérieur de Tsukiji",
+  "jp": "築地",
+  "city": "tokyo",
+  "area": "Ginza",
+  "histoire": "Le marché aux poissons en gros a déménagé à Toyosu en 2018. Le marché extérieur de Tsukiji est resté, avec ses échoppes de rue.",
+  "folklore": "Au XVIIe siècle, on gagne Tsukiji sur la mer, mais les vagues détruisent sans cesse les digues. Une statue de divinité est retrouvée flottant dans la baie. On l'installe dans un sanctuaire, et les vagues se calment : c'est Namiyoke Inari, le sanctuaire « qui protège des vagues ».",
+  "surprise": "Namiyoke Inari garde d'énormes têtes de lion en bois, que l'on promène lors des fêtes.",
+  "tresor": "Sur le côté de Namiyoke Inari, des stèles servent de « tombeaux » aux aliments : sushis, œufs, crevettes, poissons. Une façon de remercier ce qu'on mange.",
+  "queries": {
+   "geo": "Tsukiji Outer Market, Chuo, Tokyo",
+   "img": "Tsukiji outer market"
+  },
+  "geo": {
+   "lat": 35.6653884,
+   "lon": 139.7704732,
+   "name": "Marché extérieur de Tsukiji"
+  }
+ },
+ {
+  "id": "yanaka",
+  "n": "Yanaka",
+  "jp": "谷中",
+  "city": "tokyo",
+  "area": "Ueno",
+  "histoire": "Un quartier shitamachi, la « ville basse » populaire, en grande partie épargné par les bombardements de 1945. Maisons en bois, temples et chats.",
+  "personnage": [
+   "Tokugawa Yoshinobu (1837-1913)",
+   "Le dernier shogun. En 1867, il rend le pouvoir à l'empereur et met fin à 265 ans de règne des Tokugawa. Il repose au cimetière de Yanaka."
+  ],
+  "folklore": "Le maneki-neko, le chat qui lève la patte, attire la chance. Patte gauche levée pour les clients, patte droite pour l'argent, selon la version la plus répandue.",
+  "surprise": "Yoshinobu n'est pas enterré avec les autres shoguns : il a choisi un rite shintō, en rupture avec ses ancêtres bouddhistes.",
+  "tresor": "Kayaba Coffee, au coin de la rue, ouvert en 1938 et resté dans son jus.",
+  "queries": {
+   "geo": "Yanaka Ginza, Taito, Tokyo",
+   "img": "Yanaka Ginza Tokyo",
+   "person": "Tokugawa Yoshinobu photograph"
+  },
+  "geo": {
+   "lat": 35.7276689,
+   "lon": 139.7653174,
+   "name": "Yanaka Ginza"
+  }
+ },
+ {
+  "id": "ueno",
+  "n": "Parc d'Ueno et Musée national",
+  "jp": "上野",
+  "city": "tokyo",
+  "area": "Ueno",
+  "histoire": "Le parc occupe l'ancien domaine du temple Kan'ei-ji, détruit en 1868 lors de la bataille d'Ueno entre partisans du shogun et troupes impériales. Le Musée national de Tokyo, le plus ancien du pays, est au fond du parc.",
+  "personnage": [
+   "Saigō Takamori (1828-1877)",
+   "Samouraï de Satsuma, il aide à renverser le shogun, puis se rebelle contre le nouveau gouvernement en 1877 et meurt au combat. Sa vie a inspiré le film Le Dernier Samouraï."
+  ],
+  "folklore": "Le Bentendō, sur l'étang Shinobazu, est dédié à Benzaiten, déesse de la musique et de l'éloquence, associée aux serpents et aux dragons.",
+  "surprise": "À l'inauguration de la statue de Saigō, en 1898, sa veuve se serait exclamée que ce n'était pas du tout lui.",
+  "tresor": "Le Tōshō-gū d'Ueno, sanctuaire doré dédié à Tokugawa Ieyasu, beaucoup plus calme que celui de Nikkō.",
+  "queries": {
+   "geo": "Ueno Park, Taito, Tokyo"
+  },
+  "geo": {
+   "lat": 35.7152915,
+   "lon": 139.7738278,
+   "name": "Parc de Ueno"
+  }
+ },
+ {
+  "id": "teamlab",
+  "n": "teamLab Planets",
+  "jp": "豊洲",
+  "city": "tokyo",
+  "area": "Toyosu",
+  "histoire": "Musée d'art numérique immersif du collectif teamLab. On y marche pieds nus, parfois dans l'eau jusqu'aux genoux.",
+  "surprise": "Les œuvres sont générées en temps réel : une salle n'est jamais deux fois identique.",
+  "tresor": "Le jardin d'orchidées suspendues, où les fleurs montent et descendent autour de toi.",
+  "queries": {
+   "geo": "teamLab Planets, Toyosu, Tokyo",
+   "img": "teamLab Planets Tokyo"
+  },
+  "geo": null
+ },
+ {
+  "id": "skytree",
+  "n": "Tokyo Skytree",
+  "jp": "スカイツリー",
+  "city": "tokyo",
+  "area": "Asakusa",
+  "histoire": "Tour de diffusion inaugurée en 2012, la plus haute du Japon avec 634 mètres.",
+  "surprise": "634 n'a rien d'un hasard : en japonais, 6-3-4 se lit mu-sa-shi, comme Musashi, l'ancien nom de la région de Tokyo.",
+  "tresor": "Le reflet de la tour dans le canal Kitajukken, au pont Jikken, juste au sud. Gratuit et superbe à la nuit tombée.",
+  "queries": {
+   "geo": "Tokyo Skytree, Sumida, Tokyo",
+   "img": "Tokyo Skytree night"
+  },
+  "geo": {
+   "lat": 35.7100543,
+   "lon": 139.8107141,
+   "name": "Tokyo Skytree"
+  }
+ },
+ {
+  "id": "kamakura",
+  "n": "Excursion à Kamakura",
+  "jp": "鎌倉",
+  "city": "tokyo",
+  "area": "Kamakura",
+  "histoire": "Capitale du premier shogunat (1185-1333), à une heure de Tokyo. Temples dans les collines et plage.",
+  "personnage": [
+   "Minamoto no Yoritomo",
+   "Premier shogun du Japon. Il installe le pouvoir militaire à Kamakura, loin de la cour de Kyoto : le début de près de 700 ans de gouvernement des samouraïs."
+  ],
+  "folklore": "Le temple Hase-dera garde une statue de Kannon à onze visages. La légende dit qu'elle a été sculptée dans le même arbre qu'une autre statue, puis jetée à la mer, et qu'elle s'est échouée ici.",
+  "surprise": "Le Grand Bouddha (13,35 m) était abrité dans un bâtiment. Un tsunami l'a emporté en 1498, et le Bouddha est resté dehors depuis.",
+  "tresor": "Hōkoku-ji, le temple aux bambous : un matcha face à la bambouseraie.",
+  "queries": {
+   "geo": "Kotoku-in, Kamakura",
+   "img": "Kamakura Daibutsu Kotoku-in",
+   "person": "Minamoto no Yoritomo portrait"
+  },
+  "geo": {
+   "lat": 35.3164986,
+   "lon": 139.5357293,
+   "name": "Kōtoku-in"
+  }
+ },
+ {
+  "id": "ashi",
+  "n": "Lac Ashi et Hakone-jinja",
+  "jp": "芦ノ湖",
+  "city": "hakone",
+  "area": "Lac Ashi",
+  "histoire": "Lac de cratère formé il y a environ 3 000 ans, dans le parc national de Fuji-Hakone-Izu. Le torii rouge de Hakone-jinja se dresse dans l'eau.",
+  "folklore": "Un dragon à neuf têtes, Kuzuryū, terrorisait les villages du lac. Le moine Mangan l'enchaîna à un rocher par la prière. Le dragon devint le protecteur du lac et possède aujourd'hui son propre sanctuaire.",
+  "surprise": "Des bateaux en forme de navires pirates font la traversée du lac. Rien de japonais, mais les familles adorent.",
+  "tresor": "Le tronçon de l'ancienne route Tōkaidō bordé de cèdres de près de 400 ans, entre Moto-Hakone et le lac.",
+  "queries": {
+   "geo": "Hakone Shrine, Hakone",
+   "img": "Hakone shrine torii lake Ashi"
+  },
+  "geo": {
+   "lat": 35.2039731,
+   "lon": 139.0255832,
+   "name": "Sanctuaire de Hakone"
+  }
+ },
+ {
+  "id": "owaku",
+  "n": "Ōwakudani",
+  "jp": "大涌谷",
+  "city": "hakone",
+  "area": "Ōwakudani",
+  "histoire": "Vallée volcanique née d'une éruption du mont Kami il y a environ 3 000 ans. Fumerolles et odeur de soufre.",
+  "folklore": "Les œufs noirs, kuro-tamago, cuits dans les sources chaudes, ajouteraient sept ans de vie à chaque œuf mangé.",
+  "surprise": "La coquille noircit à cause du fer et du soufre, mais l'intérieur reste un œuf dur tout à fait normal.",
+  "queries": {
+   "geo": "Owakudani, Hakone",
+   "img": "Owakudani Hakone"
+  },
+  "geo": {
+   "lat": 35.2474057,
+   "lon": 139.0242051,
+   "name": "Vallée d'Ōwaku"
+  }
+ },
+ {
+  "id": "ryokan",
+  "n": "Nuit en ryokan avec onsen",
+  "jp": "旅館",
+  "city": "hakone",
+  "area": "Gōra",
+  "histoire": "Le ryokan est l'auberge traditionnelle : tatamis, futons déroulés le soir, dîner kaiseki en une dizaine de petits plats.",
+  "surprise": "On dîne et on se promène en yukata, la robe de coton fournie par l'auberge, même dans les rues du village.",
+  "queries": {
+   "geo": "Gora, Hakone",
+   "img": "Hakone ryokan onsen rotenburo"
+  },
+  "geo": {
+   "lat": 35.2508461,
+   "lon": 139.0482584,
+   "name": "Gōra"
+  }
+ },
+ {
+  "id": "openair",
+  "n": "Musée en plein air de Hakone",
+  "jp": "彫刻の森",
+  "city": "hakone",
+  "area": "Gōra",
+  "histoire": "Premier musée en plein air du Japon (1969) : sculptures de Rodin, Henry Moore et un pavillon Picasso au milieu des montagnes.",
+  "surprise": "Un bain de pieds chaud attend les visiteurs au milieu du parcours.",
+  "tresor": "La Tour de la symphonie, une tour de vitraux que l'on grimpe de l'intérieur.",
+  "queries": {
+   "geo": "Hakone Open-Air Museum, Hakone",
+   "img": "Hakone Open-Air Museum"
+  },
+  "geo": {
+   "lat": 35.2442838,
+   "lon": 139.0520834,
+   "name": "Musée en plein air d'Hakone"
+  }
+ },
+ {
+  "id": "inari",
+  "n": "Fushimi Inari-taisha",
+  "jp": "伏見稲荷",
+  "city": "kyoto",
+  "area": "Fushimi",
+  "histoire": "Sanctuaire principal des quelque 30 000 sanctuaires d'Inari du Japon, fondé en 711. Des milliers de torii vermillon couvrent la montagne.",
+  "personnage": [
+   "Le clan Hata",
+   "Une famille venue du continent, maîtresse du tissage et de l'irrigation. Elle fonde le sanctuaire et façonne la région avant même que Kyoto devienne capitale."
+  ],
+  "folklore": "Les renards gardiens tiennent souvent une clé dans la gueule : celle du grenier à riz d'Inari. On dit qu'ils adorent le tofu frit, d'où le nom des sushis inari, enveloppés de tofu frit.",
+  "surprise": "Chaque torii est le don d'une entreprise ou d'une famille, gravé à son nom. Un petit torii coûte quelques centaines de milliers de yens, un grand plus d'un million.",
+  "tresor": "Les miniatures de torii laissées en offrande dans les sous-bois, loin du chemin principal.",
+  "queries": {
+   "geo": "Fushimi Inari Taisha, Kyoto",
+   "img": "Fushimi Inari torii"
+  },
+  "geo": {
+   "lat": 34.9675192,
+   "lon": 135.7797101,
+   "name": "Fushimi Inari-taisha"
+  }
+ },
+ {
+  "id": "kiyomizu",
+  "n": "Kiyomizu-dera",
+  "jp": "清水寺",
+  "city": "kyoto",
+  "area": "Higashiyama",
+  "histoire": "Temple fondé en 778 sur une colline à l'est de Kyoto. Sa grande terrasse en bois domine la ville à 13 mètres de haut.",
+  "personnage": [
+   "Sakanoue no Tamuramaro",
+   "Général de l'époque Heian et l'un des premiers à porter le titre de shogun. Il soutient la fondation du temple."
+  ],
+  "folklore": "« Sauter de la terrasse de Kiyomizu » veut dire se jeter à l'eau, prendre une grande décision. À l'époque d'Edo, certains sautaient vraiment, persuadés que Kannon exaucerait leur vœu s'ils survivaient.",
+  "surprise": "Les registres du temple comptent 234 sauts à l'époque d'Edo, avec environ 85 % de survivants. La pratique est interdite depuis 1872.",
+  "tresor": "La petite pagode de Koyasu, sur le flanc opposé du vallon : la plus belle vue sur la terrasse, sans la foule.",
+  "queries": {
+   "geo": "Kiyomizu-dera, Kyoto",
+   "img": "Kiyomizu-dera stage",
+   "person": "Sakanoue no Tamuramaro"
+  },
+  "geo": {
+   "lat": 34.994303,
+   "lon": 135.7844389,
+   "name": "Temple Kiyomizu"
+  }
+ },
+ {
+  "id": "gion",
+  "n": "Sannenzaka, Ninenzaka et Gion",
+  "jp": "祇園",
+  "city": "kyoto",
+  "area": "Higashiyama",
+  "histoire": "Ruelles pavées et maisons de bois (machiya) qui descendent de Kiyomizu vers Gion, le quartier des geiko, les geishas de Kyoto, et de leurs apprenties, les maiko.",
+  "folklore": "Trébucher sur la pente de Sannenzaka porterait trois ans de malheur. Les boutiques vendent des calebasses, hyōtan, censées absorber la malchance.",
+  "surprise": "La coiffure d'une maiko est faite avec ses propres cheveux. Elle dort sur un oreiller surélevé pour ne pas l'abîmer.",
+  "tresor": "Le Starbucks de Ninenzaka, dans une maison centenaire, avec des salles à tatamis où l'on se déchausse.",
+  "queries": {
+   "geo": "Ninenzaka, Higashiyama, Kyoto",
+   "img": "Sannenzaka Ninenzaka Kyoto"
+  },
+  "geo": null
+ },
+ {
+  "id": "kinkaku",
+  "n": "Kinkaku-ji",
+  "jp": "金閣寺",
+  "city": "kyoto",
+  "area": "Nord-ouest",
+  "histoire": "Le Pavillon d'or, ancienne villa du shogun Ashikaga Yoshimitsu, devenue temple zen à sa mort en 1408.",
+  "personnage": [
+   "Ashikaga Yoshimitsu",
+   "Shogun le plus puissant de son temps. Il réunit deux cours impériales rivales et fait de Kyoto un foyer d'art, du théâtre nō aux jardins."
+  ],
+  "folklore": "Le phénix doré au sommet du pavillon est un oiseau de bon augure, qui n'apparaît qu'en temps de paix et sous des dirigeants sages.",
+  "surprise": "Le pavillon actuel date de 1955. L'original a été incendié en 1950 par un jeune moine, histoire qui a inspiré à Mishima son roman Le Pavillon d'or.",
+  "queries": {
+   "geo": "Kinkaku-ji, Kyoto",
+   "img": "Kinkaku-ji golden pavilion",
+   "person": "Ashikaga Yoshimitsu portrait"
+  },
+  "geo": {
+   "lat": 35.0395293,
+   "lon": 135.7295373,
+   "name": "Kinkaku-ji"
+  }
+ },
+ {
+  "id": "ryoanji",
+  "n": "Ryōan-ji",
+  "jp": "龍安寺",
+  "city": "kyoto",
+  "area": "Nord-ouest",
+  "histoire": "Le plus célèbre jardin sec zen : quinze pierres sur du gravier ratissé, créé vers la fin du XVe siècle. Personne ne sait vraiment qui l'a conçu.",
+  "folklore": "Les interprétations se disputent depuis des siècles : une tigresse traversant une rivière avec ses petits, des îles dans la mer, des montagnes au-dessus des nuages.",
+  "surprise": "Où que tu t'assoies sur la galerie, tu ne vois jamais les quinze pierres en même temps. Il en manque toujours une.",
+  "tresor": "Le bassin de pierre derrière le temple : ses quatre caractères se lisent « je sais seulement me contenter ».",
+  "queries": {
+   "geo": "Ryoan-ji, Kyoto",
+   "img": "Ryoanji rock garden"
+  },
+  "geo": {
+   "lat": 35.033463,
+   "lon": 135.7180884,
+   "name": "Ryōan-ji"
+  }
+ },
+ {
+  "id": "arashi",
+  "n": "Arashiyama et Tenryū-ji",
+  "jp": "嵐山",
+  "city": "kyoto",
+  "area": "Arashiyama",
+  "histoire": "Tenryū-ji, temple zen fondé en 1339, possède l'un des plus anciens jardins de Kyoto. La bambouseraie commence juste derrière.",
+  "personnage": [
+   "Ashikaga Takauji",
+   "Fondateur du shogunat Ashikaga. Il fait bâtir le temple pour apaiser l'esprit de l'empereur Go-Daigo, son ancien allié devenu ennemi."
+  ],
+  "folklore": "Un moine aurait rêvé d'un dragon doré jaillissant de la rivière voisine, d'où le nom du temple, « dragon du ciel ». Au plafond de la salle Hattō, un dragon peint semble te suivre des yeux où que tu sois.",
+  "surprise": "Les bâtiments ont brûlé huit fois, mais le jardin a gardé son dessin du XIVe siècle.",
+  "tresor": "Otagi Nenbutsu-ji, au bout de la vallée : 1 200 statuettes de moines en pierre, toutes différentes, sculptées par des visiteurs dans les années 1980.",
+  "queries": {
+   "geo": "Tenryu-ji, Kyoto",
+   "img": "Arashiyama bamboo grove",
+   "person": "Ashikaga Takauji portrait"
+  },
+  "geo": {
+   "lat": 35.0162243,
+   "lon": 135.6729408,
+   "name": "Temple Tenryū"
+  }
+ },
+ {
+  "id": "ginkaku",
+  "n": "Ginkaku-ji et chemin de la philosophie",
+  "jp": "銀閣寺",
+  "city": "kyoto",
+  "area": "Ginkaku",
+  "histoire": "Le Pavillon d'argent, villa du shogun Ashikaga Yoshimasa achevée à la fin du XVe siècle, au départ du chemin de la philosophie.",
+  "personnage": [
+   "Ashikaga Yoshimasa",
+   "Piètre politique mais grand esthète. Pendant que la guerre d'Ōnin ravage Kyoto, il fait éclore la cérémonie du thé, l'art floral et l'esthétique wabi."
+  ],
+  "surprise": "Le Pavillon d'argent n'a jamais été recouvert d'argent. Le nom est venu plus tard, par analogie avec le Pavillon d'or.",
+  "tresor": "Hōnen-in, à cinq minutes du chemin : entrée gratuite, portail de mousse et tas de sable ratissés.",
+  "queries": {
+   "geo": "Ginkaku-ji, Kyoto",
+   "img": "Ginkaku-ji silver pavilion",
+   "person": "Ashikaga Yoshimasa portrait"
+  },
+  "geo": {
+   "lat": 35.0268996,
+   "lon": 135.7983714,
+   "name": "Temple du pavillon d'argent"
+  }
+ },
+ {
+  "id": "nishiki",
+  "n": "Marché Nishiki",
+  "jp": "錦市場",
+  "city": "kyoto",
+  "area": "Centre",
+  "histoire": "Rue couverte de 400 mètres, marché alimentaire depuis plus de 400 ans, surnommée « la cuisine de Kyoto ».",
+  "folklore": "Au bout de la rue, Nishiki Tenman-gū honore Sugawara no Michizane, lettré exilé à tort. Pour apaiser son esprit vengeur, on en a fait le dieu des études. Frotter la tête du taureau de bronze rendrait plus intelligent.",
+  "surprise": "Le marché s'est d'abord installé ici pour son eau souterraine très froide, idéale pour garder le poisson frais.",
+  "queries": {
+   "geo": "Nishiki Market, Kyoto",
+   "img": "Nishiki market Kyoto"
+  },
+  "geo": {
+   "lat": 35.0050244,
+   "lon": 135.7655699,
+   "name": "Marché de Nishiki"
+  }
+ },
+ {
+  "id": "nijo",
+  "n": "Château de Nijō",
+  "jp": "二条城",
+  "city": "kyoto",
+  "area": "Centre",
+  "histoire": "Résidence des shoguns Tokugawa à Kyoto, construite à partir de 1603, avec des peintures murales dorées de l'école Kanō.",
+  "personnage": [
+   "Tokugawa Yoshinobu",
+   "C'est ici qu'en 1867 le dernier shogun annonce qu'il rend le pouvoir à l'empereur. Sa tombe est à Yanaka, à Tokyo."
+  ],
+  "surprise": "Les parquets « rossignol », uguisubari, chantent sous les pas. Pratique pour entendre venir un intrus.",
+  "queries": {
+   "geo": "Nijo Castle, Kyoto",
+   "img": "Nijo castle Ninomaru palace",
+   "person": "Tokugawa Yoshinobu photograph"
+  },
+  "geo": {
+   "lat": 35.0140076,
+   "lon": 135.7485369,
+   "name": "Château de Nijō"
+  }
+ },
+ {
+  "id": "todaiji",
+  "n": "Tōdai-ji et parc de Nara",
+  "jp": "東大寺",
+  "city": "nara",
+  "area": "Nara-kōen",
+  "histoire": "Temple fondé au VIIIe siècle. Son Grand Bouddha de bronze mesure près de 15 mètres, dans l'un des plus grands bâtiments en bois du monde.",
+  "personnage": [
+   "L'empereur Shōmu",
+   "Face aux épidémies et aux révoltes, il ordonne en 743 la construction du Grand Bouddha pour protéger le pays. La fonte mobilise une grande partie du bronze du Japon."
+  ],
+  "folklore": "Le dieu Takemikazuchi serait arrivé à Nara sur un cerf blanc. Depuis, les cerfs sont des messagers divins. Tuer un cerf a longtemps été puni de mort.",
+  "surprise": "Un pilier de la salle est percé d'un trou de la taille d'une narine du Grand Bouddha. Qui passe à travers obtiendrait l'éveil.",
+  "tresor": "Nigatsu-dō, sur la colline derrière : terrasse gratuite et toujours ouverte, avec tout Nara au coucher du soleil.",
+  "queries": {
+   "geo": "Todai-ji, Nara",
+   "img": "Todaiji Daibutsuden",
+   "person": "Emperor Shomu"
+  },
+  "geo": {
+   "lat": 34.6882437,
+   "lon": 135.8397568,
+   "name": "Temple Tōdai"
+  }
+ },
+ {
+  "id": "kasuga",
+  "n": "Kasuga-taisha",
+  "jp": "春日大社",
+  "city": "nara",
+  "area": "Nara-kōen",
+  "histoire": "Sanctuaire shintō fondé en 768 pour le clan Fujiwara, au pied d'une forêt primaire protégée depuis plus de mille ans.",
+  "personnage": [
+   "Le clan Fujiwara",
+   "La famille la plus puissante de la cour pendant des siècles. Ses filles épousaient les empereurs, ses hommes gouvernaient à leur place comme régents."
+  ],
+  "folklore": "Le bois sacré du mont Kasuga n'a jamais été coupé : on croit que les kami y résident.",
+  "surprise": "Environ 3 000 lanternes de pierre et de bronze, toutes offertes par des fidèles. Elles sont toutes allumées deux fois par an, en février et en août.",
+  "tresor": "Le jardin botanique Man'yō, à côté, cultive les plantes citées dans le plus ancien recueil de poésie du Japon.",
+  "queries": {
+   "geo": "Kasuga-taisha, Nara",
+   "img": "Kasuga Taisha lanterns"
+  },
+  "geo": {
+   "lat": 34.6805063,
+   "lon": 135.8460746,
+   "name": "Kasuga-taisha"
+  }
+ },
+ {
+  "id": "dotonbori",
+  "n": "Dōtonbori et Namba",
+  "jp": "道頓堀",
+  "city": "osaka",
+  "area": "Minami",
+  "histoire": "Canal creusé au début du XVIIe siècle, devenu quartier des théâtres puis temple de la street food. La devise d'Osaka : kuidaore, « manger jusqu'à la ruine ».",
+  "folklore": "La malédiction du Colonel : en 1985, des supporters des Hanshin Tigers fêtent le titre en jetant dans le canal une statue du Colonel Sanders. Les années de défaites qui suivent sont attribuées à sa colère.",
+  "surprise": "La statue a été repêchée en 2009. Les Tigers ont de nouveau remporté le championnat du Japon en 2023, 38 ans après.",
+  "tresor": "Hōzen-ji Yokochō, ruelle pavée à deux pas : on asperge d'eau Mizukake Fudō, une statue couverte de mousse, en faisant un vœu.",
+  "queries": {
+   "geo": "Dotonbori, Osaka",
+   "img": "Dotonbori Osaka night"
+  },
+  "geo": {
+   "lat": 34.6690306,
+   "lon": 135.5015715,
+   "name": "Dōtonbori"
+  }
+ },
+ {
+  "id": "osakajo",
+  "n": "Château d'Osaka",
+  "jp": "大阪城",
+  "city": "osaka",
+  "area": "Château",
+  "histoire": "Château bâti à partir de 1583 par Toyotomi Hideyoshi. Le donjon actuel date de 1931, en béton, avec un musée et un ascenseur.",
+  "personnage": [
+   "Toyotomi Hideyoshi (1537-1598)",
+   "Fils de paysan, devenu maître du Japon. Il achève l'unification du pays, mais sa famille est anéantie par les Tokugawa au siège d'Osaka, en 1615."
+  ],
+  "surprise": "Son seigneur, Oda Nobunaga, le surnommait « le singe », pour son visage et sa vivacité.",
+  "tresor": "Les blocs géants des remparts, comme la pierre Takoishi de plus de 100 tonnes, amenés par bateau sans machines.",
+  "queries": {
+   "geo": "Osaka Castle, Osaka",
+   "img": "Osaka castle main tower",
+   "person": "Toyotomi Hideyoshi portrait"
+  },
+  "geo": {
+   "lat": 34.6871828,
+   "lon": 135.5253958,
+   "name": "Château d'Osaka"
+  }
+ },
+ {
+  "id": "shinsekai",
+  "n": "Shinsekai",
+  "jp": "新世界",
+  "city": "osaka",
+  "area": "Shinsekai",
+  "histoire": "Quartier construit en 1912 sur le modèle de Paris et de New York, autour de la tour Tsūtenkaku. Aujourd'hui rétro, populaire et joyeusement kitsch.",
+  "folklore": "Billiken, petit dieu aux pieds tendus, est une création américaine de 1908 adoptée par Osaka. On lui frotte la plante des pieds pour que les choses s'arrangent.",
+  "surprise": "La première tour Tsūtenkaku associait une tour Eiffel et un arc de triomphe.",
+  "queries": {
+   "geo": "Tsutenkaku, Osaka",
+   "img": "Shinsekai Tsutenkaku"
+  },
+  "geo": {
+   "lat": 34.6525393,
+   "lon": 135.5063098,
+   "name": "Tsūtenkaku"
+  }
+ },
+ {
+  "id": "umeda",
+  "n": "Umeda Sky Building",
+  "jp": "梅田",
+  "city": "osaka",
+  "area": "Umeda",
+  "histoire": "Deux tours reliées au sommet par un observatoire circulaire à ciel ouvert, terminé en 1993.",
+  "surprise": "Le sommet a été assemblé au sol, puis hissé entre les deux tours.",
+  "tresor": "Takimi Kōji, au sous-sol : une rue des années 1920 reconstituée, avec de petits restaurants.",
+  "queries": {
+   "geo": "Umeda Sky Building, Osaka",
+   "img": "Umeda Sky Building"
+  },
+  "geo": {
+   "lat": 34.7052927,
+   "lon": 135.4905349,
+   "name": "Umeda Sky Building"
+  }
+ },
+ {
+  "id": "paix",
+  "n": "Parc et musée du Mémorial pour la paix",
+  "jp": "平和記念",
+  "city": "hiroshima",
+  "area": "Paix",
+  "histoire": "Le 6 août 1945 à 8 h 15, la première bombe atomique utilisée en temps de guerre explose au-dessus de ce quartier. Le parc et le musée racontent ce jour et la reconstruction.",
+  "personnage": [
+   "Sadako Sasaki (1943-1955)",
+   "Exposée aux radiations à deux ans, elle développe une leucémie à douze ans. Elle plie des grues en papier, avec l'espoir de guérir en atteignant mille. Elle est devenue le symbole des enfants victimes de la bombe."
+  ],
+  "folklore": "Pas de folklore ici : c'est un lieu de mémoire. La grue de papier, orizuru, symbole de longévité, est devenue celui de la paix grâce à Sadako.",
+  "surprise": "Le Dôme de Genbaku était un palais des expositions dessiné par l'architecte tchèque Jan Letzel. C'est l'un des rares bâtiments restés debout près de l'hypocentre.",
+  "tresor": "La flamme de la paix, devant le cénotaphe, restera allumée jusqu'à la disparition de la dernière arme nucléaire.",
+  "queries": {
+   "geo": "Hiroshima Peace Memorial Park, Hiroshima",
+   "img": "Hiroshima Peace Memorial Genbaku Dome",
+   "person": "Sadako Sasaki statue"
+  },
+  "geo": {
+   "lat": 34.3931714,
+   "lon": 132.4523008,
+   "name": "Parc du Mémorial de la Paix de Hiroshima"
+  }
+ },
+ {
+  "id": "miyajima",
+  "n": "Miyajima et Itsukushima-jinja",
+  "jp": "宮島",
+  "city": "hiroshima",
+  "area": "Miyajima",
+  "histoire": "Sanctuaire bâti sur pilotis dans la mer. Sa forme actuelle date de 1168, et son grand torii semble flotter à marée haute.",
+  "personnage": [
+   "Taira no Kiyomori (1118-1181)",
+   "Chef du clan Taira, premier guerrier à dominer la cour impériale. Il fait du sanctuaire le protecteur de sa famille et lui donne son architecture actuelle."
+  ],
+  "folklore": "L'île entière était considérée comme un kami. Longtemps, naissances et morts y étaient interdites : femmes sur le point d'accoucher et mourants étaient emmenés sur le continent.",
+  "surprise": "Au sommet du mont Misen, le feu du Reikadō brûlerait depuis plus de 1 200 ans, allumé par le moine Kūkai. Il a servi à allumer la flamme de la paix d'Hiroshima.",
+  "tresor": "Daishō-in, au pied du mont Misen : des centaines de statuettes de Jizō à bonnets tricotés et un escalier bordé de moulins à prières.",
+  "queries": {
+   "geo": "Itsukushima Shrine, Hatsukaichi",
+   "img": "Itsukushima shrine torii",
+   "person": "Taira no Kiyomori portrait"
+  },
+  "geo": {
+   "lat": 34.2965274,
+   "lon": 132.3190065,
+   "name": "Sanctuaire d’Itsukushima"
+  }
+ },
+ {
+  "id": "okonomi",
+  "n": "Okonomiyaki façon Hiroshima",
+  "jp": "お好み焼き",
+  "city": "hiroshima",
+  "area": "Centre",
+  "histoire": "À Hiroshima, l'okonomiyaki ne se mélange pas comme à Osaka : on empile crêpe, chou, nouilles et œuf, couche par couche.",
+  "surprise": "La recette s'est répandue après la guerre : nourrissante, bon marché, à base de farine.",
+  "queries": {
+   "geo": "Okonomimura, Naka-ku, Hiroshima",
+   "img": "Hiroshima okonomiyaki"
+  },
+  "geo": {
+   "lat": 34.3912894,
+   "lon": 132.461894,
+   "name": "お好み村"
+  }
+ },
+ {
+  "id": "chureito",
+  "n": "Pagode Chūrei-tō et le Fuji",
+  "jp": "忠霊塔",
+  "city": "kawaguchiko",
+  "area": "Fujiyoshida",
+  "histoire": "Pagode à cinq étages construite en 1963 sur la colline d'Arakurayama. Avec le Fuji derrière, c'est la carte postale du Japon.",
+  "folklore": "Le Fuji est une montagne sacrée, demeure de Konohanasakuya-hime, déesse des fleurs de cerisier. Ses sanctuaires sont censés apaiser le volcan.",
+  "surprise": "Il faut gravir environ 400 marches pour la vue. Le Fuji se cache souvent dans les nuages, surtout en été.",
+  "tresor": "Le sanctuaire Kitaguchi Hongū Fuji Sengen-jinja, départ historique des pèlerins, dans une allée de cèdres géants.",
+  "queries": {
+   "geo": "Chureito Pagoda, Fujiyoshida",
+   "img": "Chureito pagoda Fuji"
+  },
+  "geo": {
+   "lat": 35.5012871,
+   "lon": 138.8013556,
+   "name": "Pagode Chūrei-tō"
+  }
+ },
+ {
+  "id": "oshino",
+  "n": "Oshino Hakkai",
+  "jp": "忍野八海",
+  "city": "kawaguchiko",
+  "area": "Oshino",
+  "histoire": "Huit étangs alimentés par la neige fondue du Fuji, filtrée pendant des décennies dans la roche volcanique.",
+  "surprise": "L'eau est si claire qu'on voit le fond à plusieurs mètres.",
+  "queries": {
+   "geo": "Oshino Hakkai, Oshino",
+   "img": "Oshino Hakkai"
+  },
+  "geo": {
+   "lat": 35.4602407,
+   "lon": 138.8327032,
+   "name": "忍野八海"
+  }
+ },
+ {
+  "id": "fujiryokan",
+  "n": "Ryokan avec onsen face au Fuji",
+  "jp": "旅館",
+  "city": "kawaguchiko",
+  "area": "Lac Kawaguchi",
+  "histoire": "Plusieurs auberges au bord du lac Kawaguchi ont des bains avec vue sur le Fuji.",
+  "queries": {
+   "geo": "Lake Kawaguchi, Fujikawaguchiko",
+   "img": "Lake Kawaguchi Mount Fuji"
+  },
+  "geo": {
+   "lat": 35.5130603,
+   "lon": 138.7448243,
+   "name": "Lac Kawaguchi"
+  }
+ },
+ {
+  "id": "toshogu",
+  "n": "Tōshō-gū de Nikkō",
+  "jp": "東照宮",
+  "city": "nikko",
+  "area": "Sanctuaires",
+  "histoire": "Mausolée de Tokugawa Ieyasu, achevé dans sa forme flamboyante en 1636. Plus de 5 000 sculptures peintes et dorées.",
+  "personnage": [
+   "Tokugawa Ieyasu (1543-1616)",
+   "Il unifie le Japon après la bataille de Sekigahara en 1600 et fonde une dynastie qui règne 265 ans. Il demande à être divinisé et enterré ici."
+  ],
+  "folklore": "Le chat endormi, Nemuri-neko, sculpté au-dessus d'une porte, garderait le tombeau : il fait semblant de dormir pour tromper les intrus.",
+  "surprise": "Les trois singes « ne rien voir, ne rien entendre, ne rien dire » viennent d'ici, sculptés sur l'écurie sacrée.",
+  "tresor": "Kanmangafuchi, sentier le long de la rivière, bordé de 70 statues de Jizō à bonnets rouges. On dit qu'on ne trouve jamais le même nombre à l'aller et au retour.",
+  "queries": {
+   "geo": "Nikko Toshogu, Nikko",
+   "img": "Nikko Toshogu Yomeimon",
+   "person": "Tokugawa Ieyasu portrait"
+  },
+  "geo": {
+   "lat": 36.7559388,
+   "lon": 139.6002425,
+   "name": "Musée du Tōshōgū de Nikkō"
+  }
+ },
+ {
+  "id": "kegon",
+  "n": "Cascade de Kegon et lac Chūzenji",
+  "jp": "華厳滝",
+  "city": "nikko",
+  "area": "Oku-Nikkō",
+  "histoire": "Cascade de 97 mètres à la sortie du lac Chūzenji, en haut de la route d'Irohazaka.",
+  "folklore": "Les 48 virages de la route rappellent les 48 syllabes de l'ancien alphabet iroha : un virage par syllabe.",
+  "queries": {
+   "geo": "Kegon Falls, Nikko",
+   "img": "Kegon falls"
+  },
+  "geo": {
+   "lat": 36.7380094,
+   "lon": 139.5019683,
+   "name": "Chutes de Kegon"
+  }
+ },
+ {
+  "id": "matsumotojo",
+  "n": "Château de Matsumoto",
+  "jp": "松本城",
+  "city": "matsumoto",
+  "area": "Centre",
+  "histoire": "L'un des douze châteaux au donjon d'origine, achevé à la fin du XVIe siècle. Sa couleur noire lui vaut le surnom de « château du corbeau ».",
+  "surprise": "Ses escaliers intérieurs sont si raides qu'on les monte presque comme une échelle.",
+  "tresor": "La rue Nawate, petites échoppes devant un sanctuaire, avec des grenouilles porte-bonheur partout.",
+  "queries": {
+   "geo": "Matsumoto Castle, Matsumoto",
+   "img": "Matsumoto castle"
+  },
+  "geo": {
+   "lat": 36.2386353,
+   "lon": 137.9688709,
+   "name": "Château de Matsumoto"
+  }
+ },
+ {
+  "id": "snowmonkeys",
+  "n": "Singes des neiges de Jigokudani",
+  "jp": "地獄谷",
+  "city": "matsumoto",
+  "area": "Excursion",
+  "histoire": "Des macaques sauvages se baignent dans une source chaude en pleine montagne, à environ deux heures de Matsumoto via Nagano.",
+  "folklore": "Jigokudani veut dire « vallée de l'enfer », à cause des vapeurs qui sortent du sol.",
+  "surprise": "Ce sont les singes qui vivent le plus au nord du monde, en dehors de l'homme.",
+  "queries": {
+   "geo": "Jigokudani Monkey Park, Yamanouchi",
+   "img": "Jigokudani snow monkeys onsen"
+  },
+  "geo": {
+   "lat": 36.7328117,
+   "lon": 138.4623185,
+   "name": "Parc aux singes de Jigokudani"
+  }
+ },
+ {
+  "id": "sanmachi",
+  "n": "Vieille ville de Takayama",
+  "jp": "三町",
+  "city": "takayama",
+  "area": "Vieille ville",
+  "histoire": "Rues de maisons marchandes en bois de l'époque d'Edo. Les brasseries de saké se signalent par une boule de cèdre suspendue.",
+  "folklore": "La boule de cèdre, sugidama, est verte quand le saké nouveau est pressé, puis brunit à mesure qu'il mûrit.",
+  "surprise": "Les charpentiers de Hida étaient si réputés qu'ils payaient l'impôt en travaillant sur les palais de la capitale, au lieu de donner du riz.",
+  "tresor": "Le Takayama Jinya, rare bâtiment de gouverneur de l'époque d'Edo encore debout.",
+  "queries": {
+   "geo": "Sanmachi Suji, Takayama",
+   "img": "Takayama Sanmachi old town"
+  },
+  "geo": {
+   "lat": 36.1408745,
+   "lon": 137.2596623,
+   "name": "Takayama Old Town, Sanmachi Suji"
+  }
+ },
+ {
+  "id": "takayamaryokan",
+  "n": "Ryokan avec onsen à Takayama",
+  "jp": "旅館",
+  "city": "takayama",
+  "area": "Vieille ville",
+  "histoire": "Les auberges de Takayama servent le dîner autour du bœuf de Hida et des légumes de montagne.",
+  "queries": {
+   "geo": "Takayama, Gifu",
+   "img": "Takayama ryokan"
+  },
+  "geo": {
+   "lat": 36.1396246,
+   "lon": 137.2510322,
+   "name": "Takayama"
+  }
+ },
+ {
+  "id": "shirakawago",
+  "n": "Village de Shirakawa-gō",
+  "jp": "白川郷",
+  "city": "shirakawa",
+  "area": "Village",
+  "histoire": "Village de fermes aux toits de chaume très pentus, inscrit au patrimoine mondial de l'Unesco en 1995.",
+  "folklore": "Le style gasshō-zukuri doit son nom aux mains jointes en prière. Sous les toits, on élevait des vers à soie.",
+  "surprise": "Tous les 30 à 40 ans, un toit est refait en une journée par tout le village : c'est le yui, l'entraide.",
+  "tresor": "La ferme Wada, la plus grande du village, se visite de l'intérieur.",
+  "queries": {
+   "geo": "Ogimachi, Shirakawa, Gifu",
+   "img": "Shirakawa-go gassho winter"
+  },
+  "geo": {
+   "lat": 36.2541194,
+   "lon": 136.9057401,
+   "name": "Ogimachi"
+  }
+ },
+ {
+  "id": "kenrokuen",
+  "n": "Jardin Kenroku-en",
+  "jp": "兼六園",
+  "city": "kanazawa",
+  "area": "Centre",
+  "histoire": "L'un des trois plus beaux jardins du Japon, aménagé par les seigneurs Maeda à partir du XVIIe siècle.",
+  "surprise": "Son nom veut dire « jardin des six qualités » : étendue, intimité, art, ancienneté, eaux vives et vues dégagées.",
+  "tresor": "Le salon de thé Shigure-tei, dans le jardin, sert un matcha avec un wagashi.",
+  "queries": {
+   "geo": "Kenroku-en, Kanazawa",
+   "img": "Kenrokuen garden"
+  },
+  "geo": {
+   "lat": 36.5624267,
+   "lon": 136.6623546,
+   "name": "兼六園"
+  }
+ },
+ {
+  "id": "higashichaya",
+  "n": "Quartier Higashi Chaya",
+  "jp": "ひがし茶屋街",
+  "city": "kanazawa",
+  "area": "Higashiyama",
+  "histoire": "Ancien quartier des maisons de thé et des geishas, aux façades de bois à fines lattes.",
+  "surprise": "Kanazawa produit presque toute la feuille d'or du Japon. On en met même sur les glaces.",
+  "tresor": "Le quartier Kazue-machi, de l'autre côté de la rivière, plus petit et presque désert.",
+  "queries": {
+   "geo": "Higashi Chaya District, Kanazawa",
+   "img": "Higashi Chaya Kanazawa"
+  },
+  "geo": {
+   "lat": 36.5725559,
+   "lon": 136.6666756,
+   "name": "ひがし茶屋街"
+  }
+ },
+ {
+  "id": "omicho",
+  "n": "Marché Ōmichō",
+  "jp": "近江町市場",
+  "city": "kanazawa",
+  "area": "Centre",
+  "histoire": "Marché couvert depuis près de 300 ans, réputé pour les fruits de mer de la mer du Japon.",
+  "queries": {
+   "geo": "Omicho Market, Kanazawa",
+   "img": "Omicho market Kanazawa"
+  },
+  "geo": {
+   "lat": 36.5718658,
+   "lon": 136.6557781,
+   "name": "近江町市場"
+  }
+ },
+ {
+  "id": "musee21",
+  "n": "Musée d'art du XXIe siècle",
+  "jp": "21世紀美術館",
+  "city": "kanazawa",
+  "area": "Centre",
+  "histoire": "Musée circulaire en verre, ouvert en 2004, au milieu de la ville.",
+  "surprise": "La piscine de Leandro Erlich : on croit voir des gens sous l'eau, ils sont dans une salle sèche.",
+  "queries": {
+   "geo": "21st Century Museum of Contemporary Art, Kanazawa",
+   "img": "21st Century Museum of Contemporary Art Kanazawa"
+  },
+  "geo": {
+   "lat": 36.561088,
+   "lon": 136.659375,
+   "name": "21世紀美術館"
+  }
+ },
+ {
+  "id": "okunoin",
+  "n": "Okunoin et nuit au temple",
+  "jp": "奥之院",
+  "city": "koya",
+  "area": "Mont Kōya",
+  "histoire": "Le mont Kōya est le centre du bouddhisme Shingon, fondé par le moine Kūkai en 816. Okunoin est le plus grand cimetière du Japon, plus de 200 000 tombes sous les cèdres.",
+  "personnage": [
+   "Kūkai, dit Kōbō Daishi (774-835)",
+   "Moine, poète, ingénieur et calligraphe. Il rapporte de Chine le bouddhisme ésotérique et fonde Kōya-san."
+  ],
+  "folklore": "Pour les fidèles, Kūkai n'est pas mort : il médite pour l'éternité dans son mausolée. Des moines lui portent ses repas deux fois par jour depuis plus de mille ans.",
+  "surprise": "Parmi les tombes de samouraïs se cachent des monuments d'entreprises, dont une fusée et une tasse à café.",
+  "tresor": "La salle des lanternes Tōrōdō, où certaines lanternes brûleraient depuis près de mille ans.",
+  "queries": {
+   "geo": "Okunoin, Koya",
+   "img": "Okunoin Koyasan cemetery",
+   "person": "Kukai Kobo Daishi portrait"
+  },
+  "geo": {
+   "lat": 34.21878,
+   "lon": 135.6053745,
+   "name": "Okuno-in"
+  }
+ },
+ {
+  "id": "himejijo",
+  "n": "Château de Himeji",
+  "jp": "姫路城",
+  "city": "himeji",
+  "area": "Centre",
+  "histoire": "Le plus grand château d'origine du Japon, achevé en 1609. On le surnomme le « héron blanc » pour ses murs blancs.",
+  "folklore": "Le puits d'Okiku : une servante accusée d'avoir perdu une assiette précieuse y aurait été jetée. Son fantôme sortirait la nuit pour compter les assiettes jusqu'à neuf, puis pousser un cri.",
+  "surprise": "Il a traversé les bombardements de 1945 : une bombe incendiaire tombée sur le donjon n'aurait pas explosé.",
+  "tresor": "Le puits d'Okiku lui-même, dans l'enceinte, que beaucoup de visiteurs ratent.",
+  "queries": {
+   "geo": "Himeji Castle, Himeji",
+   "img": "Himeji castle"
+  },
+  "geo": {
+   "lat": 34.8393313,
+   "lon": 134.69402,
+   "name": "Château de Himeji"
+  }
+ },
+ {
+  "id": "naoshimaart",
+  "n": "Île d'art de Naoshima",
+  "jp": "直島",
+  "city": "naoshima",
+  "area": "Île",
+  "histoire": "Ancienne île industrielle devenue, depuis les années 1990, un musée à ciel ouvert. Au Chichu Art Museum, presque entièrement enterré, les Nymphéas de Monet sont éclairés par la lumière du jour.",
+  "personnage": [
+   "Tadao Andō",
+   "Ancien boxeur devenu architecte autodidacte. Il dessine la plupart des musées de l'île, en béton brut et lumière naturelle."
+  ],
+  "surprise": "La citrouille jaune à pois de Yayoi Kusama, sur la jetée, a été emportée par un typhon en 2021, puis refaite.",
+  "tresor": "Le bain public I♥湯, décoré par l'artiste Shinrō Ōtake : on se baigne au milieu d'une œuvre d'art.",
+  "queries": {
+   "geo": "Chichu Art Museum, Naoshima",
+   "img": "Naoshima Benesse art site"
+  },
+  "geo": {
+   "lat": 34.4478026,
+   "lon": 133.9847608,
+   "name": "Musée d'Art de Chichū"
+  }
+ },
+ {
+  "id": "yatai",
+  "n": "Yatai de Nakasu",
+  "jp": "屋台",
+  "city": "fukuoka",
+  "area": "Nakasu",
+  "histoire": "Les stands de rue yatai, presque disparus ailleurs au Japon, s'installent chaque soir au bord de la rivière à Fukuoka.",
+  "surprise": "Le ramen tonkotsu, au bouillon blanc d'os de porc, vient de cette région de Kyūshū.",
+  "queries": {
+   "geo": "Nakasu, Hakata, Fukuoka",
+   "img": "Fukuoka yatai Nakasu"
+  },
+  "geo": {
+   "lat": 33.5934757,
+   "lon": 130.4056216,
+   "name": "中洲"
+  }
+ },
+ {
+  "id": "dazaifu",
+  "n": "Dazaifu Tenman-gū",
+  "jp": "太宰府",
+  "city": "fukuoka",
+  "area": "Dazaifu",
+  "histoire": "Sanctuaire bâti sur la tombe de Sugawara no Michizane, le lettré devenu dieu des études.",
+  "folklore": "Le prunier Tobi-ume aurait volé de Kyoto jusqu'ici en une nuit, pour rejoindre son maître exilé.",
+  "queries": {
+   "geo": "Dazaifu Tenmangu, Dazaifu",
+   "img": "Dazaifu Tenmangu",
+   "person": "Sugawara no Michizane"
+  },
+  "geo": {
+   "lat": 33.5194494,
+   "lon": 130.5344619,
+   "name": "Dazaifu Tenmangu Information Center"
+  }
+ },
+ {
+  "id": "sapporoodori",
+  "n": "Sapporo, Ōdōri et marché Nijō",
+  "jp": "札幌",
+  "city": "sapporo",
+  "area": "Centre",
+  "histoire": "Ville fondée en 1869 sur un plan en damier, pendant la colonisation de Hokkaidō. Elle a accueilli les Jeux olympiques d'hiver en 1972.",
+  "folklore": "Hokkaidō est la terre des Aïnous, peuple autochtone. Leurs récits racontent les kamuy, dieux présents dans les animaux comme l'ours ou la chouette.",
+  "surprise": "En février, le festival de la neige aligne sur Ōdōri des sculptures de glace hautes de plusieurs étages.",
+  "tresor": "Upopoy, le musée national de la culture aïnoue, à Shiraoi, à environ une heure de train.",
+  "queries": {
+   "geo": "Odori Park, Sapporo",
+   "img": "Sapporo Odori park"
+  },
+  "geo": {
+   "lat": 43.0599018,
+   "lon": 141.3475101,
+   "name": "Parc Ōdōri"
+  }
+ },
+ {
+  "id": "otaru",
+  "n": "Excursion à Otaru",
+  "jp": "小樽",
+  "city": "sapporo",
+  "area": "Otaru",
+  "histoire": "Port marchand de la fin du XIXe siècle, avec son canal bordé d'entrepôts en pierre.",
+  "queries": {
+   "geo": "Otaru Canal, Otaru",
+   "img": "Otaru canal"
+  },
+  "geo": {
+   "lat": 43.2020231,
+   "lon": 141.0006005,
+   "name": "小樽運河"
+  }
+ },
+ {
+  "id": "okinawabeach",
+  "n": "Plages et récifs d'Okinawa",
+  "jp": "沖縄",
+  "city": "naha",
+  "area": "Nord de l'île",
+  "histoire": "Archipel subtropical, ancien royaume de Ryūkyū, indépendant jusqu'au XIXe siècle.",
+  "folklore": "Les shīsā, lions-chiens en terre cuite posés sur les toits, protègent les maisons : bouche ouverte pour attirer la chance, bouche fermée pour la garder.",
+  "surprise": "Okinawa compte parmi les régions du monde où l'on vit le plus longtemps.",
+  "tresor": "Le village de Bise, une allée de quelque 20 000 arbres fukugi plantés pour protéger les maisons du vent.",
+  "queries": {
+   "geo": "Bise, Motobu, Okinawa",
+   "img": "Okinawa beach Kerama"
+  },
+  "geo": {
+   "lat": 26.7030437,
+   "lon": 127.8843892,
+   "name": "備瀬"
+  }
+ },
+ {
+  "id": "shuri",
+  "n": "Château de Shuri",
+  "jp": "首里城",
+  "city": "naha",
+  "area": "Naha",
+  "histoire": "Palais des rois de Ryūkyū. Le bâtiment principal a brûlé en 2019 et sa reconstruction est en cours.",
+  "queries": {
+   "geo": "Shuri Castle, Naha",
+   "img": "Shuri castle Naha"
+  },
+  "geo": {
+   "lat": 26.2170014,
+   "lon": 127.7193727,
+   "name": "Château de Shuri"
+  }
+ },
+ {
+  "id": "ghibli",
+  "n": "Musée Ghibli",
+  "jp": "三鷹の森",
+  "city": "tokyo",
+  "area": "Mitaka",
+  "histoire": "Musée imaginé par Hayao Miyazaki, ouvert en 2001 à Mitaka, à l'ouest de Tokyo.",
+  "surprise": "Les billets ne se vendent pas sur place : uniquement à l'avance, et ils partent vite.",
+  "tresor": "Le parc Inokashira, qu'on traverse à pied depuis la gare de Kichijōji.",
+  "queries": {
+   "geo": "Ghibli Museum, Mitaka",
+   "img": "Ghibli Museum Mitaka"
+  },
+  "geo": {
+   "lat": 35.6962518,
+   "lon": 139.570451,
+   "name": "Musée Ghibli de la forêt de Mitaka"
+  }
+ },
+ {
+  "id": "akihabara",
+  "n": "Akihabara",
+  "jp": "秋葉原",
+  "city": "tokyo",
+  "area": "Akihabara",
+  "histoire": "Quartier de l'électronique devenu le centre des mangas, de l'animation et des jeux vidéo.",
+  "surprise": "Après la guerre, c'était un marché noir de pièces radio.",
+  "tresor": "Mandarake Complex : huit étages de mangas, figurines et objets de collection d'occasion.",
+  "queries": {
+   "geo": "Akihabara, Chiyoda, Tokyo",
+   "img": "Akihabara electric town"
+  },
+  "geo": {
+   "lat": 35.6985569,
+   "lon": 139.7731418,
+   "name": "Akihabara"
+  }
+ },
+ {
+  "id": "sumo",
+  "n": "Sumo à Ryōgoku",
+  "jp": "両国",
+  "city": "tokyo",
+  "area": "Ryōgoku",
+  "histoire": "Ryōgoku est le quartier du sumo, avec le stade Kokugikan et les écuries de lutteurs.",
+  "folklore": "Le sumo vient de rituels shintō : le sel jeté sur le ring purifie l'espace avant le combat.",
+  "surprise": "Les tournois de Tokyo ont lieu en janvier, mai et septembre, sur quinze jours.",
+  "queries": {
+   "geo": "Ryogoku Kokugikan, Sumida, Tokyo",
+   "img": "Ryogoku Kokugikan sumo"
+  },
+  "geo": {
+   "lat": 35.696876,
+   "lon": 139.7934568,
+   "name": "Ryōgoku Kokugikan"
+  }
+ }
+]

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tabi, carnet de voyage</title>
+<meta name="description" content="Ton voyage jour par jour : itinéraire qui se recalcule, fiches illustrées, adresses de locaux, carte et guide pratique.">
+<meta name="theme-color" content="#1F4FA8">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tabi">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="app/app.css">
+</head>
+<body>
+<div class="app">
+  <header class="top" id="top"></header>
+  <main id="main" style="overflow-x:clip"><div class="splash"><div><div class="hanko" aria-hidden="true">旅</div><p class="small" style="margin-top:12px">Préparation du carnet…</p></div></div></main>
+  <p class="foot-note">Temps de trajet estimés. Images Wikimedia Commons, cartes © OpenStreetMap et CARTO.</p>
+</div>
+<nav class="nav" id="nav" hidden aria-label="Sections">
+  <div class="nav-in">
+    <button type="button" data-tab="jours"><span class="nk">日</span><span class="nl">Jours</span></button>
+    <button type="button" data-tab="carte"><span class="nk">図</span><span class="nl">Carte</span></button>
+    <button type="button" data-tab="lieux"><span class="nk">所</span><span class="nl">Lieux</span></button>
+    <button type="button" data-tab="guide"><span class="nk">案</span><span class="nl">Guide</span></button>
+    <button type="button" data-tab="mots"><span class="nk">語</span><span class="nl">Mots</span></button>
+  </div>
+</nav>
+<div class="sheet-wrap" id="sheet" hidden>
+  <div class="scrim" data-act="close"></div>
+  <div class="sheet" role="dialog" aria-modal="true" id="sheetIn"></div>
+</div>
+<div class="toast" id="toast" hidden></div>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Image agrandie" hidden></div>
+<script>
+/* Chargeur : une destination = un pack JSON. ?d=japon (par défaut). */
+(function(){
+  try{const th=localStorage.getItem("tabi-theme");if(th)document.documentElement.dataset.theme=th}catch(e){}
+  const V="4";
+  const id=(new URLSearchParams(location.search).get("d")||"japon").replace(/[^a-z0-9-]/g,"");
+  const load=src=>new Promise((ok,ko)=>{const s=document.createElement("script");s.src=src+"?v="+V;s.onload=ok;s.onerror=()=>ko(new Error(src));document.body.appendChild(s)});
+  const fail=msg=>{document.getElementById("main").innerHTML=`<div class="splash"><div><div class="hanko">旅</div><p style="margin-top:12px">${msg}</p><button class="btn" onclick="location.reload()">Réessayer</button></div></div>`};
+  fetch(`packs/${id}/pack.json?v=${V}`).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(async pack=>{
+    window.PACK=pack;document.title=pack.brand;
+    await load("vendor/leaflet/leaflet.js").catch(()=>{});
+    for(const f of ["data","scenes","extra","art","map","share","app"])await load(`app/${f}.js`);
+  }).catch(e=>{console.error(e);fail("Impossible de charger le carnet. Vérifie la connexion.")});
+})();
+</script>
+</body>
+</html>
