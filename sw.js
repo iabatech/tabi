@@ -1,7 +1,7 @@
 /* Service worker : l'app marche sans réseau une fois ouverte.
    Coque de l'app : réseau d'abord, cache en secours (les mises à jour arrivent vite).
    Images (Wikimedia, YouTube) : cache d'abord. Fonds de carte : cache d'abord, limité. */
-const V="tabi-v5";
+const V="tabi-v6";
 const SHELL=["./","index.html","manifest.webmanifest","app/app.css","app/data.js","app/scenes.js","app/extra.js","app/art.js","app/map.js","app/share.js","app/trip.js","app/app.js","data/world-cities.json","vendor/leaflet/leaflet.js","vendor/leaflet/leaflet.css","packs/japon/pack.json","icons/icon-192.png"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(SHELL.map(u=>new Request(u,{cache:"reload"})))).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith("tabi-v")&&k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});

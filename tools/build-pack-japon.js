@@ -18,7 +18,9 @@ const places=raw.PLACES.concat(raw.PLACES2).map(p=>{
   const o=Object.assign({},p);
   if(g&&g.lat){o.lat=+(+g.lat).toFixed(5);o.lon=+(+g.lon).toFixed(5)}
   if(gal[p.id])o.g=gal[p.id];
-  if(vids.places&&vids.places[p.id]&&vids.places[p.id].length)o.v=vids.places[p.id];
+  const clean=v=>Object.assign({},v,{t:String(v.t||'').replace(/\s*[—–]\s*/g,' : ')});
+  if(vids.places&&vids.places[p.id]&&vids.places[p.id].length)o.v=vids.places[p.id].map(clean);
+  else if(vids.places_en&&vids.places_en[p.id]&&p.id!=='dazaifu')o.v=[Object.assign(clean(vids.places_en[p.id]),{en:1})];
   return o});
 const routes=adr._routes||[];delete adr._routes;
 /* okinawa -> naha dans les villes */
@@ -40,7 +42,7 @@ const pack={
   cities:raw.CITIES,airports:raw.AIRPORTS,homes:raw.HOMES,places,musts:raw.MUSTS,options:raw.OPTIONS,seasons:raw.SEASONS,
   guide:raw.GUIDE,words:raw.WORDS,ico:raw.ICO,
   tags:X.TAGS,exp:X.EXP,refs:X.REFS,web:X.WEB,gems:X.GEMS,kw:KW,
-  addresses,routes,cityVideos:vids.cities||{},creators:vids.creators||[]
+  addresses,routes,cityVideos:Object.fromEntries(Object.entries(vids.cities||{}).map(([k,l])=>[k,l.map(v=>Object.assign({},v,{t:String(v.t||'').replace(/\s*[—–]\s*/g,' : ')}))])),creators:vids.creators||[]
 };
 /* pourquoi chaque alternative */
 const WHY={

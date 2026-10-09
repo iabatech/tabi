@@ -43,7 +43,7 @@
 /* Chargeur : une destination = un pack JSON. ?d=japon (par défaut). */
 (function(){
   try{const th=localStorage.getItem("tabi-theme");if(th)document.documentElement.dataset.theme=th}catch(e){}
-  const V="5";
+  const V="6";
   const id=(new URLSearchParams(location.search).get("d")||"japon").replace(/[^a-z0-9-]/g,"");
   const load=src=>new Promise((ok,ko)=>{const s=document.createElement("script");s.src=src+"?v="+V;s.onload=ok;s.onerror=()=>ko(new Error(src));document.body.appendChild(s)});
   const fail=msg=>{document.getElementById("main").innerHTML=`<div class="splash"><div><div class="hanko">旅</div><p style="margin-top:12px">${msg}</p><button class="btn" onclick="location.reload()">Réessayer</button></div></div>`};

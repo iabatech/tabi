@@ -16,7 +16,7 @@ function addrCard(a,from){
 }
 function videoBlock(list){
   if(!list||!list.length)return "";
-  return `<div class="vrow">${list.map(v=>`<figure class="vid"><button type="button" class="vthumb2" data-act="yt" data-v="${esc(v.vid)}" aria-label="Lire la vidéo : ${esc(v.t)}"><img src="https://i.ytimg.com/vi/${esc(v.vid)}/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></button><figcaption><b>${esc(v.t)}</b><span>${esc(v.ch||"")}${v.y?" · "+esc(v.y):""}${v.dur?" · "+esc(v.dur):""}</span></figcaption></figure>`).join("")}</div>`;
+  return `<div class="vrow">${list.map(v=>`<figure class="vid"><button type="button" class="vthumb2" data-act="yt" data-v="${esc(v.vid)}" aria-label="Lire la vidéo : ${esc(v.t)}"><img src="https://i.ytimg.com/vi/${esc(v.vid)}/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></button><figcaption><b>${esc(v.t)}</b><span>${esc(v.ch||"")}${v.y?" · "+esc(v.y):""}${v.dur?" · "+esc(v.dur):""}${v.en?" · en anglais":""}</span></figcaption></figure>`).join("")}</div>`;
 }
 function artSheet(p,v,where,map){
   const G=p.g||{};const ph=G.photos||[];const hero=ph[0];
