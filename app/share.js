@@ -1,5 +1,5 @@
 /* ---------- Partage, aujourd'hui, hors ligne, repli des images ---------- */
-const SHARE_KEYS=["from","start","len","rythme","arr","ret","musts","nope","chosen","active","sel","custom","delta","hotels","dropWeb","researchDone","step"];
+const SHARE_KEYS=["from","fromCity","start","len","rythme","arr","ret","musts","nope","chosen","active","sel","custom","delta","hotels","dropWeb","researchDone","step"];
 function todayIdx(pl){const s=new Date(S.start+"T00:00:00");if(isNaN(s)||!pl)return -1;const n=new Date();n.setHours(0,0,0,0);const i=Math.round((n-s)/864e5);return i>=0&&i<pl.total?i:-1}
 const b64u={enc:u8=>{let s="";u8.forEach(c=>s+=String.fromCharCode(c));return btoa(s).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")},dec:str=>{const s=atob(str.replace(/-/g,"+").replace(/_/g,"/"));return Uint8Array.from(s,c=>c.charCodeAt(0))}};
 async function packState(){

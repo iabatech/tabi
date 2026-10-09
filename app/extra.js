@@ -7,12 +7,27 @@ function relevance(s){const lt=likedTags();const lp=new Set(S.musts.flatMap(id=>
 
 /* ---------- Écran coups de cœur ---------- */
 function mustPlace(mid){return P(MUST[mid].p[0])}
-function deckLeft(){return MUSTS.filter(m=>!S.musts.includes(m.id)&&!(S.nope||[]).includes(m.id))}
-function dcard(mu,top,i){const p=mustPlace(mu.id),e=EXP[mu.id];return `<article class="dcard ${top?"top":""}" data-id="${mu.id}" style="--i:${i}" ${top?"":'aria-hidden="true"'}><div class="dcard-img">${postcard(p)}</div><div class="dcard-body"><div class="dcard-city">${esc(CITY[p.c].n)} · ${CITY[p.c].jp}</div><h2>${esc(mu.n)}</h2><p>${esc(e[0])}</p><div class="dtags">${e[1].map(t=>`<span>${TAGS[t]}</span>`).join("")}</div></div><span class="dstamp like">Coup de cœur</span><span class="dstamp nope">Pas pour moi</span></article>`}
+/* Le paquet s'adapte : après chaque choix, les cartes les plus proches de tes goûts remontent */
+function nopeTags(){const c={};(S.nope||[]).forEach(id=>(EXP[id]||["",[]])[1].forEach(t=>c[t]=(c[t]||0)+1));return c}
+function affinity(mu){const lt=likedTags(),nt=nopeTags();const tg=(EXP[mu.id]||["",[]])[1];return tg.reduce((a,t)=>a+(lt[t]||0)*1.2-(nt[t]||0)*0.8,0)}
+function deckLeft(){const base=MUSTS.filter(m=>!S.musts.includes(m.id)&&!(S.nope||[]).includes(m.id));if(!S.musts.length&&!(S.nope||[]).length)return base;return base.map((m,i)=>({m,s:affinity(m)-i*0.01})).sort((a,b)=>b.s-a.s).map(x=>x.m)}
+function cardReason(mu){const lt=likedTags();const tg=(EXP[mu.id]||["",[]])[1].filter(t=>lt[t]);if(!tg.length)return "";return `Parce que tu aimes : ${tg.slice(0,2).map(t=>TAGS[t].toLowerCase()).join(", ")}`}
+let PREVIEW=null;
+function previewPlan(){try{PREVIEW=planOption({k:"A",n:"Ton voyage",cities:[AIR[S.arr].c]})}catch(e){PREVIEW=null}return PREVIEW}
+function routeEffect(mu){const p=mustPlace(mu.id);const pl=PREVIEW;if(!pl)return "";
+  if(pl.order.includes(p.c))return `<span class="eff on">Déjà sur ta route · ${esc(CITY[p.c].n)}</span>`;
+  const near=pl.order.slice().sort((a,b)=>legH(a,p.c)-legH(b,p.c))[0];
+  return `<span class="eff new">Nouvelle étape : ${esc(CITY[p.c].n)}, ${fmtH(legH(near,p.c))} depuis ${esc(CITY[near].n)}</span>`}
+function fillGauge(pl){const R=RY[S.rythme];const cap=pl.list.reduce((s,d)=>s+d.cap+d.eve,0);const used=pl.list.reduce((s,d)=>s+d.used+d.eveUsed,0);return {cap,used,pct:cap?Math.min(1,used/cap):0,over:pl.over.length}}
+function previewHTML(){const pl=previewPlan();if(!pl)return "";const g=fillGauge(pl);
+  const msg=g.over?`C'est plein : ${g.over} lieu${g.over>1?"x":""} ne rentre${g.over>1?"nt":""} plus. Ajoute des jours ou change de rythme.`:g.pct>.85?"Presque plein : encore un ou deux coups de cœur.":`Il reste de la place : environ ${Math.max(1,Math.round((g.cap-g.used)/3))} demi-journées libres.`;
+  return `<section class="preview"><div class="k">Ton voyage se dessine</div>${chainHTML(pl)}<div class="gauge ${g.over?"full":""}"><i style="width:${Math.round(g.pct*100)}%"></i></div><p class="small">${msg}</p><div id="deckMap" class="deckmap"></div></section>`}
+
+function dcard(mu,top,i){const p=mustPlace(mu.id),e=EXP[mu.id];return `<article class="dcard ${top?"top":""}" data-id="${mu.id}" style="--i:${i}" ${top?"":'aria-hidden="true"'}><div class="dcard-img">${postcard(p)}</div><div class="dcard-body"><div class="dcard-city">${esc(CITY[p.c].n)} · ${CITY[p.c].jp} · ${fmtDur(p.d)}</div><h2>${esc(mu.n)}</h2>${top&&cardReason(mu)?`<div class="reason">${esc(cardReason(mu))}</div>`:""}<p>${esc(e[0])}</p><div class="dtags">${e[1].map(t=>`<span>${TAGS[t]}</span>`).join("")}</div>${top?routeEffect(mu):""}</div><span class="dstamp like">Coup de cœur</span><span class="dstamp nope">Pas pour moi</span></article>`}
 function profileHTML(){const c=likedTags();const ent=Object.entries(c).sort((a,b)=>b[1]-a[1]);if(!ent.length)return "";const mx=ent[0][1];return `<div class="profile"><div class="k">Ton profil de voyageur</div>${ent.map(([t,n])=>`<div class="pbar"><span>${TAGS[t]}</span><i><b style="width:${Math.round(n/mx*100)}%"></b></i><em>${n}</em></div>`).join("")}</div>`}
 function renderDeck(){
-  const m=document.getElementById("main");const left=deckLeft();const seen=MUSTS.length-left.length;
-  let h=`<section class="step"><div class="q-eyebrow">Question 4 sur 4</div><h1 class="q-title">Qu'est-ce qui te fait rêver ?</h1><p class="q-lead">Pas besoin de connaître le Japon. Glisse à droite ce qui te plaît, à gauche ce qui ne te dit rien. Chaque coup de cœur sera placé dans ton voyage.</p>
+  const m=document.getElementById("main");previewPlan();const left=deckLeft();const seen=MUSTS.length-left.length;
+  let h=`<section class="step"><div class="q-eyebrow">Question 4 sur 4</div><h1 class="q-title">Qu'est-ce qui te fait rêver ?</h1><p class="q-lead">Pas besoin de connaître le pays. Glisse à droite ce qui te plaît, à gauche ce qui ne te dit rien. Les cartes suivantes s'adaptent à tes goûts, et ton itinéraire se dessine en dessous à chaque choix.</p>
   <div class="deck-bar"><span class="count">${seen} / ${MUSTS.length} vus · ${S.musts.length} coup${S.musts.length>1?"s":""} de cœur</span><button type="button" class="linkbtn" data-act="mosaic">${S.mosaic?"Revenir aux cartes":"Tout voir d'un coup"}</button></div>`;
   if(S.mosaic){
     h+=`<div class="mosaic">${MUSTS.map(mu=>{const on=S.musts.includes(mu.id);return `<button type="button" class="mtile ${on?"on":""}" data-act="mtoggle" data-v="${mu.id}" aria-pressed="${on}"><span class="mimg">${postcard(mustPlace(mu.id),"",330)}</span><span class="mname">${esc(mu.n)}</span><span class="mheart" aria-hidden="true">♥</span></button>`}).join("")}</div>`;
@@ -24,10 +39,11 @@ function renderDeck(){
     h+=`<div class="infobox"><span class="k">C'est tout vu</span><span>${S.musts.length?`${S.musts.length} coups de cœur retenus.`:"Aucun coup de cœur : on partira sur les grands classiques."}</span></div>`;
   }
   if(S.musts.length&&!S.mosaic)h+=`<div class="likes">${S.musts.map(id=>`<button type="button" class="lchip" data-act="mtoggle" data-v="${id}" title="Retirer">${esc(MUST[id].n)} <span aria-hidden="true">×</span></button>`).join("")}</div>`;
-  h+=profileHTML();
+  h+=previewHTML()+profileHTML();
   h+=navRow(S.musts.length?"Chercher en ligne pour mon voyage":"Passer et chercher en ligne")+`</section>`;
   m.innerHTML=h;
   bindDeck();
+  const dm=document.getElementById("deckMap");if(dm&&PREVIEW)mountMap(dm,{routes:[{k:"A",order:PREVIEW.order}],active:"A",fit:PREVIEW.order,onCity:cityChoiceSheet});
 }
 function decide(id,v){S.hist=(S.hist||[]).concat([[id,v]]);if(v==="like"){if(!S.musts.includes(id))S.musts=S.musts.concat(id)}else S.nope=(S.nope||[]).concat(id);S.researchDone=false;save();renderTop();renderDeck()}
 function flyOut(card,v){const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;if(reduce){decide(card.dataset.id,v);return}card.style.transition="transform .25s ease-in, opacity .25s";card.style.transform=`translateX(${v==="like"?520:-520}px) rotate(${v==="like"?24:-24}deg)`;card.style.opacity="0";setTimeout(()=>decide(card.dataset.id,v),220)}

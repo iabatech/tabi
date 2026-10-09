@@ -43,14 +43,14 @@
 /* Chargeur : une destination = un pack JSON. ?d=japon (par défaut). */
 (function(){
   try{const th=localStorage.getItem("tabi-theme");if(th)document.documentElement.dataset.theme=th}catch(e){}
-  const V="4";
+  const V="5";
   const id=(new URLSearchParams(location.search).get("d")||"japon").replace(/[^a-z0-9-]/g,"");
   const load=src=>new Promise((ok,ko)=>{const s=document.createElement("script");s.src=src+"?v="+V;s.onload=ok;s.onerror=()=>ko(new Error(src));document.body.appendChild(s)});
   const fail=msg=>{document.getElementById("main").innerHTML=`<div class="splash"><div><div class="hanko">旅</div><p style="margin-top:12px">${msg}</p><button class="btn" onclick="location.reload()">Réessayer</button></div></div>`};
   fetch(`packs/${id}/pack.json?v=${V}`).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(async pack=>{
     window.PACK=pack;document.title=pack.brand;
     await load("vendor/leaflet/leaflet.js").catch(()=>{});
-    for(const f of ["data","scenes","extra","art","map","share","app"])await load(`app/${f}.js`);
+    for(const f of ["data","scenes","extra","art","map","share","trip","app"])await load(`app/${f}.js`);
   }).catch(e=>{console.error(e);fail("Impossible de charger le carnet. Vérifie la connexion.")});
 })();
 </script>

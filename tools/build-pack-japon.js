@@ -30,9 +30,11 @@ const pack={
   map:{path:rd('japan.txt').trim(),lon0:122,lat0:46,k:40,latc:35,center:[36.2,138.2],zoom:5},
   hubs:["tokyo","osaka","fukuoka"],
   flights:{
-    default:"Depuis {from} : une correspondance, souvent via Paris ou une grande ville européenne. Compter 16 à 20 h.",
-    rules:[{re:"montr",txt:"Vol direct depuis Montréal : environ 13 h.",lag:[13,14]},{re:"paris",txt:"Vol direct depuis Paris : environ 14 h, la route contourne la Russie.",lag:[7,8]}],
-    lag:[7,8],lagNote:"Prévoir une première journée légère."
+    tz:"Asia/Tokyo",speed:830,
+    detour:[{lat:[34,72],lon:[-25,60],h:1.6,note:"la route contourne la Russie"}],
+    direct:["Paris","Londres","Francfort","Munich","Amsterdam","Helsinki","Zurich","Vienne","Rome","Milan","Copenhague","Istanbul","Dubaï","Doha","Abou Dabi","Montréal","Toronto","Vancouver","New York","Los Angeles","San Francisco","Seattle","Chicago","Dallas","Houston","Boston","Honolulu","Singapour","Hong Kong","Séoul","Bangkok","Taipei","Shanghai","Pékin","Sydney","Melbourne","Manille","Kuala Lumpur","Hanoï","Hô Chi Minh-Ville","Jakarta","Delhi","Bombay"],
+    hubs:["Paris","Francfort","Amsterdam","Londres","Helsinki","Istanbul","Doha","Dubaï","Séoul","Hong Kong","Singapour","Bangkok","Taipei","Shanghai","Pékin","Los Angeles","San Francisco","Seattle","Vancouver","Chicago","New York","Toronto","Montréal","Sydney","Honolulu","Delhi"],
+    lagNote:"Prévoir une première journée légère."
   },
   airportTip:"Arriver à Tokyo et repartir d'Osaka évite de revenir sur ses pas : une demi-journée de train gagnée.",
   cities:raw.CITIES,airports:raw.AIRPORTS,homes:raw.HOMES,places,musts:raw.MUSTS,options:raw.OPTIONS,seasons:raw.SEASONS,
@@ -46,7 +48,8 @@ const WHY={
   B:{pour:"Ceux qui veulent le Japon des montagnes et des villages, loin de la foule.",gain:[{t:"Les villages de chaume de Shirakawa-gō",c:["shirakawa"]},{t:"La vieille ville de Takayama",c:["takayama"]},{t:"Le château noir de Matsumoto, d'origine",c:["matsumoto"]},{t:"Les jardins et le quartier des geishas de Kanazawa",c:["kanazawa"]},{t:"Les sanctuaires dans la forêt de Nikkō",c:["nikko"]}],perte:[{t:"Plus de trains régionaux et de bus"}]},
   C:{pour:"Les curieux d'art et d'expériences rares : une nuit au temple, une île musée.",gain:[{t:"Une nuit dans un temple à Kōya-san",c:["koya"]},{t:"Naoshima, l'île d'art contemporain",c:["naoshima"]},{t:"Le Fuji au bord du lac Kawaguchi",c:["kawaguchiko"]}],perte:[{t:"Des trajets plus longs, avec ferry et funiculaire"}]}
 };
-pack.options.forEach(o=>Object.assign(o,WHY[o.k]||{}));
+const EXT={A:["kawaguchiko","himeji","kanazawa","nikko"],B:["hakone","nara","osaka"],C:["nara","himeji","hakone"]};
+pack.options.forEach(o=>Object.assign(o,WHY[o.k]||{},{extend:EXT[o.k]||[]}));
 const out=path.join(__dirname,'..','packs','japon','pack.json');
 fs.writeFileSync(out,JSON.stringify(pack));
 const n=k=>places.filter(p=>p.g&&p.g[k]&&(Array.isArray(p.g[k])?p.g[k].length:1)).length;

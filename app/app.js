@@ -81,7 +81,8 @@ function planCity(cid,n,items,R,o){
       best.d.items.push({id:p.id,slot});best.d.areas.add(p.a);
       if(slot==="eve")best.d.eveUsed+=best.cost;else best.d.used+=best.cost;return true;
     };
-    if(!(p.m==="soir"?(put("eve")||put("day")):(put("day")||put("eve"))))over.push(p);
+    /* un lieu de jour (temple, jardin, musée) ne glisse jamais le soir : il ferme */
+    if(!(p.m==="soir"?(put("eve")||put("day")):put("day")))over.push(p);
   }
   return {days,over};
 }
@@ -101,6 +102,8 @@ function planOption(opt){
   const st=p=>S.sel[p.id]||(pinned.has(p.id)?"pin":found.has(p.id)?"in":p.base?"in":"out");
   const soft=new Set();pasted.forEach(id=>{const p=P(id);if(p&&!tpl.includes(p.c)&&!forced.has(p.c))soft.add(p.c)});
   let cities=[...new Set([...tpl,...forced,...soft])];
+  /* voyage long : on ajoute les étapes d'extension prévues pour cet itinéraire */
+  {const ext=(opt.extend||[]).filter(c=>CITY[c]&&!cities.includes(c));let slack=N-cities.reduce((t,c)=>t+CITY[c].ideal,0);while(slack>=2&&ext.length){const c=ext.shift();cities.push(c);slack-=CITY[c].ideal}}
   const prio=c=>(c===arrC||c===retC)?4:forced.has(c)?3:soft.has(c)?2.5:2;
   const sel=c=>allPlaces().filter(p=>p.c===c&&(st(p)==="in"||st(p)==="pin"));
   const dropped=[];
@@ -240,29 +243,10 @@ function renderTop(){
 
 /* ---------- Rendu : questionnaire ---------- */
 function navRow(nextLabel,disabled){return `<div class="wz-nav">${S.step>0?`<button type="button" class="btn quiet" data-act="prev">Retour</button>`:"<span></span>"}<button type="button" class="btn" data-act="next" ${disabled?"disabled":""}>${nextLabel||"Continuer"}</button></div>`}
-function flightInfo(){
-  const F=PACK.flights||{};const f=S.from;const r=(F.rules||[]).find(x=>new RegExp(x.re,"i").test(f));
-  const m=(dAt(0)||new Date()).getMonth()+1;const summer=m>=4&&m<=10;const L2=(r&&r.lag)||F.lag||[0,0];const lag=summer?L2[0]:L2[1];
-  const fl=r?r.txt:String(F.default||"").replace("{from}",esc(f));
-  return `<div class="infobox"><span class="k">Le trajet</span><span>${fl}</span>${lag?`<span>Décalage horaire : +${lag} h sur place. ${esc(F.lagNote||"")}</span>`:""}</div>`;
-}
-
 function renderStep(){
   const m=document.getElementById("main");
-  if(S.step===0){
-    m.innerHTML=`<section class="step"><div class="banner">${postcard(P(PACK.cover||"chureito")||PLACES[0])}</div><div class="q-eyebrow">Question 1 sur 4</div><h1 class="q-title">D'où partez-vous ?</h1>
-     <div class="opts" role="group" aria-label="Ville de départ">${HOMES.map(h=>`<button type="button" class="pill" data-act="from" data-v="${esc(h)}" aria-pressed="${S.from===h}">${esc(h)}</button>`).join("")}</div>
-     <label class="field" for="fromOther">Autre ville<input id="fromOther" value="${HOMES.includes(S.from)?"":esc(S.from)}" placeholder="Ta ville de départ"></label>
-     ${flightInfo()}${navRow()}</section>`;
-  }else if(S.step===1){
-    const m0=(dAt(0)||new Date()).getMonth()+1;
-    m.innerHTML=`<section class="step"><div class="q-eyebrow">Question 2 sur 4</div><h1 class="q-title">Quand partez-vous, et pour combien de temps ?</h1>
-     <label class="field" for="startDate">Premier jour au Japon<input id="startDate" type="date" value="${esc(S.start)}"></label>
-     <div class="big-step"><button type="button" class="round" data-act="len" data-v="-1" aria-label="Un jour de moins">−</button><span class="val">${S.len}<small>jours sur place</small></span><button type="button" class="round" data-act="len" data-v="1" aria-label="Un jour de plus">+</button></div>
-     <div class="opts">${[7,10,14,21].map(n=>`<button type="button" class="pill" data-act="lenset" data-v="${n}" aria-pressed="${S.len===n}">${n} jours</button>`).join("")}</div>
-     <div><div class="ctrl-label" style="margin-bottom:6px">Votre rythme</div><div class="seg" role="group" aria-label="Rythme">${Object.entries(RY).map(([k,v])=>`<button type="button" data-act="rythme" data-v="${k}" aria-pressed="${S.rythme===k}">${v.label}</button>`).join("")}</div><p class="small" style="margin-top:6px">${RY[S.rythme].day} h de visite par jour, ${RY[S.rythme].eve} h le soir.</p></div>
-     <div class="infobox"><span class="k">À cette période</span><span>${SEASONS[m0]}</span><span class="small">Retour le ${longDate(S.len-1)}.</span></div>
-     ${navRow()}</section>`;
+  if(S.step===0){renderFrom()}
+  else if(S.step===1){renderDates()
   }else if(S.step===2){
     const port=(key,id)=>{const a=AIR[id];return `<button type="button" class="port" data-act="${key}" data-v="${id}" aria-pressed="${S[key]===id}"><b>${id}</b><span>${esc(a.n)}</span><small>${esc(CITY[a.c].n)}</small></button>`};
     m.innerHTML=`<section class="step"><div class="q-eyebrow">Question 3 sur 4</div><h1 class="q-title">Où arrivez-vous ?</h1>
@@ -286,13 +270,17 @@ function analyze(){
 }
 /* ---------- Choix A/B/C ---------- */
 function chainHTML(pl){return `<div class="chain">${pl.order.map((c,i)=>`${i?'<span class="ar">→</span>':''}<b>${esc(CITY[c].n)}</b><span class="nd">${pl.days[c]}j</span>`).join("")}</div>`}
+function cityHead(c,stats){const p=allPlaces().find(x=>x.c===c.id&&x.g);return `<div class="city-hero">${p?postcard(p):sceneSVG({id:"city"+c.id,n:c.n,ico:"pin",c:c.id})}<div class="day-over"><h3 style="font-size:30px">${esc(c.n)} <span class="f-jp" style="color:#E9E4DA">${c.jp}</span></h3></div></div><div class="ostats" style="margin-top:10px">${stats}</div><div class="minimap tall" id="cm-${c.id}"></div>`}
 function cityChoiceSheet(cid){
   const c=CITY[cid];
-  const inOpt=OPTIONS.map(o=>{const pl=PLANS[o.k];return pl.order.includes(cid)?`<span class="stat" style="color:${RC[o.k]}">${o.k} : ${pl.days[cid]} jour${pl.days[cid]>1?"s":""}</span>`:""}).join("");
+  const opts=OPTIONS.filter(o=>PLANS[o.k].order.includes(cid));
+  const inOpt=opts.map(o=>`<span class="stat" style="color:${RC[o.k]}">${o.k} : ${PLANS[o.k].days[cid]} jour${PLANS[o.k].days[cid]>1?"s":""}</span>`).join("");
   const ps=allPlaces().filter(p=>p.c===cid);
-  openSheet(`<h2 style="font-size:28px">${esc(c.n)} <span class="f-jp">${c.jp}</span></h2><div class="ostats" style="margin-top:8px">${inOpt||'<span class="stat">Dans aucun itinéraire pour l\'instant</span>'}</div>
+  openSheet(`${cityHead(c,inOpt||'<span class="stat">Dans aucun itinéraire pour l\'instant</span>')}
+   ${opts.length?`<div class="f-actions">${opts.map(o=>`<button type="button" class="btn sm" style="background:${RC[o.k]}" data-act="choose" data-v="${o.k}">Générer l'itinéraire ${o.k}</button>`).join("")}</div>`:""}
    <section class="f-sec"><h4>Accès</h4><p>${esc(c.acc)}</p></section><section class="f-sec"><h4>Où dormir</h4><p>${esc(c.hotel)}</p></section>
    <h3 style="margin-top:18px;font-size:18px">À voir</h3><ul class="plist">${ps.map(p=>`<li><button type="button" data-act="open" data-id="${p.id}">${tile(p,"sm")}<span><b>${esc(p.n)}</b><br><span class="small">${esc(p.a)} · ${fmtDur(p.d)}</span></span><span class="small">›</span></button></li>`).join("")}</ul>${cityExtras(cid)}`);
+  sheetIn.classList.add("art");
   setTimeout(()=>{const el=document.getElementById("cm-"+cid);if(el)cityMap(el,cid)},80);
 }
 
@@ -324,7 +312,7 @@ function renderJours(){
       <div class="hotel"><div><strong>Où dormir :</strong> ${esc(cur.hotel)}</div><div class="hotel-row"><label for="hotel-${cur.id}">Hôtel choisi</label><input id="hotel-${cur.id}" data-hotel="${cur.id}" placeholder="Nom de l'hôtel, à remplir" value="${esc(S.hotels[cur.id]||"")}"></div></div>`}
     const rows=schedule(d,pl);const load=d.cap?Math.min(1,d.used/d.cap):0;
     const heroP=(()=>{const ids=d.items.map(x=>x.id);const pin=ids.find(id=>pl.st(P(id))==="pin");return P(pin||ids[0])||{id:"city"+d.city.id,n:d.city.n,ico:"pin",c:d.city.id}})();
-    h+=`<article class="day" id="day-${d.idx}"><div class="day-hero">${postcard(heroP)}<div class="day-over"><h3>Jour ${d.idx+1}</h3><span class="day-date">${dateOf(d.idx)} · ${esc(d.city.n)}</span></div></div><div class="day-load ${load>.92?'full':''}"><i style="width:${Math.round(load*100)}%"></i></div><ul class="stops">`;
+    h+=`<article class="day" id="day-${d.idx}"><div class="day-hero">${postcard(heroP)}<div class="day-over"><h3>Jour ${d.idx+1}</h3><span class="day-date">${dateOf(d.idx)} · ${esc(d.city.n)}</span></div><button type="button" class="day-map" data-act="day" data-v="${d.idx}">Carte et itinéraire</button></div><div class="day-load ${load>.92?'full':''}"><i style="width:${Math.round(load*100)}%"></i></div><ul class="stops">`;
     let has=false;
     rows.forEach(r=>{
       if(r.k==="transit"){h+=`<li class="sub-row transit"><span class="time">${r.t==null?"":hhmm(r.t)}</span><span class="txt">${esc(r.txt)}</span></li>`;if(d.first&&d.prev&&r===rows[0])routeTips(d.prev,d.city.id).forEach(x=>{h+=`<li class="sub-row tip"><span class="time">Astuce</span><span class="txt"><b>${esc(x.n)}</b> : ${esc(x.why)}</span></li>`})}
@@ -354,16 +342,40 @@ function renderCarte(){
 }
 function cityExtras(cid){
   const ad=ADDR[cid]||[];const vids=CITYVID[cid]||[];let h="";
-  h+=`<section class="art-sec"><div class="art-k"><span lang="ja">近所</span>Adresses stylées</div><div class="minimap tall" id="cm-${cid}"></div>${ad.length?`<ul class="addrs">${ad.map(a=>addrCard(a)).join("")}</ul>`:`<p class="small">Pas encore d'adresse curée pour cette ville.</p>`}</section>`;
+  h+=`<section class="art-sec"><div class="art-k"><span lang="ja">近所</span>Adresses stylées</div>${ad.length?`<ul class="addrs">${ad.map(a=>addrCard(a)).join("")}</ul>`:`<p class="small">Pas encore d'adresse curée pour cette ville.</p>`}</section>`;
   if(vids.length)h+=`<section class="art-sec"><div class="art-k"><span lang="ja">映像</span>Vivre comme un local, en vidéo</div>${videoBlock(vids)}</section>`;
   return h;
 }
 function cityTripSheet(cid){
   const pl=plan();const c=CITY[cid];const ps=allPlaces().filter(p=>p.c===cid);
-  openSheet(`<h2 style="font-size:28px">${esc(c.n)} <span class="f-jp">${c.jp}</span></h2><div class="ostats" style="margin-top:8px">${pl.order.includes(cid)?`<span class="stat good">${pl.days[cid]} jour${pl.days[cid]>1?"s":""} dans ton voyage</span>`:`<span class="stat">Pas dans ton itinéraire</span>`}</div>
+  const days=pl.list.filter(d=>d.city.id===cid);
+  openSheet(`${cityHead(c,pl.order.includes(cid)?`<span class="stat good">${pl.days[cid]} jour${pl.days[cid]>1?"s":""} dans ton voyage</span>`:`<span class="stat">Pas dans ton itinéraire</span>`)}
+   ${days.length?`<div class="daybtns">${days.map(d=>`<button type="button" class="daybtn" data-act="day" data-v="${d.idx}"><b>Jour ${d.idx+1}</b><span>${esc(dateOf(d.idx))} · ${d.items.length} lieu${d.items.length>1?"x":""}</span><em>Voir le parcours et l'itinéraire</em></button>`).join("")}</div>`:""}
    <section class="f-sec"><h4>Accès</h4><p>${esc(c.acc)}</p></section><section class="f-sec"><h4>Où dormir</h4><p>${esc(c.hotel)}</p></section>
    <h3 style="margin-top:18px;font-size:18px">Lieux</h3><ul class="plist">${ps.map(p=>`<li><button type="button" data-act="open" data-id="${p.id}">${tile(p,"sm")}<span><b>${esc(p.n)}</b><br><span class="small">${stateLabel(pl.st(p))} · ${fmtDur(p.d)}</span></span><span class="small">›</span></button></li>`).join("")}</ul>${cityExtras(cid)}`);
+  sheetIn.classList.add("art");
   setTimeout(()=>{const el=document.getElementById("cm-"+cid);if(el)cityMap(el,cid)},80);
+}
+/* Parcours d'une journée : carte, ordre des visites, itinéraire entre chaque étape */
+function gdir(a,b,mode){return `https://www.google.com/maps/dir/?api=1&origin=${a.lat},${a.lon}&destination=${b.lat},${b.lon}&travelmode=${mode||"transit"}`}
+function daySheet(idx){
+  const pl=plan();const d=pl.list[idx];if(!d)return;
+  const rows=schedule(d,pl);const stops=rows.filter(r=>r.k==="stop").map(r=>({t:r.t,p:r.p}));
+  const geo=stops.filter(x=>x.p.lat);
+  const near=[];const seen=new Set();stops.forEach(x=>nearAddr(x.p,0.9).forEach(a=>{if(!seen.has(a.id)){seen.add(a.id);near.push(a)}}));
+  let legs="";
+  stops.forEach((x,i)=>{
+    legs+=`<li class="leg"><span class="leg-n">${i+1}</span><div><div class="leg-h"><span class="time">${hhmm(x.t)}</span><button type="button" class="linkbtn" data-act="open" data-id="${x.p.id}">${esc(x.p.n)}</button></div><div class="small">${esc(x.p.a)} · ${fmtDur(x.p.d)}</div></div></li>`;
+    const nx=stops[i+1];if(nx&&x.p.lat&&nx.p.lat){const k=km(x.p,nx.p);const walk=k<1.3;legs+=`<li class="leg-go"><a href="${gdir(x.p,nx.p,walk?"walking":"transit")}" target="_blank" rel="noopener">${walk?`À pied, ${Math.max(1,Math.round(k*14))} min environ`:`En transports, ${k.toFixed(1).replace(".",",")} km`} : voir l'itinéraire</a></li>`}
+  });
+  const full=geo.length>1?`https://www.google.com/maps/dir/?api=1&origin=${geo[0].p.lat},${geo[0].p.lon}&destination=${geo[geo.length-1].p.lat},${geo[geo.length-1].p.lon}${geo.length>2?"&waypoints="+geo.slice(1,-1).map(x=>x.p.lat+","+x.p.lon).join("|"):""}&travelmode=walking`:"";
+  openSheet(`<div class="q-eyebrow">${esc(dateOf(idx))} · ${esc(d.city.n)}</div><h2 style="font-size:28px;margin-top:4px">Jour ${idx+1}, le parcours</h2>
+   <div class="minimap tall" id="dm-${idx}" style="margin-top:12px"></div>
+   ${rows.filter(r=>r.k==="transit").map(r=>`<p class="transit-note">${esc(r.txt)}</p>`).join("")}
+   ${stops.length?`<ol class="legs">${legs}</ol>`:`<p class="small">Journée libre.</p>`}
+   ${full?`<div class="f-actions"><a class="btn sm" style="text-decoration:none" href="${full}" target="_blank" rel="noopener">Tout le parcours dans Google Maps</a></div>`:""}
+   ${near.length?`<section class="art-sec"><div class="art-k"><span lang="ja">近所</span>Autour, ce jour-là</div><ul class="addrs">${near.slice(0,6).map(a=>addrCard(a)).join("")}</ul></section>`:""}`);
+  setTimeout(()=>{const el=document.getElementById("dm-"+idx);if(el)dayMap(el,stops,near)},80);
 }
 function addrById(id){for(const l of Object.values(ADDR)){const a=l.find(x=>x.id===id);if(a)return a}return null}
 function addrSheet(id){const a=addrById(id);if(!a)return;openSheet(`<h2 style="font-size:24px">${esc(a.n)}</h2><ul class="addrs">${addrCard(a)}</ul>${a.lat?`<div class="minimap" id="am-x"></div>`:""}`);
@@ -455,9 +467,10 @@ document.addEventListener("click",e=>{
   else if(a==="goto"){S.step=+v;save();render(true)}
   else if(a==="restart"){const keep={hotels:S.hotels,custom:S.custom};S=Object.assign(defaults(),keep);save();render(true)}
   else if(a==="example"){S=Object.assign(defaults(),{musts:["fuji","inari","nara","miyajima","onsen","shibuya","gion","kamakura","sumo"],step:5,researchDone:true});save();render(true);toast("Exemple chargé : 14 jours, de Tokyo Haneda à Osaka Kansai.")}
-  else if(a==="from"){S.from=v;save();render(false)}
-  else if(a==="len"){S.len=Math.max(4,Math.min(30,S.len+(+v)));save();render(false)}
-  else if(a==="lenset"){S.len=+v;save();render(false)}
+  else if(a==="pickhome"){loadWorld().then(()=>{const c=findWorld(v);if(c)setFrom(c);else toast("Ville introuvable.")})}
+  else if(a==="pickcity"){const c=fromHits[+v];if(c)setFrom(c)}
+  else if(a==="len"){S.len=Math.max(2,Math.min(60,S.len+(+v)));save();if(S.step===1)updateDatesUI();else render(false)}
+  else if(a==="lenset"){S.len=+v;save();if(S.step===1)updateDatesUI();else render(false)}
   else if(a==="rythme"){S.rythme=v;if(S.step>=7)recompute(`Rythme ${RY[v].label.toLowerCase()}.`);else{save();render(false)}}
   else if(a==="arr"||a==="ret"){S[a]=v;save();render(false)}
   else if(a==="mtoggle"){S.musts=S.musts.includes(v)?S.musts.filter(x=>x!==v):S.musts.concat(v);S.nope=(S.nope||[]).filter(x=>x!==v);S.researchDone=false;save();renderTop();renderDeck()}
@@ -468,11 +481,12 @@ document.addEventListener("click",e=>{
   else if(a==="reanalyse"){save();const y=window.scrollY;renderResearch();window.scrollTo({top:y});toast(S.found.length?`${S.found.length} lieu${S.found.length>1?"x":""} repéré${S.found.length>1?"s":""} dans tes textes.`:"Aucun lieu reconnu dans tes textes.")}
   else if(a==="src-del"){S.sources.splice(+b.dataset.i,1);save();render(false)}
   else if(a==="active"){if(e.target.closest("[data-act='choose']"))return;S.active=v;save();render(false)}
-  else if(a==="choose"){S.chosen=v;S.active=v;S.step=6;S.tab="jours";save();render(true);toast(`Itinéraire ${v} généré jour par jour.`)}
+  else if(a==="choose"){closeSheet();S.chosen=v;S.active=v;S.step=6;S.tab="jours";save();render(true);toast(`Itinéraire ${v} généré jour par jour.`)}
   else if(a==="city"){cityTripSheet(v)}
   else if(a==="open")placeSheet(id);
   else if(a==="lightbox")lightbox(b.dataset.k);
   else if(a==="addr")addrSheet(v);
+  else if(a==="day")daySheet(+v);
   else if(a==="lmode"){S.lmode=v;save();render(false)}
   else if(a==="yt"){b.outerHTML=`<iframe class="yt" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v)}?autoplay=1&rel=0" title="Vidéo YouTube" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`}
   else if(a==="share")shareSheet();
@@ -503,12 +517,13 @@ document.addEventListener("submit",e=>{
 });
 document.addEventListener("input",e=>{
   const t=e.target;
-  if(t.id==="fromOther"&&t.value.trim()){S.from=t.value.trim();save();document.querySelectorAll('[data-act="from"]').forEach(x=>x.setAttribute("aria-pressed","false"))}
+  if(t.id==="fromQ"){loadWorld().then(()=>showFromList(t.value))}
   if(t.dataset&&t.dataset.srctext!=null){S.sources[+t.dataset.srctext].text=t.value;save()}
   if(t.dataset&&t.dataset.hotel){S.hotels[t.dataset.hotel]=t.value;save()}
   if(t.id==="wordSearch"){wq=t.value;fillWords()}
 });
-document.addEventListener("change",e=>{if(e.target.id==="startDate"&&e.target.value){S.start=e.target.value;save();render(false)}if(e.target.id==="fromOther"){render(false)}});
+document.addEventListener("change",e=>{if(e.target.id==="startDate"||e.target.id==="endDate")onDateChange(e.target)});
+document.addEventListener("keydown",e=>{if(e.target.id==="fromQ"&&e.key==="Enter"){e.preventDefault();if(fromHits[0])setFrom(fromHits[0])}});
 document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;const lb=document.getElementById("lb");if(!lb.hidden){lb.hidden=true;return}if(!sheet.hidden)closeSheet()});
 
 computePlans();
