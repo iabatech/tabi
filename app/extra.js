@@ -92,6 +92,13 @@ function reasons(pl){const placed=new Set();pl.list.forEach(d=>d.items.forEach(x
   out.push(`${fmtH(pl.travel)} de trajets pour ${pl.order.length} étapes.`);
   return out}
 function score(pl){return pl.cover.filter(x=>x.ok).length*10+pl.foundOk*2-pl.travel*.4-pl.over.filter(p=>pl.st(p)==="pin").length*8}
+function altDiff(k,best){
+  const out={gain:[],perte:[]};if(k===best)return out;const a=PLANS[k],b=PLANS[best];
+  const plus=a.order.filter(c=>!b.order.includes(c)).map(c=>CITY[c].n),moins=b.order.filter(c=>!a.order.includes(c)).map(c=>CITY[c].n);
+  if(plus.length)out.gain.push(`Par rapport à ${best} : ${plus.join(", ")} en plus`);
+  if(moins.length)out.perte.push(`Par rapport à ${best} : sans ${moins.join(", ")}`);
+  const dt=a.travel-b.travel;if(Math.abs(dt)>=0.75)(dt>0?out.perte:out.gain).push(`${fmtH(Math.abs(dt))} de trajet ${dt>0?"en plus":"en moins"} que ${best}`);
+  return out}
 function renderChoice(){
   computePlans();
   const m=document.getElementById("main");
@@ -104,7 +111,9 @@ function renderChoice(){
      return `<article class="ocard ${S.active===o.k?'active':''}" style="--oc:${RC[o.k]}" data-act="active" data-v="${o.k}"><div class="strip">${hl.map(pid=>`<div>${postcard(P(pid),"",330)}<span>${esc(P(pid).n)}</span></div>`).join("")}</div>
       <div class="ocard-head"><span class="oletter">${o.k}</span><div><h3>${esc(o.n)}${o.k===best?' <span class="best">Mon conseil</span>':""}</h3><p class="otag">${esc(o.tag)}</p></div></div>
       ${chainHTML(pl)}
+      ${o.pour?`<p class="opour"><b>Pour qui :</b> ${esc(o.pour)}</p>`:""}
       <div class="why"><div class="k2">Pourquoi cette route</div><ul>${reasons(pl).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+      ${o.gain?`<div class="tradeoff"><div class="to-g"><div class="k2">Tu gagnes</div><ul>${o.gain.filter(x=>!x.c||x.c.every(c=>pl.order.includes(c))).map(x=>`<li>${esc(x.t)}</li>`).join("")}${altDiff(o.k,best).gain.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div><div class="to-p"><div class="k2">Tu laisses de côté</div><ul>${o.perte.filter(x=>!x.c||x.c.every(c=>pl.order.includes(c))).map(x=>`<li>${esc(x.t)}</li>`).join("")}${altDiff(o.k,best).perte.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div>`:""}
       ${pl.cover.some(x=>!x.ok)?`<p class="small">Manque : ${esc(pl.cover.filter(x=>!x.ok).map(x=>x.m.n).join(", "))}.</p>`:""}
       <div class="ocard-actions"><button type="button" class="btn sm" data-act="choose" data-v="${o.k}">Générer le jour par jour</button></div></article>`}).join("")}</div><div class="wz-nav"><button type="button" class="btn quiet" data-act="prev">Retour à la recherche</button><span></span></div></section>`;
   mountMap(document.getElementById("mapA"),{routes:OPTIONS.map(o=>({k:o.k,order:PLANS[o.k].order})),active:S.active,fit:[...new Set(OPTIONS.flatMap(o=>PLANS[o.k].order))],legend,onCity:cityChoiceSheet});

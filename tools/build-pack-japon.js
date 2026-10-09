@@ -42,9 +42,9 @@ const pack={
 };
 /* pourquoi chaque alternative */
 const WHY={
-  A:{pour:"Un premier voyage, sans stress : les grands noms, des trajets courts en Shinkansen.",gain:["Le moins de temps dans les transports","Les incontournables : Kyoto, Nara, Fuji depuis Hakone, Hiroshima"],perte:["Plus de monde sur les sites","Peu de campagne et de villages"]},
-  B:{pour:"Ceux qui veulent le Japon des montagnes et des villages, loin de la foule.",gain:["Villages de chaume de Shirakawa-gō et vieille ville de Takayama","Deux châteaux d'origine et les jardins de Kanazawa"],perte:["Plus de trains régionaux et de bus","Pas d'Osaka, de Nara ni de Hiroshima"]},
-  C:{pour:"Les curieux d'art et d'expériences rares : une nuit au temple, une île musée.",gain:["Nuit dans un temple à Kōya-san","Naoshima, l'île d'art contemporain","Le Fuji au bord du lac Kawaguchi"],perte:["Les trajets les plus longs, avec ferry et funiculaire","Moins de temps à Tokyo"]}
+  A:{pour:"Un premier voyage, sans stress : les grands noms, des trajets courts en Shinkansen.",gain:[{t:"Le moins de temps dans les transports"},{t:"Kyoto et Nara, les deux anciennes capitales",c:["kyoto","nara"]},{t:"Le Fuji et les onsen de Hakone",c:["hakone"]},{t:"Hiroshima et l'île de Miyajima",c:["hiroshima"]}],perte:[{t:"Plus de monde sur les sites"},{t:"Peu de campagne et de villages"}]},
+  B:{pour:"Ceux qui veulent le Japon des montagnes et des villages, loin de la foule.",gain:[{t:"Les villages de chaume de Shirakawa-gō",c:["shirakawa"]},{t:"La vieille ville de Takayama",c:["takayama"]},{t:"Le château noir de Matsumoto, d'origine",c:["matsumoto"]},{t:"Les jardins et le quartier des geishas de Kanazawa",c:["kanazawa"]},{t:"Les sanctuaires dans la forêt de Nikkō",c:["nikko"]}],perte:[{t:"Plus de trains régionaux et de bus"}]},
+  C:{pour:"Les curieux d'art et d'expériences rares : une nuit au temple, une île musée.",gain:[{t:"Une nuit dans un temple à Kōya-san",c:["koya"]},{t:"Naoshima, l'île d'art contemporain",c:["naoshima"]},{t:"Le Fuji au bord du lac Kawaguchi",c:["kawaguchiko"]}],perte:[{t:"Des trajets plus longs, avec ferry et funiculaire"}]}
 };
 pack.options.forEach(o=>Object.assign(o,WHY[o.k]||{}));
 const out=path.join(__dirname,'..','packs','japon','pack.json');

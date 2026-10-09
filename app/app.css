@@ -516,3 +516,11 @@ iframe.yt{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;display:block
 .share-box input{width:100%;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:12px;font:inherit;font-family:var(--f-mono);font-size:12px;margin-top:12px}
 .howto{margin:12px 0 0;padding-left:20px;display:grid;gap:8px}
 .person.noimg{grid-template-columns:1fr}
+.opour{margin:0;font-size:13.5px}
+.tradeoff{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tradeoff ul{margin:0;padding-left:18px;display:grid;gap:4px;font-size:13px}
+.to-g{background:var(--ok-soft);border-radius:12px;padding:8px 10px}.to-g .k2{color:var(--ok);margin-top:0}
+.to-p{background:var(--warn-soft);border-radius:12px;padding:8px 10px}.to-p .k2{color:var(--warn);margin-top:0}
+@media (max-width:420px){.tradeoff{grid-template-columns:1fr}}
+.howto-card{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;margin-top:14px}
+.howto-card h3{font-size:18px}
