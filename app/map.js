@@ -20,8 +20,9 @@ function addrMarker(a,from){
   return L.marker([a.lat,a.lon],{icon:dotIcon("addr",kd[1]),title:a.n}).bindPopup(`<b>${esc(a.n)}</b><br><span>${esc(kd[0])}${a.q?" · "+esc(a.q):""}</span><br>${esc(a.why)}`,{maxWidth:260});
 }
 /* Carte du voyage choisi : villes, lieux par jour, adresses */
-function tripMap(el,pl){
-  const m=newMap(el,{scrollWheelZoom:true});if(!m)return;
+function tripMap(el,pl,o){
+  o=o||{};const m=newMap(el,{scrollWheelZoom:true,zoomControl:!o.noCtl});if(!m)return;
+  if(o.noCtl)L.control.zoom({position:"topright"}).addTo(m);
   const pts=pl.order.map(c=>[CITY[c].lat,CITY[c].lon]);
   pl.order.slice(1).forEach((c,i)=>{const a=CITY[pl.order[i]],b=CITY[c];const fl=a.flight||b.flight;L.polyline([[a.lat,a.lon],[b.lat,b.lon]],{color:"#1F4FA8",weight:4,opacity:.75,dashArray:fl?"8 8":null}).addTo(m)});
   const placesL=L.layerGroup().addTo(m),addrL=L.layerGroup(),bounds=L.latLngBounds(pts);
@@ -30,8 +31,9 @@ function tripMap(el,pl){
     bounds.extend([p.lat,p.lon])})});
   pl.order.forEach((c,i)=>{const C=CITY[c];L.marker([C.lat,C.lon],{icon:dotIcon("city",`${i+1}`),title:C.n,zIndexOffset:1000}).on("click",()=>cityTripSheet(c)).addTo(m)});
   pl.order.forEach(c=>(ADDR[c]||[]).forEach(a=>{if(a.lat)addrMarker(a).addTo(addrL)}));
-  L.control.layers(null,{"Lieux du programme":placesL,"Adresses stylées":addrL},{collapsed:false,position:"topright"}).addTo(m);
-  m.fitBounds(bounds,{padding:[30,30]});
+  m._tabi={placesL,addrL};
+  if(!o.noCtl)L.control.layers(null,{"Lieux du programme":placesL,"Adresses stylées":addrL},{collapsed:false,position:"topright"}).addTo(m);
+  m.fitBounds(bounds,{paddingTopLeft:[30,60],paddingBottomRight:[30,o.padBottom||30]});
   return m;
 }
 /* Mini-carte d'un lieu et de ses adresses */

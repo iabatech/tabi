@@ -292,54 +292,13 @@ function renderTrip(){
   const tabs=["jours","carte","lieux","guide","mots"];
   if(!tabs.includes(S.tab))S.tab="jours";
   document.querySelectorAll(".nav button").forEach(b=>b.setAttribute("aria-current",b.dataset.tab===S.tab?"page":"false"));
+  document.body.classList.toggle("mapmode",S.tab==="carte");
   ({jours:renderJours,carte:renderCarte,lieux:renderLieux,guide:renderGuide,mots:renderMots})[S.tab]();
 }
 function stateLabel(v){return v==="pin"?"Incontournable":v==="in"?"Au programme":"Pas retenu"}
-function renderJours(){
-  const pl=plan(),o=pl.opt,R=RY[S.rythme];const m=document.getElementById("main");
-  const pinOver=pl.over.filter(p=>pl.st(p)==="pin"),other=pl.over.filter(p=>pl.st(p)!=="pin");
-  let h=`<div class="hero"><div class="q-eyebrow">Itinéraire ${o.k} · ${esc(o.n)}</div><h1>${pl.total} jours, de ${esc(CITY[pl.order[0]].n)} à ${esc(CITY[pl.order[pl.order.length-1]].n)}</h1><p>Du ${longDate(0)} au ${longDate(pl.total-1)}. Ajoute un lieu, change le rythme ou les jours par ville : tout se recalcule.</p><div class="hero-actions"><button type="button" class="btn sm" data-act="share">Partager ce voyage</button>${todayIdx(pl)>=0?`<button type="button" class="btn quiet sm" data-act="today">Aujourd'hui</button>`:""}<button type="button" class="btn quiet sm" data-act="offline">Hors ligne</button></div></div>
-   ${chainHTML(pl)}
-   <div class="controls"><span class="ctrl-label">Rythme</span><div class="seg" role="group" aria-label="Rythme">${Object.entries(RY).map(([k,v])=>`<button type="button" data-act="rythme" data-v="${k}" aria-pressed="${S.rythme===k}">${v.label}</button>`).join("")}</div></div>`;
-  if(pl.log.length)h+=`<div class="notice info"><strong>Jours redistribués automatiquement</strong><ul>${pl.log.map(l=>`<li>${esc(l)}</li>`).join("")}</ul></div>`;
-  if(pl.dropped.length)h+=`<div class="notice warn"><strong>Étapes retirées faute de jours</strong><span>${pl.dropped.map(c=>esc(CITY[c].n)).join(", ")}. Ajoute des jours au voyage pour les retrouver.</span></div>`;
-  if(pinOver.length)h+=`<div class="notice crit"><strong>Incontournable sans place</strong><span>${pinOver.map(p=>esc(p.n)).join(", ")} ne rentre pas. Passe en rythme soutenu ou ajoute un jour à ${esc(CITY[pinOver[0].c].n)}.</span></div>`;
-  if(other.length)h+=`<div class="notice warn"><strong>Hors programme, faute de temps</strong><span>${other.map(p=>`<button type="button" class="chip" data-act="open" data-id="${p.id}">${esc(p.n)}</button>`).join(" ")}</span></div>`;
-  h+=`<div class="days">`;let cur=null;
-  pl.list.forEach(d=>{
-    if(d.city!==cur){cur=d.city;const n=pl.days[cur.id];
-      h+=`<div class="city-head"><div><h2>${esc(cur.n)}</h2><span class="kjbig">${cur.jp}</span></div><div class="dstep"><button type="button" data-act="dminus" data-id="${cur.id}" aria-label="Un jour de moins à ${esc(cur.n)}">−</button><span>${n} jour${n>1?"s":""}</span><button type="button" data-act="dplus" data-id="${cur.id}" aria-label="Un jour de plus à ${esc(cur.n)}">+</button></div></div>
-      <div class="hotel"><div><strong>Où dormir :</strong> ${esc(cur.hotel)}</div><div class="hotel-row"><label for="hotel-${cur.id}">Hôtel choisi</label><input id="hotel-${cur.id}" data-hotel="${cur.id}" placeholder="Nom de l'hôtel, à remplir" value="${esc(S.hotels[cur.id]||"")}"></div></div>`}
-    const rows=schedule(d,pl);const load=d.cap?Math.min(1,d.used/d.cap):0;
-    const heroP=(()=>{const ids=d.items.map(x=>x.id);const pin=ids.find(id=>pl.st(P(id))==="pin");return P(pin||ids[0])||{id:"city"+d.city.id,n:d.city.n,ico:"pin",c:d.city.id}})();
-    h+=`<article class="day" id="day-${d.idx}"><div class="day-hero">${postcard(heroP)}<div class="day-over"><h3>Jour ${d.idx+1}</h3><span class="day-date">${dateOf(d.idx)} · ${esc(d.city.n)}</span></div><button type="button" class="day-map" data-act="day" data-v="${d.idx}">Carte et itinéraire</button></div><div class="day-load ${load>.92?'full':''}"><i style="width:${Math.round(load*100)}%"></i></div><ul class="stops">`;
-    let has=false;
-    rows.forEach(r=>{
-      if(r.k==="transit"){h+=`<li class="sub-row transit"><span class="time">${r.t==null?"":hhmm(r.t)}</span><span class="txt">${esc(r.txt)}</span></li>`;if(d.first&&d.prev&&r===rows[0])routeTips(d.prev,d.city.id).forEach(x=>{h+=`<li class="sub-row tip"><span class="time">Astuce</span><span class="txt"><b>${esc(x.n)}</b> : ${esc(x.why)}</span></li>`})}
-      else if(r.k==="lunch")h+=`<li class="sub-row lunch"><span class="time">${hhmm(r.t)}</span><span class="txt">${r.txt}</span></li>`;
-      else if(r.k==="evesep")h+=`<li class="evening-sep">Le soir</li>`;
-      else{has=true;const p=r.p;h+=`<li><button type="button" class="stop ${flashIds.has(p.id)?'moved':''}" data-act="open" data-id="${p.id}"><span class="time">${hhmm(r.t)}</span>${tile(p,"sm")}<span style="min-width:0"><span class="stop-name">${esc(p.n)}</span><br><span class="stop-meta">${esc(p.a)} · ${fmtDur(p.d)}</span></span>${pl.st(p)==="pin"?'<span class="pin-badge">Incontournable</span>':''}</button></li>`}
-    });
-    if(!has)h+=`<li class="empty-day">${d.last?"Temps libre avant le départ.":d.idx===0?"Installation et repos après le vol.":"Journée libre : flâner, se reposer, ou ajouter un lieu depuis l'onglet Lieux."}</li>`;
-    h+=`</ul>`;
-    const near=[];const seen=new Set();d.items.forEach(x=>{const p=P(x.id);if(p)nearAddr(p,0.9).forEach(a=>{if(!seen.has(a.id)){seen.add(a.id);near.push(a)}})});
-    if(near.length)h+=`<div class="around"><span class="around-k">Autour, ce jour-là</span><div class="around-l">${near.slice(0,4).map(a=>`<button type="button" class="achip" data-act="addr" data-v="${esc(a.id)}"><i aria-hidden="true">${(ADDR_KIND[a.k]||["","店"])[1]}</i>${esc(a.n)}</button>`).join("")}</div></div>`;
-    h+=`</article>`;
-  });
-  m.innerHTML=h+`</div>`;
-}
 function routeTips(a,b){return ROUTES.filter(r=>(r.from===a&&r.to===b)||(r.from===b&&r.to===a))}
 function tripRouteTips(pl){const out=[];ROUTES.forEach(r=>{const i=pl.order.indexOf(r.from),j=pl.order.indexOf(r.to);if(i>=0&&j>=0)out.push(r)});return out}
 function routeTipsHTML(pl){const items=tripRouteTips(pl);if(!items.length)return "";return `<section class="f-sec route-tips"><h4>Bons plans sur la route</h4><ul>${items.map(r=>`<li><b>${esc(CITY[r.from]?CITY[r.from].n:r.from)} et ${esc(CITY[r.to]?CITY[r.to].n:r.to)} : ${esc(r.n)}</b><br>${esc(r.why)}${(r.src||[]).slice(0,1).map(x=>` <a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.n)}</a>`).join("")}</li>`).join("")}</ul></section>`}
-function renderCarte(){
-  const pl=plan();const m=document.getElementById("main");
-  const labels={};pl.list.forEach(d=>{const c=d.city.id;const a=labels[c];labels[c]=a?a.replace(/-?\d+$/,"")+"-"+(d.idx+1):"J"+(d.idx+1)});
-  Object.keys(labels).forEach(c=>{labels[c]=labels[c].replace(/^J(\d+)-(\d+)$/,(x,a,b)=>a===b?"J"+a:`J${a} à ${b}`)});
-  m.innerHTML=`<div class="hero"><div class="q-eyebrow">Carte du voyage</div><h1>${esc(pl.opt.n)}</h1><p>Les numéros ronds sont les étapes, les petits numéros les jours. Touche un lieu pour sa fiche. Coche « Adresses stylées » pour voir les bons coins autour.</p></div><div id="mapT" class="lmap"></div>
-   ${routeTipsHTML(pl)}
-   <div class="optlist">${pl.order.map((c,i)=>`<button type="button" class="ocard" style="text-align:left;--oc:${RC[pl.opt.k]}" data-act="city" data-v="${c}"><div class="ocard-head"><span class="oletter">${i+1}</span><div><h3>${esc(CITY[c].n)}</h3><p class="otag">${esc(labels[c]||"")} · ${pl.days[c]} jour${pl.days[c]>1?"s":""}${i>0?` · ${legMode(pl.order[i-1],c).toLowerCase()} depuis ${esc(CITY[pl.order[i-1]].n)}, ${fmtH(legH(pl.order[i-1],c))}`:""}${(ADDR[c]||[]).length?` · ${(ADDR[c]||[]).length} adresses`:""}</p></div></div></button>`).join("")}</div>`;
-  tripMap(document.getElementById("mapT"),pl);
-}
 function cityExtras(cid){
   const ad=ADDR[cid]||[];const vids=CITYVID[cid]||[];let h="";
   h+=`<section class="art-sec"><div class="art-k"><span lang="ja">近所</span>Adresses stylées</div>${ad.length?`<ul class="addrs">${ad.map(a=>addrCard(a)).join("")}</ul>`:`<p class="small">Pas encore d'adresse curée pour cette ville.</p>`}</section>`;
@@ -446,7 +405,7 @@ let tt;function toast(msg){const t=document.getElementById("toast");t.textConten
 /* ---------- Rendu général ---------- */
 function render(scrollTop){
   renderTop();
-  if(S.step>=6&&S.chosen)renderTrip();else{if(S.step>=6)S.step=5;renderStep()}
+  if(S.step>=6&&S.chosen)renderTrip();else{document.body.classList.remove("mapmode");if(S.step>=6)S.step=5;renderStep()}
   if(scrollTop)window.scrollTo({top:0});
 }
 function positions(){const m={};if(!S.chosen)return m;plan().list.forEach(d=>d.items.forEach(x=>m[x.id]=d.idx));return m}
@@ -492,7 +451,10 @@ document.addEventListener("click",e=>{
   else if(a==="share")shareSheet();
   else if(a==="copylink")copyLink();
   else if(a==="nativeshare")nativeShare();
-  else if(a==="today"){const i=todayIdx(plan());const el=document.getElementById("day-"+i);if(el)el.scrollIntoView({behavior:"smooth",block:"start"})}
+  else if(a==="today"){const i=todayIdx(plan());if(i>=0){S.dayIdx=i;S.tab="jours";save();render(true)}}
+  else if(a==="jday"){S.dayIdx=+v;save();render(false);const t=document.getElementById("jxDay");if(t&&t.getBoundingClientRect().top<0)window.scrollTo({top:0,behavior:"smooth"})}
+  else if(a==="layer")toggleLayer(b);
+  else if(a==="snap")cycleSnap();
   else if(a==="offline")offlineSheet();
   else if(a==="dloffline")downloadOffline(b);
   else if(a==="import")acceptImport();
