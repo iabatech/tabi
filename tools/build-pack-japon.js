@@ -27,7 +27,8 @@ const routes=adr._routes||[];delete adr._routes;
 const cityIds=new Set(raw.CITIES.map(c=>c.id));
 const addresses={};Object.entries(adr).forEach(([c,l])=>{const id=cityIds.has(c)?c:(c==='okinawa'?'naha':c);addresses[id]=l});
 const pack={
-  v:1,id:"japon",name:"Japon",brand:"Tabi Japon",hanko:"旅",lang:"fr",currency:"JPY",
+  v:1,id:"japon",name:"Japon",brand:"Tabi Japon",hanko:"旅",
+  skin:{d1:"#3B3BF5",d2:"#FF5A8A",d3:"#FFC53D",glyph:"旅",defaultSkin:"ciel"},lang:"fr",currency:"JPY",
   built:new Date().toISOString().slice(0,10),
   map:{path:rd('japan.txt').trim(),lon0:122,lat0:46,k:40,latc:35,center:[36.2,138.2],zoom:5},
   hubs:["tokyo","osaka","fukuoka"],

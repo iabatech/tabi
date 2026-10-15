@@ -20,6 +20,7 @@ function renderJours(){
   let walkKm=0;stops.forEach((r,k)=>{const nx=stops[k+1];if(nx){const L2=legInfo(r.p,nx.p);if(L2&&L2.walk)walkKm+=L2.k}});
   const dt=dAt(i);
   h+=`<section class="jx-day" id="jxDay"><div class="jx-dh"><div style="min-width:0"><h2>${dt?esc(cap(dHead.format(dt))):"Jour "+(i+1)}</h2><div class="jx-sub">Jour ${i+1}${i===ti?' · <span class="today-badge">Aujourd\'hui</span>':""} · ${esc(d.city.n)} <span lang="ja">${d.city.jp}</span></div></div></div>
+   ${(()=>{const ids=d.items.map(x=>x.id);const hp=P(ids.find(id=>pl.st(P(id))==="pin")||ids[0]);return hp&&hp.g?`<button type="button" class="jx-cover" data-act="open" data-id="${hp.id}" aria-label="Ouvrir la fiche : ${esc(hp.n)}">${postcard(hp)}<span class="jx-cover-t">${esc(hp.n)}</span></button>`:""})()}
    <div class="jx-sum">${stops.length?`${stops.length} visite${stops.length>1?"s":""} · ${fmtH(hours)} sur place${walkKm>=0.3?` · ${walkKm.toFixed(1).replace(".",",")} km à pied`:""}`:"Journée légère"}</div>`;
   h+=`<ol class="jx-list">`;
   if(d.first)h+=`<li class="jx-row hotel"><span class="jx-ic" aria-hidden="true">宿</span><div class="jx-rb"><label for="hotel-${d.city.id}">Ton hôtel à ${esc(d.city.n)}</label><input id="hotel-${d.city.id}" data-hotel="${d.city.id}" placeholder="Nom de l'hôtel, à remplir" value="${esc(S.hotels[d.city.id]||"")}"><span class="jx-hint">${esc(d.city.hotel)}</span></div></li>`;
@@ -63,7 +64,7 @@ function bindDaySwipe(){
 let SNAP=1;const SNAPS=[0.3,0.52,0.84];
 function placeMapFrame(){
   const f=document.getElementById("pmap");if(!f)return;
-  const top=document.getElementById("top").getBoundingClientRect().bottom;const nav=document.getElementById("nav");const nb=nav&&!nav.hidden?nav.getBoundingClientRect().height:0;
+  const top=document.getElementById("top").getBoundingClientRect().bottom;const nav=document.getElementById("nav");const nb=nav&&!nav.hidden?Math.max(0,window.innerHeight-nav.getBoundingClientRect().top):0;
   f.style.top=Math.max(0,top)+"px";f.style.bottom=nb+"px";
   const sh=document.getElementById("psheet");if(sh)sh.style.height=Math.round(f.clientHeight*SNAPS[SNAP])+"px";
 }

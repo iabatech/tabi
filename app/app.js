@@ -233,7 +233,7 @@ function renderTop(){
   const t=document.getElementById("top");
   const inTrip=S.step>=6;
   const sub=inTrip&&S.chosen?`${PLANS[S.chosen].total} jours · ${dateOf(0)}`:"Créer son voyage";
-  let h=`<div class="top-row"><div class="brand"><div class="hanko" aria-hidden="true">${esc(PACK.hanko||"旅")}</div><div><div class="brand-name">${esc(PACK.brand)}</div><div class="brand-sub">${esc(sub)}</div></div></div>`;
+  let h=`<div class="top-row"><div class="brand"><div class="hanko" aria-hidden="true">${esc(PACK.hanko||"旅")}</div><div><div class="brand-name"><span class="bn-old">${esc(PACK.brand)}</span><span class="bn-new">tabi<i>.</i> <em>${esc(PACK.name)}</em></span></div><div class="brand-sub">${esc(sub)}</div></div></div>`;
   h+=inTrip?`<button class="btn-ghost" type="button" data-act="goto" data-v="5">Comparer A, B, C</button>`:(S.step>0?`<button class="btn-ghost" type="button" data-act="restart">Recommencer</button>`:`<button class="btn-ghost" type="button" data-act="example">Voir un exemple</button>`);
   h+=`</div>`;
   if(!inTrip){const pct=Math.min(S.step,5)/5*86;h+=`<ol class="line-prog" aria-label="Étapes"><span class="fill" style="width:${pct}%"></span>${STEPS.map((s,i)=>`<li class="lp ${i<S.step?'done':i===S.step?'cur':''}"><i></i><span>${s}</span></li>`).join("")}</ol>`}
@@ -357,8 +357,10 @@ function renderLieux(){
    <button type="button" class="add-btn" data-act="addplace">+ Ajouter un lieu à voir absolument</button>`;
 }
 function howtoCard(){return `<details class="g howto-card"><summary><span class="g-kj">使</span>Mode d'emploi de l'app</summary><ol class="howto"><li><b>Jours</b> : le programme jour par jour. Touche un lieu pour sa fiche complète (photos, histoire, légende, adresses autour).</li><li><b>Carte</b> : tout le voyage sur une carte. Coche « Adresses stylées » pour les bons coins.</li><li><b>Lieux</b> : change le statut d'un lieu (non, oui, incontournable) ; le programme se recalcule tout seul. « Adresses stylées » liste les cafés, tables et boutiques repérés.</li><li><b>Aujourd'hui</b> : pendant le voyage, ce bouton t'emmène directement au bon jour.</li><li><b>Hors ligne</b> : ajoute l'app à l'écran d'accueil et télécharge les images en wifi avant de partir.</li></ol></details>`}
+const SKINS=[["ciel","Ciel","Clair et lumineux, grandes photos"],["aurora","Aurore","Sombre et feutré, lueurs de couleur"],["pop","Pop","Couleurs franches, style autocollant"],["washi","Carnet","Papier et calligraphie, version d'origine"]];
+function skinCard(){const cur=document.documentElement.dataset.skin;return `<section class="skinpick"><h3>Apparence</h3><div class="skins">${SKINS.map(([k,n,d])=>`<button type="button" class="skin-o sk-${k}" data-act="skin" data-v="${k}" aria-pressed="${cur===k}"><span class="sw"><i></i><i></i><i></i></span><b>${n}</b><span>${d}</span></button>`).join("")}</div></section>`}
 function renderGuide(){
-  document.getElementById("main").innerHTML=`<h2 class="section-title">Guide pratique</h2><p class="lead">Ce qu'il faut savoir en arrivant de France, classé par situation.</p>${howtoCard()}<div class="acc">${GUIDE.map((g,i)=>`<details class="g" ${i===0?"open":""}><summary><span class="g-kj">${g.k}</span>${esc(g.t)}<span class="g-count">${g.i.length}</span></summary><ul>${g.i.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></details>`).join("")}</div>`;
+  document.getElementById("main").innerHTML=`<h2 class="section-title">Guide pratique</h2><p class="lead">Ce qu'il faut savoir en arrivant de France, classé par situation.</p>${skinCard()}${howtoCard()}<div class="acc">${GUIDE.map((g,i)=>`<details class="g" ${i===0?"open":""}><summary><span class="g-kj">${g.k}</span>${esc(g.t)}<span class="g-count">${g.i.length}</span></summary><ul>${g.i.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></details>`).join("")}</div>`;
 }
 let wq="";
 function renderMots(){
@@ -454,6 +456,7 @@ document.addEventListener("click",e=>{
   else if(a==="today"){const i=todayIdx(plan());if(i>=0){S.dayIdx=i;S.tab="jours";save();render(true)}}
   else if(a==="jday"){S.dayIdx=+v;save();render(false);const t=document.getElementById("jxDay");if(t&&t.getBoundingClientRect().top<0)window.scrollTo({top:0,behavior:"smooth"})}
   else if(a==="layer")toggleLayer(b);
+  else if(a==="skin"){applySkin(v,true);render(false)}
   else if(a==="snap")cycleSnap();
   else if(a==="offline")offlineSheet();
   else if(a==="dloffline")downloadOffline(b);
